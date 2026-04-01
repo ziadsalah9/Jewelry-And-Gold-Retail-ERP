@@ -1,0 +1,3 @@
+﻿1>------ Clean started: Project: DT_restrant, Configuration: Debug Any CPU ------
+1>C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(5055,5): warning MSB3061: Unable to delete file "C:\Users\hosam\Documents\GitHub\SABSQL_VB.net\DT_restrant\bin\Debug\SAP_ACC.exe". Access to the path 'C:\Users\hosam\Documents\GitHub\SABSQL_VB.net\DT_restrant\bin\Debug\SAP_ACC.exe' is denied.
+========== Clean: 1 succeeded, 0 failed, 0 skipped ==========

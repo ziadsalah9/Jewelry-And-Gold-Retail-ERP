@@ -1,0 +1,2497 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class GoldInvoice
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GoldInvoice))
+        Me.txtBarCode = New System.Windows.Forms.TextBox()
+        Me.IDTextBox1 = New System.Windows.Forms.TextBox()
+        Me.CastomeridTextBox = New System.Windows.Forms.TextBox()
+        Me.UserIDTextBox1 = New System.Windows.Forms.TextBox()
+        Me.Item_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_despTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_GramPriceTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_gramTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_gramMadeTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_extrasPRICETextBox = New System.Windows.Forms.TextBox()
+        Me.Item_extrasMAZANTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_totalPriceTextBox = New System.Windows.Forms.TextBox()
+        Me.CashTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_cantreyTextBox = New System.Windows.Forms.TextBox()
+        Me.Invoc_timeDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.CacherIDTextBox = New System.Windows.Forms.TextBox()
+        Me.cmbCashier = New System.Windows.Forms.ComboBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.Invoc_timeTextBox = New System.Windows.Forms.TextBox()
+        Me.Item_totalPriceTextBox1 = New System.Windows.Forms.TextBox()
+        Me.DateDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Invoc_date_timeTextBox = New System.Windows.Forms.TextBox()
+        Me.CashTextBox1 = New System.Windows.Forms.TextBox()
+        Me.grid = New System.Windows.Forms.DataGridView()
+        Me.colDelete = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colTaxTextAm = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTaxAmo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colModify = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colCastomerid = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colcacher = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colItemID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colItemName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGramPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldWeight = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoledKarat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoledPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoledMakeCharge = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTotalGoledPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoledPiecesQuantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonName1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonWeight1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonColor1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonPrice1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonName2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonWeight2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonColor2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonPrice2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonName3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonWeight3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonColor3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonPrice3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoledPurchasPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coldate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coluserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSroomName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colInvocDateTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNots = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colItemCantrey = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonePriceType1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonePriceType2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colStonePriceType3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.gbData = New System.Windows.Forms.GroupBox()
+        Me.BtnTax = New System.Windows.Forms.Button()
+        Me.lblPr = New System.Windows.Forms.Label()
+        Me.txtTaxAmo = New System.Windows.Forms.TextBox()
+        Me.txtTaxTextAm = New System.Windows.Forms.TextBox()
+        Me.lblTaxAm = New System.Windows.Forms.Label()
+        Me.txtMakeCharge = New System.Windows.Forms.TextBox()
+        Me.btnItemName = New System.Windows.Forms.Button()
+        Me.btnPayPrint = New System.Windows.Forms.Button()
+        Me.lblMakeCharge = New System.Windows.Forms.Label()
+        Me.labItemNmeInInvoce = New System.Windows.Forms.Label()
+        Me.txtItemNmeInInvoce = New System.Windows.Forms.TextBox()
+        Me.lblKarat = New System.Windows.Forms.Label()
+        Me.dtpInvoiceDate = New System.Windows.Forms.DateTimePicker()
+        Me.lblItem = New System.Windows.Forms.Label()
+        Me.txtKarat = New System.Windows.Forms.TextBox()
+        Me.lblInvoiceDate = New System.Windows.Forms.Label()
+        Me.lblBarCode = New System.Windows.Forms.Label()
+        Me.lblQty = New System.Windows.Forms.Label()
+        Me.lblCashier = New System.Windows.Forms.Label()
+        Me.cmbItem = New System.Windows.Forms.ComboBox()
+        Me.lblMetalPrice = New System.Windows.Forms.Label()
+        Me.lblPricePerGram = New System.Windows.Forms.Label()
+        Me.cmbStoneName3 = New System.Windows.Forms.ComboBox()
+        Me.txtStonePrice3 = New System.Windows.Forms.TextBox()
+        Me.lblMetalWeight = New System.Windows.Forms.Label()
+        Me.cmbStoneName2 = New System.Windows.Forms.ComboBox()
+        Me.txtStoneWeight3 = New System.Windows.Forms.TextBox()
+        Me.txtQty = New System.Windows.Forms.TextBox()
+        Me.txtStoneColor2 = New System.Windows.Forms.TextBox()
+        Me.txtStoneColor3 = New System.Windows.Forms.TextBox()
+        Me.txtMetalPrice = New System.Windows.Forms.TextBox()
+        Me.txtStoneWeight2 = New System.Windows.Forms.TextBox()
+        Me.txtCostPerItem = New System.Windows.Forms.TextBox()
+        Me.txtStonePrice2 = New System.Windows.Forms.TextBox()
+        Me.txtMetalWeight = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtStonePrice1 = New System.Windows.Forms.TextBox()
+        Me.cmbStoneName1 = New System.Windows.Forms.ComboBox()
+        Me.txtPricePerGram = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtStoneWeight1 = New System.Windows.Forms.TextBox()
+        Me.lblStoneColor = New System.Windows.Forms.Label()
+        Me.lblCostPerItem = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtStoneColor1 = New System.Windows.Forms.TextBox()
+        Me.lblStonePrice = New System.Windows.Forms.Label()
+        Me.lblStoneWeight = New System.Windows.Forms.Label()
+        Me.txtTotalPrice = New System.Windows.Forms.TextBox()
+        Me.lblTotalPrice = New System.Windows.Forms.Label()
+        Me.lblStoneName = New System.Windows.Forms.Label()
+        Me.lblNote = New System.Windows.Forms.Label()
+        Me.txtNotes = New System.Windows.Forms.TextBox()
+        Me.NotsTextBox = New System.Windows.Forms.TextBox()
+        Me.QuntTextBox = New System.Windows.Forms.TextBox()
+        Me.txtTpriceTtax = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtTotalPriceValue = New System.Windows.Forms.TextBox()
+        Me.lblInvoiceTitle = New System.Windows.Forms.Label()
+        Me.lblInvoiceValue = New System.Windows.Forms.Label()
+        Me.FotoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.Inv_startTextBox = New System.Windows.Forms.TextBox()
+        Me.Saryal_maxTextBox = New System.Windows.Forms.TextBox()
+        Me.Loc_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.Comp_note1TextBox = New System.Windows.Forms.TextBox()
+        Me.Sroom_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.Inv_startTextBox1 = New System.Windows.Forms.TextBox()
+        Me.SET_INVARCHR147TextBox = New System.Windows.Forms.TextBox()
+        Me.SignaturePictureBox = New System.Windows.Forms.PictureBox()
+        Me.btnNextItem = New System.Windows.Forms.Button()
+        Me.pnl = New System.Windows.Forms.Panel()
+        Me.StonePriceType3TextBox = New System.Windows.Forms.TextBox()
+        Me.StonePriceType2TextBox = New System.Windows.Forms.TextBox()
+        Me.StonePriceType1TextBox = New System.Windows.Forms.TextBox()
+        Me.CacherTextBox = New System.Windows.Forms.TextBox()
+        Me.ItemIDTextBox = New System.Windows.Forms.TextBox()
+        Me.SET_INVARCHR169TextBox = New System.Windows.Forms.TextBox()
+        Me.SET_INVARCHR168TextBox = New System.Windows.Forms.TextBox()
+        Me.SET_INVARCHR167TextBox = New System.Windows.Forms.TextBox()
+        Me.StoneWeight3TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StonePrice3TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneColor3TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneName3TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneWeight2TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StonePrice2TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneColor2TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneName2TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneColor1TextBox1 = New System.Windows.Forms.TextBox()
+        Me.StoneName1TextBox = New System.Windows.Forms.TextBox()
+        Me.ActiveCheckBox = New System.Windows.Forms.CheckBox()
+        Me.SET_INVARCHR151TextBox = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.lblTotalPriceTitle = New System.Windows.Forms.Label()
+        Me.ComBxGoCaret999 = New System.Windows.Forms.ComboBox()
+        Me.TXTGoCaret999 = New System.Windows.Forms.TextBox()
+        Me.txtQunt = New System.Windows.Forms.TextBox()
+        Me.txtWeight = New System.Windows.Forms.TextBox()
+        Me.lblNetCaret = New System.Windows.Forms.Label()
+        Me.lblNetWeight = New System.Windows.Forms.Label()
+        Me.lblQunt = New System.Windows.Forms.Label()
+        Me.lblbayKarat = New System.Windows.Forms.Label()
+        Me.Bay_mazanLabel = New System.Windows.Forms.Label()
+        Me.TeBoxItem_Des = New System.Windows.Forms.ComboBox()
+        Me.LabItem_Des = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Bay_gram_priceLabel = New System.Windows.Forms.LinkLabel()
+        Me.txtGramPrice = New System.Windows.Forms.TextBox()
+        Me.BtnAddPur = New System.Windows.Forms.Button()
+        Me.txtlblGoldPurPrice = New System.Windows.Forms.TextBox()
+        Me.lblGoldPurPrice = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colItem_Des = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colbay_val = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colbay_mazan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldCaret999 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldWeight999 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colbay_gram_price = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colQunt = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colAddToItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colcastomer_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCashier = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colB_gold_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNote = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnGoldCh = New System.Windows.Forms.Button()
+        Me.cmbKarat = New System.Windows.Forms.TextBox()
+        CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbData.SuspendLayout()
+        CType(Me.FotoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SignaturePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'txtBarCode
+        '
+        Me.txtBarCode.BackColor = System.Drawing.Color.White
+        Me.txtBarCode.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.txtBarCode.Location = New System.Drawing.Point(676, 45)
+        Me.txtBarCode.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtBarCode.Name = "txtBarCode"
+        Me.txtBarCode.Size = New System.Drawing.Size(144, 27)
+        Me.txtBarCode.TabIndex = 20
+        Me.txtBarCode.TabStop = False
+        Me.txtBarCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'IDTextBox1
+        '
+        Me.IDTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.IDTextBox1.Location = New System.Drawing.Point(148, 50)
+        Me.IDTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.IDTextBox1.Name = "IDTextBox1"
+        Me.IDTextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.IDTextBox1.TabIndex = 48
+        '
+        'CastomeridTextBox
+        '
+        Me.CastomeridTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CastomeridTextBox.Location = New System.Drawing.Point(148, 77)
+        Me.CastomeridTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CastomeridTextBox.Name = "CastomeridTextBox"
+        Me.CastomeridTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.CastomeridTextBox.TabIndex = 50
+        '
+        'UserIDTextBox1
+        '
+        Me.UserIDTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UserIDTextBox1.Location = New System.Drawing.Point(148, 131)
+        Me.UserIDTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.UserIDTextBox1.Name = "UserIDTextBox1"
+        Me.UserIDTextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.UserIDTextBox1.TabIndex = 54
+        '
+        'Item_nameTextBox
+        '
+        Me.Item_nameTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_nameTextBox.Location = New System.Drawing.Point(148, 158)
+        Me.Item_nameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_nameTextBox.Name = "Item_nameTextBox"
+        Me.Item_nameTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_nameTextBox.TabIndex = 56
+        '
+        'Item_despTextBox
+        '
+        Me.Item_despTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_despTextBox.Location = New System.Drawing.Point(148, 185)
+        Me.Item_despTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_despTextBox.Name = "Item_despTextBox"
+        Me.Item_despTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_despTextBox.TabIndex = 58
+        '
+        'Item_GramPriceTextBox
+        '
+        Me.Item_GramPriceTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_GramPriceTextBox.Location = New System.Drawing.Point(148, 401)
+        Me.Item_GramPriceTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_GramPriceTextBox.Name = "Item_GramPriceTextBox"
+        Me.Item_GramPriceTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_GramPriceTextBox.TabIndex = 60
+        '
+        'Item_gramTextBox
+        '
+        Me.Item_gramTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_gramTextBox.Location = New System.Drawing.Point(148, 374)
+        Me.Item_gramTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_gramTextBox.Name = "Item_gramTextBox"
+        Me.Item_gramTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_gramTextBox.TabIndex = 62
+        '
+        'Item_gramMadeTextBox
+        '
+        Me.Item_gramMadeTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_gramMadeTextBox.Location = New System.Drawing.Point(148, 347)
+        Me.Item_gramMadeTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_gramMadeTextBox.Name = "Item_gramMadeTextBox"
+        Me.Item_gramMadeTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_gramMadeTextBox.TabIndex = 64
+        '
+        'Item_extrasPRICETextBox
+        '
+        Me.Item_extrasPRICETextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_extrasPRICETextBox.Location = New System.Drawing.Point(97, 104)
+        Me.Item_extrasPRICETextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_extrasPRICETextBox.Name = "Item_extrasPRICETextBox"
+        Me.Item_extrasPRICETextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_extrasPRICETextBox.TabIndex = 66
+        '
+        'Item_extrasMAZANTextBox
+        '
+        Me.Item_extrasMAZANTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_extrasMAZANTextBox.Location = New System.Drawing.Point(97, 131)
+        Me.Item_extrasMAZANTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_extrasMAZANTextBox.Name = "Item_extrasMAZANTextBox"
+        Me.Item_extrasMAZANTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_extrasMAZANTextBox.TabIndex = 68
+        '
+        'Item_totalPriceTextBox
+        '
+        Me.Item_totalPriceTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_totalPriceTextBox.Location = New System.Drawing.Point(148, 266)
+        Me.Item_totalPriceTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_totalPriceTextBox.Name = "Item_totalPriceTextBox"
+        Me.Item_totalPriceTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_totalPriceTextBox.TabIndex = 70
+        '
+        'CashTextBox
+        '
+        Me.CashTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CashTextBox.Location = New System.Drawing.Point(97, 374)
+        Me.CashTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CashTextBox.Name = "CashTextBox"
+        Me.CashTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.CashTextBox.TabIndex = 72
+        '
+        'Item_cantreyTextBox
+        '
+        Me.Item_cantreyTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_cantreyTextBox.Location = New System.Drawing.Point(148, 212)
+        Me.Item_cantreyTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_cantreyTextBox.Name = "Item_cantreyTextBox"
+        Me.Item_cantreyTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Item_cantreyTextBox.TabIndex = 75
+        '
+        'Invoc_timeDateTimePicker
+        '
+        Me.Invoc_timeDateTimePicker.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Invoc_timeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.Invoc_timeDateTimePicker.Location = New System.Drawing.Point(97, 401)
+        Me.Invoc_timeDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Invoc_timeDateTimePicker.Name = "Invoc_timeDateTimePicker"
+        Me.Invoc_timeDateTimePicker.Size = New System.Drawing.Size(51, 22)
+        Me.Invoc_timeDateTimePicker.TabIndex = 102
+        '
+        'CacherIDTextBox
+        '
+        Me.CacherIDTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CacherIDTextBox.Location = New System.Drawing.Point(-36, 149)
+        Me.CacherIDTextBox.Name = "CacherIDTextBox"
+        Me.CacherIDTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.CacherIDTextBox.TabIndex = 205
+        '
+        'cmbCashier
+        '
+        Me.cmbCashier.BackColor = System.Drawing.Color.White
+        Me.cmbCashier.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cmbCashier.FormattingEnabled = True
+        Me.cmbCashier.Location = New System.Drawing.Point(820, 45)
+        Me.cmbCashier.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbCashier.Name = "cmbCashier"
+        Me.cmbCashier.Size = New System.Drawing.Size(139, 27)
+        Me.cmbCashier.TabIndex = 0
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.Black
+        Me.btnSave.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSave.Location = New System.Drawing.Point(112, 73)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(195, 50)
+        Me.btnSave.TabIndex = 22
+        Me.btnSave.Text = "حفظ"
+        Me.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'Invoc_timeTextBox
+        '
+        Me.Invoc_timeTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Invoc_timeTextBox.Location = New System.Drawing.Point(148, 293)
+        Me.Invoc_timeTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Invoc_timeTextBox.Name = "Invoc_timeTextBox"
+        Me.Invoc_timeTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Invoc_timeTextBox.TabIndex = 118
+        '
+        'Item_totalPriceTextBox1
+        '
+        Me.Item_totalPriceTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Item_totalPriceTextBox1.Location = New System.Drawing.Point(148, 509)
+        Me.Item_totalPriceTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Item_totalPriceTextBox1.Name = "Item_totalPriceTextBox1"
+        Me.Item_totalPriceTextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.Item_totalPriceTextBox1.TabIndex = 121
+        '
+        'DateDateTimePicker
+        '
+        Me.DateDateTimePicker.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DateDateTimePicker.CustomFormat = "yyyy-MM-dd"
+        Me.DateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateDateTimePicker.Location = New System.Drawing.Point(147, 428)
+        Me.DateDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DateDateTimePicker.Name = "DateDateTimePicker"
+        Me.DateDateTimePicker.Size = New System.Drawing.Size(52, 22)
+        Me.DateDateTimePicker.TabIndex = 123
+        Me.DateDateTimePicker.Value = New Date(2022, 2, 7, 0, 0, 0, 0)
+        '
+        'Invoc_date_timeTextBox
+        '
+        Me.Invoc_date_timeTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Invoc_date_timeTextBox.Location = New System.Drawing.Point(97, 428)
+        Me.Invoc_date_timeTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Invoc_date_timeTextBox.Name = "Invoc_date_timeTextBox"
+        Me.Invoc_date_timeTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Invoc_date_timeTextBox.TabIndex = 124
+        '
+        'CashTextBox1
+        '
+        Me.CashTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CashTextBox1.Location = New System.Drawing.Point(148, 239)
+        Me.CashTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CashTextBox1.Name = "CashTextBox1"
+        Me.CashTextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.CashTextBox1.TabIndex = 128
+        '
+        'grid
+        '
+        Me.grid.AllowUserToAddRows = False
+        Me.grid.AllowUserToDeleteRows = False
+        Me.grid.AllowUserToResizeColumns = False
+        Me.grid.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.grid.BackgroundColor = System.Drawing.Color.Silver
+        Me.grid.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.grid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        Me.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colDelete, Me.colTaxTextAm, Me.colTaxAmo, Me.colModify, Me.colCastomerid, Me.colcacher, Me.colItemID, Me.colItemName, Me.colGramPrice, Me.colGoldWeight, Me.colGoledKarat, Me.colGoledPrice, Me.colGoledMakeCharge, Me.colTotalGoledPrice, Me.colGoledPiecesQuantity, Me.colStonName1, Me.colStonWeight1, Me.colStonColor1, Me.colStonPrice1, Me.colStonName2, Me.colStonWeight2, Me.colStonColor2, Me.colStonPrice2, Me.colStonName3, Me.colStonWeight3, Me.colStonColor3, Me.colStonPrice3, Me.colGoledPurchasPrice, Me.coldate, Me.coluserID, Me.colSroomName, Me.colInvocDateTime, Me.colNots, Me.colItemCantrey, Me.colStonePriceType1, Me.colStonePriceType2, Me.colStonePriceType3})
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid.DefaultCellStyle = DataGridViewCellStyle4
+        Me.grid.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.grid.Location = New System.Drawing.Point(2, 450)
+        Me.grid.Margin = New System.Windows.Forms.Padding(2)
+        Me.grid.MultiSelect = False
+        Me.grid.Name = "grid"
+        Me.grid.ReadOnly = True
+        Me.grid.RightToLeft = System.Windows.Forms.RightToLeft.No
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Tomato
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.grid.RowHeadersWidth = 10
+        Me.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.grid.Size = New System.Drawing.Size(967, 121)
+        Me.grid.TabIndex = 1
+        '
+        'colDelete
+        '
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        Me.colDelete.DefaultCellStyle = DataGridViewCellStyle3
+        Me.colDelete.FillWeight = 50.0!
+        Me.colDelete.HeaderText = "حذف"
+        Me.colDelete.Name = "colDelete"
+        Me.colDelete.ReadOnly = True
+        Me.colDelete.Width = 37
+        '
+        'colTaxTextAm
+        '
+        Me.colTaxTextAm.HeaderText = "TaxTextAm"
+        Me.colTaxTextAm.Name = "colTaxTextAm"
+        Me.colTaxTextAm.ReadOnly = True
+        Me.colTaxTextAm.Visible = False
+        Me.colTaxTextAm.Width = 107
+        '
+        'colTaxAmo
+        '
+        Me.colTaxAmo.HeaderText = "TaxAmo"
+        Me.colTaxAmo.Name = "colTaxAmo"
+        Me.colTaxAmo.ReadOnly = True
+        Me.colTaxAmo.Visible = False
+        Me.colTaxAmo.Width = 88
+        '
+        'colModify
+        '
+        Me.colModify.HeaderText = "Modify"
+        Me.colModify.Name = "colModify"
+        Me.colModify.ReadOnly = True
+        Me.colModify.Width = 48
+        '
+        'colCastomerid
+        '
+        Me.colCastomerid.HeaderText = "Castomerid"
+        Me.colCastomerid.Name = "colCastomerid"
+        Me.colCastomerid.ReadOnly = True
+        Me.colCastomerid.Visible = False
+        Me.colCastomerid.Width = 111
+        '
+        'colcacher
+        '
+        Me.colcacher.HeaderText = "cacher"
+        Me.colcacher.Name = "colcacher"
+        Me.colcacher.ReadOnly = True
+        Me.colcacher.Visible = False
+        Me.colcacher.Width = 79
+        '
+        'colItemID
+        '
+        Me.colItemID.HeaderText = "ItemID"
+        Me.colItemID.Name = "colItemID"
+        Me.colItemID.ReadOnly = True
+        Me.colItemID.Width = 66
+        '
+        'colItemName
+        '
+        Me.colItemName.HeaderText = "temName"
+        Me.colItemName.Name = "colItemName"
+        Me.colItemName.ReadOnly = True
+        Me.colItemName.Width = 82
+        '
+        'colGramPrice
+        '
+        Me.colGramPrice.HeaderText = "GramPrice"
+        Me.colGramPrice.Name = "colGramPrice"
+        Me.colGramPrice.ReadOnly = True
+        Me.colGramPrice.Width = 84
+        '
+        'colGoldWeight
+        '
+        Me.colGoldWeight.HeaderText = "GoldWeight"
+        Me.colGoldWeight.Name = "colGoldWeight"
+        Me.colGoldWeight.ReadOnly = True
+        Me.colGoldWeight.Width = 91
+        '
+        'colGoledKarat
+        '
+        Me.colGoledKarat.HeaderText = "GoledKarat"
+        Me.colGoledKarat.Name = "colGoledKarat"
+        Me.colGoledKarat.ReadOnly = True
+        Me.colGoledKarat.Width = 88
+        '
+        'colGoledPrice
+        '
+        Me.colGoledPrice.HeaderText = "GoledPrice"
+        Me.colGoledPrice.Name = "colGoledPrice"
+        Me.colGoledPrice.ReadOnly = True
+        Me.colGoledPrice.Width = 85
+        '
+        'colGoledMakeCharge
+        '
+        Me.colGoledMakeCharge.HeaderText = "GoledMakeCharge"
+        Me.colGoledMakeCharge.Name = "colGoledMakeCharge"
+        Me.colGoledMakeCharge.ReadOnly = True
+        Me.colGoledMakeCharge.Width = 123
+        '
+        'colTotalGoledPrice
+        '
+        Me.colTotalGoledPrice.HeaderText = "TotalGoledPrice"
+        Me.colTotalGoledPrice.Name = "colTotalGoledPrice"
+        Me.colTotalGoledPrice.ReadOnly = True
+        Me.colTotalGoledPrice.Width = 109
+        '
+        'colGoledPiecesQuantity
+        '
+        Me.colGoledPiecesQuantity.HeaderText = "GoledPiecesQuantity"
+        Me.colGoledPiecesQuantity.Name = "colGoledPiecesQuantity"
+        Me.colGoledPiecesQuantity.ReadOnly = True
+        Me.colGoledPiecesQuantity.Width = 135
+        '
+        'colStonName1
+        '
+        Me.colStonName1.HeaderText = "StonName1"
+        Me.colStonName1.Name = "colStonName1"
+        Me.colStonName1.ReadOnly = True
+        Me.colStonName1.Width = 90
+        '
+        'colStonWeight1
+        '
+        Me.colStonWeight1.HeaderText = "StonWeight1"
+        Me.colStonWeight1.Name = "colStonWeight1"
+        Me.colStonWeight1.ReadOnly = True
+        Me.colStonWeight1.Width = 96
+        '
+        'colStonColor1
+        '
+        Me.colStonColor1.HeaderText = "StonColor1"
+        Me.colStonColor1.Name = "colStonColor1"
+        Me.colStonColor1.ReadOnly = True
+        Me.colStonColor1.Width = 85
+        '
+        'colStonPrice1
+        '
+        Me.colStonPrice1.HeaderText = "StonPrice1"
+        Me.colStonPrice1.Name = "colStonPrice1"
+        Me.colStonPrice1.ReadOnly = True
+        Me.colStonPrice1.Width = 84
+        '
+        'colStonName2
+        '
+        Me.colStonName2.HeaderText = "StonName2"
+        Me.colStonName2.Name = "colStonName2"
+        Me.colStonName2.ReadOnly = True
+        Me.colStonName2.Width = 90
+        '
+        'colStonWeight2
+        '
+        Me.colStonWeight2.HeaderText = "StonWeight2"
+        Me.colStonWeight2.Name = "colStonWeight2"
+        Me.colStonWeight2.ReadOnly = True
+        Me.colStonWeight2.Width = 96
+        '
+        'colStonColor2
+        '
+        Me.colStonColor2.HeaderText = "StonColor2"
+        Me.colStonColor2.Name = "colStonColor2"
+        Me.colStonColor2.ReadOnly = True
+        Me.colStonColor2.Width = 85
+        '
+        'colStonPrice2
+        '
+        Me.colStonPrice2.HeaderText = "StonPrice2"
+        Me.colStonPrice2.Name = "colStonPrice2"
+        Me.colStonPrice2.ReadOnly = True
+        Me.colStonPrice2.Width = 84
+        '
+        'colStonName3
+        '
+        Me.colStonName3.HeaderText = "StonName3"
+        Me.colStonName3.Name = "colStonName3"
+        Me.colStonName3.ReadOnly = True
+        Me.colStonName3.Width = 90
+        '
+        'colStonWeight3
+        '
+        Me.colStonWeight3.HeaderText = "StonWeight3"
+        Me.colStonWeight3.Name = "colStonWeight3"
+        Me.colStonWeight3.ReadOnly = True
+        Me.colStonWeight3.Width = 96
+        '
+        'colStonColor3
+        '
+        Me.colStonColor3.HeaderText = "StonColor3"
+        Me.colStonColor3.Name = "colStonColor3"
+        Me.colStonColor3.ReadOnly = True
+        Me.colStonColor3.Width = 85
+        '
+        'colStonPrice3
+        '
+        Me.colStonPrice3.HeaderText = "StonPrice3"
+        Me.colStonPrice3.Name = "colStonPrice3"
+        Me.colStonPrice3.ReadOnly = True
+        Me.colStonPrice3.Width = 84
+        '
+        'colGoledPurchasPrice
+        '
+        Me.colGoledPurchasPrice.HeaderText = "GoledPurchasPrice"
+        Me.colGoledPurchasPrice.Name = "colGoledPurchasPrice"
+        Me.colGoledPurchasPrice.ReadOnly = True
+        Me.colGoledPurchasPrice.Visible = False
+        Me.colGoledPurchasPrice.Width = 162
+        '
+        'coldate
+        '
+        Me.coldate.HeaderText = "date"
+        Me.coldate.Name = "coldate"
+        Me.coldate.ReadOnly = True
+        Me.coldate.Visible = False
+        Me.coldate.Width = 65
+        '
+        'coluserID
+        '
+        Me.coluserID.HeaderText = "userID"
+        Me.coluserID.Name = "coluserID"
+        Me.coluserID.ReadOnly = True
+        Me.coluserID.Visible = False
+        Me.coluserID.Width = 77
+        '
+        'colSroomName
+        '
+        Me.colSroomName.HeaderText = "SroomName"
+        Me.colSroomName.Name = "colSroomName"
+        Me.colSroomName.ReadOnly = True
+        Me.colSroomName.Visible = False
+        Me.colSroomName.Width = 119
+        '
+        'colInvocDateTime
+        '
+        Me.colInvocDateTime.HeaderText = "InvocDateTime"
+        Me.colInvocDateTime.Name = "colInvocDateTime"
+        Me.colInvocDateTime.ReadOnly = True
+        Me.colInvocDateTime.Width = 107
+        '
+        'colNots
+        '
+        Me.colNots.HeaderText = "Nots"
+        Me.colNots.Name = "colNots"
+        Me.colNots.ReadOnly = True
+        Me.colNots.Visible = False
+        Me.colNots.Width = 66
+        '
+        'colItemCantrey
+        '
+        Me.colItemCantrey.HeaderText = "ItemCantrey"
+        Me.colItemCantrey.Name = "colItemCantrey"
+        Me.colItemCantrey.ReadOnly = True
+        Me.colItemCantrey.Visible = False
+        Me.colItemCantrey.Width = 118
+        '
+        'colStonePriceType1
+        '
+        Me.colStonePriceType1.HeaderText = "StonePriceType1"
+        Me.colStonePriceType1.Name = "colStonePriceType1"
+        Me.colStonePriceType1.ReadOnly = True
+        Me.colStonePriceType1.Visible = False
+        Me.colStonePriceType1.Width = 149
+        '
+        'colStonePriceType2
+        '
+        Me.colStonePriceType2.HeaderText = "StonePriceType2"
+        Me.colStonePriceType2.Name = "colStonePriceType2"
+        Me.colStonePriceType2.ReadOnly = True
+        Me.colStonePriceType2.Visible = False
+        Me.colStonePriceType2.Width = 149
+        '
+        'colStonePriceType3
+        '
+        Me.colStonePriceType3.HeaderText = "StonePriceType3"
+        Me.colStonePriceType3.Name = "colStonePriceType3"
+        Me.colStonePriceType3.ReadOnly = True
+        Me.colStonePriceType3.Visible = False
+        Me.colStonePriceType3.Width = 149
+        '
+        'gbData
+        '
+        Me.gbData.BackColor = System.Drawing.Color.Black
+        Me.gbData.Controls.Add(Me.BtnTax)
+        Me.gbData.Controls.Add(Me.btnSave)
+        Me.gbData.Controls.Add(Me.lblPr)
+        Me.gbData.Controls.Add(Me.txtTaxAmo)
+        Me.gbData.Controls.Add(Me.txtTaxTextAm)
+        Me.gbData.Controls.Add(Me.lblTaxAm)
+        Me.gbData.Controls.Add(Me.txtMakeCharge)
+        Me.gbData.Controls.Add(Me.btnItemName)
+        Me.gbData.Controls.Add(Me.btnPayPrint)
+        Me.gbData.Controls.Add(Me.lblMakeCharge)
+        Me.gbData.Controls.Add(Me.labItemNmeInInvoce)
+        Me.gbData.Controls.Add(Me.txtItemNmeInInvoce)
+        Me.gbData.Controls.Add(Me.lblKarat)
+        Me.gbData.Controls.Add(Me.dtpInvoiceDate)
+        Me.gbData.Controls.Add(Me.lblItem)
+        Me.gbData.Controls.Add(Me.txtKarat)
+        Me.gbData.Controls.Add(Me.lblInvoiceDate)
+        Me.gbData.Controls.Add(Me.lblBarCode)
+        Me.gbData.Controls.Add(Me.lblQty)
+        Me.gbData.Controls.Add(Me.lblCashier)
+        Me.gbData.Controls.Add(Me.cmbItem)
+        Me.gbData.Controls.Add(Me.lblMetalPrice)
+        Me.gbData.Controls.Add(Me.cmbCashier)
+        Me.gbData.Controls.Add(Me.txtBarCode)
+        Me.gbData.Controls.Add(Me.lblPricePerGram)
+        Me.gbData.Controls.Add(Me.cmbStoneName3)
+        Me.gbData.Controls.Add(Me.txtStonePrice3)
+        Me.gbData.Controls.Add(Me.lblMetalWeight)
+        Me.gbData.Controls.Add(Me.cmbStoneName2)
+        Me.gbData.Controls.Add(Me.txtStoneWeight3)
+        Me.gbData.Controls.Add(Me.txtQty)
+        Me.gbData.Controls.Add(Me.txtStoneColor2)
+        Me.gbData.Controls.Add(Me.txtStoneColor3)
+        Me.gbData.Controls.Add(Me.txtMetalPrice)
+        Me.gbData.Controls.Add(Me.txtStoneWeight2)
+        Me.gbData.Controls.Add(Me.txtCostPerItem)
+        Me.gbData.Controls.Add(Me.txtStonePrice2)
+        Me.gbData.Controls.Add(Me.txtMetalWeight)
+        Me.gbData.Controls.Add(Me.Label3)
+        Me.gbData.Controls.Add(Me.txtStonePrice1)
+        Me.gbData.Controls.Add(Me.cmbStoneName1)
+        Me.gbData.Controls.Add(Me.txtPricePerGram)
+        Me.gbData.Controls.Add(Me.Label4)
+        Me.gbData.Controls.Add(Me.txtStoneWeight1)
+        Me.gbData.Controls.Add(Me.lblStoneColor)
+        Me.gbData.Controls.Add(Me.lblCostPerItem)
+        Me.gbData.Controls.Add(Me.Label5)
+        Me.gbData.Controls.Add(Me.txtStoneColor1)
+        Me.gbData.Controls.Add(Me.lblStonePrice)
+        Me.gbData.Controls.Add(Me.lblStoneWeight)
+        Me.gbData.Controls.Add(Me.txtTotalPrice)
+        Me.gbData.Controls.Add(Me.lblTotalPrice)
+        Me.gbData.Controls.Add(Me.lblStoneName)
+        Me.gbData.ForeColor = System.Drawing.Color.Lime
+        Me.gbData.Location = New System.Drawing.Point(2, 266)
+        Me.gbData.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gbData.Name = "gbData"
+        Me.gbData.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gbData.Size = New System.Drawing.Size(967, 181)
+        Me.gbData.TabIndex = 2
+        Me.gbData.TabStop = False
+        Me.gbData.Text = "بيانات الفاتورة"
+        '
+        'BtnTax
+        '
+        Me.BtnTax.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnTax.Location = New System.Drawing.Point(3, 67)
+        Me.BtnTax.Name = "BtnTax"
+        Me.BtnTax.Size = New System.Drawing.Size(108, 29)
+        Me.BtnTax.TabIndex = 189
+        Me.BtnTax.Text = "Button1"
+        Me.BtnTax.UseVisualStyleBackColor = True
+        '
+        'lblPr
+        '
+        Me.lblPr.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.lblPr.ForeColor = System.Drawing.Color.Black
+        Me.lblPr.Location = New System.Drawing.Point(86, 97)
+        Me.lblPr.Name = "lblPr"
+        Me.lblPr.Size = New System.Drawing.Size(25, 22)
+        Me.lblPr.TabIndex = 188
+        Me.lblPr.Text = "%"
+        Me.lblPr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtTaxAmo
+        '
+        Me.txtTaxAmo.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtTaxAmo.Location = New System.Drawing.Point(3, 97)
+        Me.txtTaxAmo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTaxAmo.Name = "txtTaxAmo"
+        Me.txtTaxAmo.Size = New System.Drawing.Size(77, 22)
+        Me.txtTaxAmo.TabIndex = 184
+        Me.txtTaxAmo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtTaxTextAm
+        '
+        Me.txtTaxTextAm.BackColor = System.Drawing.SystemColors.Highlight
+        Me.txtTaxTextAm.Location = New System.Drawing.Point(3, 154)
+        Me.txtTaxTextAm.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTaxTextAm.Name = "txtTaxTextAm"
+        Me.txtTaxTextAm.Size = New System.Drawing.Size(108, 22)
+        Me.txtTaxTextAm.TabIndex = 185
+        Me.txtTaxTextAm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblTaxAm
+        '
+        Me.lblTaxAm.BackColor = System.Drawing.Color.DimGray
+        Me.lblTaxAm.ForeColor = System.Drawing.Color.Black
+        Me.lblTaxAm.Location = New System.Drawing.Point(3, 121)
+        Me.lblTaxAm.Name = "lblTaxAm"
+        Me.lblTaxAm.Size = New System.Drawing.Size(108, 33)
+        Me.lblTaxAm.TabIndex = 187
+        Me.lblTaxAm.Text = "مبلغ الضريبه"
+        Me.lblTaxAm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtMakeCharge
+        '
+        Me.txtMakeCharge.BackColor = System.Drawing.Color.White
+        Me.txtMakeCharge.Location = New System.Drawing.Point(521, 156)
+        Me.txtMakeCharge.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtMakeCharge.Name = "txtMakeCharge"
+        Me.txtMakeCharge.Size = New System.Drawing.Size(91, 22)
+        Me.txtMakeCharge.TabIndex = 7
+        Me.txtMakeCharge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnItemName
+        '
+        Me.btnItemName.BackColor = System.Drawing.Color.Chartreuse
+        Me.btnItemName.ForeColor = System.Drawing.Color.Black
+        Me.btnItemName.Location = New System.Drawing.Point(451, 45)
+        Me.btnItemName.Name = "btnItemName"
+        Me.btnItemName.Size = New System.Drawing.Size(26, 27)
+        Me.btnItemName.TabIndex = 166
+        Me.btnItemName.Text = "+"
+        Me.btnItemName.UseVisualStyleBackColor = False
+        '
+        'btnPayPrint
+        '
+        Me.btnPayPrint.BackColor = System.Drawing.Color.Black
+        Me.btnPayPrint.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnPayPrint.ForeColor = System.Drawing.Color.White
+        Me.btnPayPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPayPrint.Location = New System.Drawing.Point(112, 123)
+        Me.btnPayPrint.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnPayPrint.Name = "btnPayPrint"
+        Me.btnPayPrint.Size = New System.Drawing.Size(195, 53)
+        Me.btnPayPrint.TabIndex = 23
+        Me.btnPayPrint.Text = "دفع طباعة الفاتورة"
+        Me.btnPayPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnPayPrint.UseVisualStyleBackColor = False
+        '
+        'lblMakeCharge
+        '
+        Me.lblMakeCharge.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMakeCharge.ForeColor = System.Drawing.Color.White
+        Me.lblMakeCharge.Location = New System.Drawing.Point(521, 132)
+        Me.lblMakeCharge.Name = "lblMakeCharge"
+        Me.lblMakeCharge.Size = New System.Drawing.Size(91, 22)
+        Me.lblMakeCharge.TabIndex = 171
+        Me.lblMakeCharge.Text = "المصنعية"
+        Me.lblMakeCharge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labItemNmeInInvoce
+        '
+        Me.labItemNmeInInvoce.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labItemNmeInInvoce.ForeColor = System.Drawing.Color.White
+        Me.labItemNmeInInvoce.Location = New System.Drawing.Point(112, 13)
+        Me.labItemNmeInInvoce.Name = "labItemNmeInInvoce"
+        Me.labItemNmeInInvoce.Size = New System.Drawing.Size(367, 25)
+        Me.labItemNmeInInvoce.TabIndex = 165
+        Me.labItemNmeInInvoce.Text = "اسم الصنف بالفاتوره"
+        Me.labItemNmeInInvoce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtItemNmeInInvoce
+        '
+        Me.txtItemNmeInInvoce.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.txtItemNmeInInvoce.Location = New System.Drawing.Point(112, 45)
+        Me.txtItemNmeInInvoce.Name = "txtItemNmeInInvoce"
+        Me.txtItemNmeInInvoce.Size = New System.Drawing.Size(340, 27)
+        Me.txtItemNmeInInvoce.TabIndex = 1
+        Me.txtItemNmeInInvoce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblKarat
+        '
+        Me.lblKarat.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblKarat.ForeColor = System.Drawing.Color.White
+        Me.lblKarat.Location = New System.Drawing.Point(616, 132)
+        Me.lblKarat.Name = "lblKarat"
+        Me.lblKarat.Size = New System.Drawing.Size(91, 22)
+        Me.lblKarat.TabIndex = 170
+        Me.lblKarat.Text = "العيار"
+        Me.lblKarat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'dtpInvoiceDate
+        '
+        Me.dtpInvoiceDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpInvoiceDate.Location = New System.Drawing.Point(3, 45)
+        Me.dtpInvoiceDate.Name = "dtpInvoiceDate"
+        Me.dtpInvoiceDate.Size = New System.Drawing.Size(108, 22)
+        Me.dtpInvoiceDate.TabIndex = 10
+        '
+        'lblItem
+        '
+        Me.lblItem.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblItem.ForeColor = System.Drawing.Color.White
+        Me.lblItem.Location = New System.Drawing.Point(479, 13)
+        Me.lblItem.Name = "lblItem"
+        Me.lblItem.Size = New System.Drawing.Size(198, 25)
+        Me.lblItem.TabIndex = 162
+        Me.lblItem.Text = "اسم الصنف"
+        Me.lblItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtKarat
+        '
+        Me.txtKarat.BackColor = System.Drawing.Color.DarkGray
+        Me.txtKarat.Location = New System.Drawing.Point(616, 156)
+        Me.txtKarat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtKarat.Name = "txtKarat"
+        Me.txtKarat.Size = New System.Drawing.Size(91, 22)
+        Me.txtKarat.TabIndex = 2
+        Me.txtKarat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblInvoiceDate
+        '
+        Me.lblInvoiceDate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblInvoiceDate.ForeColor = System.Drawing.Color.White
+        Me.lblInvoiceDate.Location = New System.Drawing.Point(0, 17)
+        Me.lblInvoiceDate.Name = "lblInvoiceDate"
+        Me.lblInvoiceDate.Size = New System.Drawing.Size(111, 25)
+        Me.lblInvoiceDate.TabIndex = 163
+        Me.lblInvoiceDate.Text = "تاريخ الفاتورة"
+        Me.lblInvoiceDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBarCode
+        '
+        Me.lblBarCode.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBarCode.ForeColor = System.Drawing.Color.White
+        Me.lblBarCode.Location = New System.Drawing.Point(677, 13)
+        Me.lblBarCode.Name = "lblBarCode"
+        Me.lblBarCode.Size = New System.Drawing.Size(144, 25)
+        Me.lblBarCode.TabIndex = 160
+        Me.lblBarCode.Text = "باركود"
+        Me.lblBarCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblQty
+        '
+        Me.lblQty.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQty.ForeColor = System.Drawing.Color.White
+        Me.lblQty.Location = New System.Drawing.Point(426, 132)
+        Me.lblQty.Name = "lblQty"
+        Me.lblQty.Size = New System.Drawing.Size(91, 22)
+        Me.lblQty.TabIndex = 12
+        Me.lblQty.Text = "العدد"
+        Me.lblQty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCashier
+        '
+        Me.lblCashier.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCashier.ForeColor = System.Drawing.Color.White
+        Me.lblCashier.Location = New System.Drawing.Point(821, 13)
+        Me.lblCashier.Name = "lblCashier"
+        Me.lblCashier.Size = New System.Drawing.Size(138, 25)
+        Me.lblCashier.TabIndex = 159
+        Me.lblCashier.Text = "كاشير"
+        Me.lblCashier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cmbItem
+        '
+        Me.cmbItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbItem.BackColor = System.Drawing.Color.White
+        Me.cmbItem.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cmbItem.FormattingEnabled = True
+        Me.cmbItem.Location = New System.Drawing.Point(476, 45)
+        Me.cmbItem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbItem.Name = "cmbItem"
+        Me.cmbItem.Size = New System.Drawing.Size(200, 27)
+        Me.cmbItem.TabIndex = 21
+        Me.cmbItem.TabStop = False
+        '
+        'lblMetalPrice
+        '
+        Me.lblMetalPrice.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMetalPrice.ForeColor = System.Drawing.Color.White
+        Me.lblMetalPrice.Location = New System.Drawing.Point(426, 81)
+        Me.lblMetalPrice.Name = "lblMetalPrice"
+        Me.lblMetalPrice.Size = New System.Drawing.Size(91, 25)
+        Me.lblMetalPrice.TabIndex = 10
+        Me.lblMetalPrice.Text = "سعر الذهب"
+        Me.lblMetalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPricePerGram
+        '
+        Me.lblPricePerGram.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPricePerGram.ForeColor = System.Drawing.Color.White
+        Me.lblPricePerGram.Location = New System.Drawing.Point(521, 81)
+        Me.lblPricePerGram.Name = "lblPricePerGram"
+        Me.lblPricePerGram.Size = New System.Drawing.Size(91, 25)
+        Me.lblPricePerGram.TabIndex = 13
+        Me.lblPricePerGram.Text = "سعر الجرام"
+        Me.lblPricePerGram.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cmbStoneName3
+        '
+        Me.cmbStoneName3.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.cmbStoneName3.FormattingEnabled = True
+        Me.cmbStoneName3.Location = New System.Drawing.Point(876, 156)
+        Me.cmbStoneName3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbStoneName3.Name = "cmbStoneName3"
+        Me.cmbStoneName3.Size = New System.Drawing.Size(70, 22)
+        Me.cmbStoneName3.TabIndex = 10
+        Me.cmbStoneName3.TabStop = False
+        '
+        'txtStonePrice3
+        '
+        Me.txtStonePrice3.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtStonePrice3.Location = New System.Drawing.Point(709, 156)
+        Me.txtStonePrice3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStonePrice3.Name = "txtStonePrice3"
+        Me.txtStonePrice3.Size = New System.Drawing.Size(56, 22)
+        Me.txtStonePrice3.TabIndex = 19
+        Me.txtStonePrice3.TabStop = False
+        Me.txtStonePrice3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblMetalWeight
+        '
+        Me.lblMetalWeight.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMetalWeight.ForeColor = System.Drawing.Color.White
+        Me.lblMetalWeight.Location = New System.Drawing.Point(616, 81)
+        Me.lblMetalWeight.Name = "lblMetalWeight"
+        Me.lblMetalWeight.Size = New System.Drawing.Size(91, 25)
+        Me.lblMetalWeight.TabIndex = 12
+        Me.lblMetalWeight.Text = "وزن الذهب"
+        Me.lblMetalWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cmbStoneName2
+        '
+        Me.cmbStoneName2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.cmbStoneName2.FormattingEnabled = True
+        Me.cmbStoneName2.Location = New System.Drawing.Point(876, 132)
+        Me.cmbStoneName2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbStoneName2.Name = "cmbStoneName2"
+        Me.cmbStoneName2.Size = New System.Drawing.Size(70, 22)
+        Me.cmbStoneName2.TabIndex = 9
+        Me.cmbStoneName2.TabStop = False
+        '
+        'txtStoneWeight3
+        '
+        Me.txtStoneWeight3.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtStoneWeight3.Location = New System.Drawing.Point(821, 156)
+        Me.txtStoneWeight3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneWeight3.Name = "txtStoneWeight3"
+        Me.txtStoneWeight3.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneWeight3.TabIndex = 13
+        Me.txtStoneWeight3.TabStop = False
+        Me.txtStoneWeight3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtQty
+        '
+        Me.txtQty.BackColor = System.Drawing.Color.White
+        Me.txtQty.Location = New System.Drawing.Point(426, 156)
+        Me.txtQty.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtQty.Name = "txtQty"
+        Me.txtQty.Size = New System.Drawing.Size(91, 22)
+        Me.txtQty.TabIndex = 6
+        Me.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtStoneColor2
+        '
+        Me.txtStoneColor2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.txtStoneColor2.Location = New System.Drawing.Point(765, 132)
+        Me.txtStoneColor2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneColor2.Name = "txtStoneColor2"
+        Me.txtStoneColor2.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneColor2.TabIndex = 15
+        Me.txtStoneColor2.TabStop = False
+        Me.txtStoneColor2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtStoneColor3
+        '
+        Me.txtStoneColor3.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtStoneColor3.Location = New System.Drawing.Point(765, 156)
+        Me.txtStoneColor3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneColor3.Name = "txtStoneColor3"
+        Me.txtStoneColor3.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneColor3.TabIndex = 16
+        Me.txtStoneColor3.TabStop = False
+        Me.txtStoneColor3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtMetalPrice
+        '
+        Me.txtMetalPrice.BackColor = System.Drawing.Color.White
+        Me.txtMetalPrice.Location = New System.Drawing.Point(426, 109)
+        Me.txtMetalPrice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtMetalPrice.Name = "txtMetalPrice"
+        Me.txtMetalPrice.Size = New System.Drawing.Size(91, 22)
+        Me.txtMetalPrice.TabIndex = 5
+        Me.txtMetalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtStoneWeight2
+        '
+        Me.txtStoneWeight2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.txtStoneWeight2.Location = New System.Drawing.Point(821, 132)
+        Me.txtStoneWeight2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneWeight2.Name = "txtStoneWeight2"
+        Me.txtStoneWeight2.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneWeight2.TabIndex = 12
+        Me.txtStoneWeight2.TabStop = False
+        Me.txtStoneWeight2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtCostPerItem
+        '
+        Me.txtCostPerItem.BackColor = System.Drawing.Color.DarkGray
+        Me.txtCostPerItem.Location = New System.Drawing.Point(313, 109)
+        Me.txtCostPerItem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCostPerItem.Name = "txtCostPerItem"
+        Me.txtCostPerItem.Size = New System.Drawing.Size(109, 22)
+        Me.txtCostPerItem.TabIndex = 8
+        Me.txtCostPerItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtStonePrice2
+        '
+        Me.txtStonePrice2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.txtStonePrice2.Location = New System.Drawing.Point(709, 132)
+        Me.txtStonePrice2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStonePrice2.Name = "txtStonePrice2"
+        Me.txtStonePrice2.Size = New System.Drawing.Size(56, 22)
+        Me.txtStonePrice2.TabIndex = 18
+        Me.txtStonePrice2.TabStop = False
+        Me.txtStonePrice2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtMetalWeight
+        '
+        Me.txtMetalWeight.BackColor = System.Drawing.Color.White
+        Me.txtMetalWeight.Location = New System.Drawing.Point(616, 109)
+        Me.txtMetalWeight.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtMetalWeight.Name = "txtMetalWeight"
+        Me.txtMetalWeight.Size = New System.Drawing.Size(91, 22)
+        Me.txtMetalWeight.TabIndex = 3
+        Me.txtMetalWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(945, 112)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(13, 14)
+        Me.Label3.TabIndex = 181
+        Me.Label3.Text = "1"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtStonePrice1
+        '
+        Me.txtStonePrice1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.txtStonePrice1.Location = New System.Drawing.Point(709, 109)
+        Me.txtStonePrice1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStonePrice1.Name = "txtStonePrice1"
+        Me.txtStonePrice1.Size = New System.Drawing.Size(56, 22)
+        Me.txtStonePrice1.TabIndex = 17
+        Me.txtStonePrice1.TabStop = False
+        Me.txtStonePrice1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'cmbStoneName1
+        '
+        Me.cmbStoneName1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.cmbStoneName1.FormattingEnabled = True
+        Me.cmbStoneName1.Location = New System.Drawing.Point(876, 109)
+        Me.cmbStoneName1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmbStoneName1.Name = "cmbStoneName1"
+        Me.cmbStoneName1.Size = New System.Drawing.Size(70, 22)
+        Me.cmbStoneName1.TabIndex = 0
+        Me.cmbStoneName1.TabStop = False
+        '
+        'txtPricePerGram
+        '
+        Me.txtPricePerGram.BackColor = System.Drawing.Color.White
+        Me.txtPricePerGram.Location = New System.Drawing.Point(521, 109)
+        Me.txtPricePerGram.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPricePerGram.Name = "txtPricePerGram"
+        Me.txtPricePerGram.Size = New System.Drawing.Size(91, 22)
+        Me.txtPricePerGram.TabIndex = 4
+        Me.txtPricePerGram.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label4
+        '
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(945, 136)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(13, 14)
+        Me.Label4.TabIndex = 181
+        Me.Label4.Text = "2"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtStoneWeight1
+        '
+        Me.txtStoneWeight1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.txtStoneWeight1.Location = New System.Drawing.Point(821, 109)
+        Me.txtStoneWeight1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneWeight1.Name = "txtStoneWeight1"
+        Me.txtStoneWeight1.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneWeight1.TabIndex = 11
+        Me.txtStoneWeight1.TabStop = False
+        Me.txtStoneWeight1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblStoneColor
+        '
+        Me.lblStoneColor.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStoneColor.ForeColor = System.Drawing.Color.White
+        Me.lblStoneColor.Location = New System.Drawing.Point(765, 81)
+        Me.lblStoneColor.Name = "lblStoneColor"
+        Me.lblStoneColor.Size = New System.Drawing.Size(56, 25)
+        Me.lblStoneColor.TabIndex = 167
+        Me.lblStoneColor.Text = "لون الفص"
+        Me.lblStoneColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCostPerItem
+        '
+        Me.lblCostPerItem.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostPerItem.ForeColor = System.Drawing.Color.White
+        Me.lblCostPerItem.Location = New System.Drawing.Point(313, 81)
+        Me.lblCostPerItem.Name = "lblCostPerItem"
+        Me.lblCostPerItem.Size = New System.Drawing.Size(109, 25)
+        Me.lblCostPerItem.TabIndex = 14
+        Me.lblCostPerItem.Text = "سعر الشراء"
+        Me.lblCostPerItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(945, 161)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(13, 14)
+        Me.Label5.TabIndex = 181
+        Me.Label5.Text = "3"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtStoneColor1
+        '
+        Me.txtStoneColor1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.txtStoneColor1.Location = New System.Drawing.Point(765, 109)
+        Me.txtStoneColor1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStoneColor1.Name = "txtStoneColor1"
+        Me.txtStoneColor1.Size = New System.Drawing.Size(56, 22)
+        Me.txtStoneColor1.TabIndex = 14
+        Me.txtStoneColor1.TabStop = False
+        Me.txtStoneColor1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblStonePrice
+        '
+        Me.lblStonePrice.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStonePrice.ForeColor = System.Drawing.Color.White
+        Me.lblStonePrice.Location = New System.Drawing.Point(709, 81)
+        Me.lblStonePrice.Name = "lblStonePrice"
+        Me.lblStonePrice.Size = New System.Drawing.Size(56, 25)
+        Me.lblStonePrice.TabIndex = 167
+        Me.lblStonePrice.Text = "سعر الفص"
+        Me.lblStonePrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblStoneWeight
+        '
+        Me.lblStoneWeight.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStoneWeight.ForeColor = System.Drawing.Color.White
+        Me.lblStoneWeight.Location = New System.Drawing.Point(821, 81)
+        Me.lblStoneWeight.Name = "lblStoneWeight"
+        Me.lblStoneWeight.Size = New System.Drawing.Size(56, 25)
+        Me.lblStoneWeight.TabIndex = 166
+        Me.lblStoneWeight.Text = "وزن الفص"
+        Me.lblStoneWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtTotalPrice
+        '
+        Me.txtTotalPrice.BackColor = System.Drawing.Color.White
+        Me.txtTotalPrice.Location = New System.Drawing.Point(313, 156)
+        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTotalPrice.Name = "txtTotalPrice"
+        Me.txtTotalPrice.Size = New System.Drawing.Size(109, 22)
+        Me.txtTotalPrice.TabIndex = 9
+        Me.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblTotalPrice
+        '
+        Me.lblTotalPrice.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalPrice.ForeColor = System.Drawing.Color.White
+        Me.lblTotalPrice.Location = New System.Drawing.Point(313, 132)
+        Me.lblTotalPrice.Name = "lblTotalPrice"
+        Me.lblTotalPrice.Size = New System.Drawing.Size(109, 22)
+        Me.lblTotalPrice.TabIndex = 183
+        Me.lblTotalPrice.Text = "سعر البيع"
+        Me.lblTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblStoneName
+        '
+        Me.lblStoneName.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStoneName.ForeColor = System.Drawing.Color.White
+        Me.lblStoneName.Location = New System.Drawing.Point(876, 81)
+        Me.lblStoneName.Name = "lblStoneName"
+        Me.lblStoneName.Size = New System.Drawing.Size(67, 25)
+        Me.lblStoneName.TabIndex = 166
+        Me.lblStoneName.Text = "نوع الفص"
+        Me.lblStoneName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblNote
+        '
+        Me.lblNote.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNote.ForeColor = System.Drawing.Color.Black
+        Me.lblNote.Location = New System.Drawing.Point(905, 573)
+        Me.lblNote.Name = "lblNote"
+        Me.lblNote.Size = New System.Drawing.Size(67, 27)
+        Me.lblNote.TabIndex = 0
+        Me.lblNote.Text = "ملاحظات"
+        Me.lblNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtNotes
+        '
+        Me.txtNotes.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNotes.Location = New System.Drawing.Point(506, 573)
+        Me.txtNotes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNotes.Name = "txtNotes"
+        Me.txtNotes.Size = New System.Drawing.Size(396, 27)
+        Me.txtNotes.TabIndex = 2
+        Me.txtNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'NotsTextBox
+        '
+        Me.NotsTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NotsTextBox.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.NotsTextBox.Location = New System.Drawing.Point(147, 482)
+        Me.NotsTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.NotsTextBox.Name = "NotsTextBox"
+        Me.NotsTextBox.Size = New System.Drawing.Size(52, 27)
+        Me.NotsTextBox.TabIndex = 142
+        '
+        'QuntTextBox
+        '
+        Me.QuntTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.QuntTextBox.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.QuntTextBox.Location = New System.Drawing.Point(147, 455)
+        Me.QuntTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.QuntTextBox.Name = "QuntTextBox"
+        Me.QuntTextBox.Size = New System.Drawing.Size(52, 27)
+        Me.QuntTextBox.TabIndex = 135
+        '
+        'txtTpriceTtax
+        '
+        Me.txtTpriceTtax.BackColor = System.Drawing.Color.DarkOrange
+        Me.txtTpriceTtax.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTpriceTtax.Location = New System.Drawing.Point(88, 573)
+        Me.txtTpriceTtax.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTpriceTtax.Name = "txtTpriceTtax"
+        Me.txtTpriceTtax.Size = New System.Drawing.Size(88, 27)
+        Me.txtTpriceTtax.TabIndex = 190
+        Me.txtTpriceTtax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.DimGray
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(179, 573)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(156, 27)
+        Me.Label1.TabIndex = 191
+        Me.Label1.Text = "اجمالي الفاتوره مع الضريبه"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtTotalPriceValue
+        '
+        Me.txtTotalPriceValue.BackColor = System.Drawing.Color.White
+        Me.txtTotalPriceValue.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalPriceValue.ForeColor = System.Drawing.Color.Black
+        Me.txtTotalPriceValue.Location = New System.Drawing.Point(338, 573)
+        Me.txtTotalPriceValue.Name = "txtTotalPriceValue"
+        Me.txtTotalPriceValue.Size = New System.Drawing.Size(77, 27)
+        Me.txtTotalPriceValue.TabIndex = 171
+        Me.txtTotalPriceValue.Text = "0.000"
+        Me.txtTotalPriceValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblInvoiceTitle
+        '
+        Me.lblInvoiceTitle.AutoSize = True
+        Me.lblInvoiceTitle.ForeColor = System.Drawing.Color.White
+        Me.lblInvoiceTitle.Location = New System.Drawing.Point(1050, 566)
+        Me.lblInvoiceTitle.Name = "lblInvoiceTitle"
+        Me.lblInvoiceTitle.Size = New System.Drawing.Size(76, 14)
+        Me.lblInvoiceTitle.TabIndex = 169
+        Me.lblInvoiceTitle.Text = "lblInvoiceTitle"
+        '
+        'lblInvoiceValue
+        '
+        Me.lblInvoiceValue.AutoSize = True
+        Me.lblInvoiceValue.ForeColor = System.Drawing.Color.Lime
+        Me.lblInvoiceValue.Location = New System.Drawing.Point(1208, 38)
+        Me.lblInvoiceValue.Name = "lblInvoiceValue"
+        Me.lblInvoiceValue.Size = New System.Drawing.Size(55, 14)
+        Me.lblInvoiceValue.TabIndex = 138
+        Me.lblInvoiceValue.Text = "00000000"
+        '
+        'FotoPictureBox
+        '
+        Me.FotoPictureBox.Location = New System.Drawing.Point(2, -2)
+        Me.FotoPictureBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.FotoPictureBox.Name = "FotoPictureBox"
+        Me.FotoPictureBox.Size = New System.Drawing.Size(1, 1)
+        Me.FotoPictureBox.TabIndex = 138
+        Me.FotoPictureBox.TabStop = False
+        '
+        'Inv_startTextBox
+        '
+        Me.Inv_startTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Inv_startTextBox.Location = New System.Drawing.Point(-36, 322)
+        Me.Inv_startTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Inv_startTextBox.Name = "Inv_startTextBox"
+        Me.Inv_startTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Inv_startTextBox.TabIndex = 143
+        '
+        'Saryal_maxTextBox
+        '
+        Me.Saryal_maxTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Saryal_maxTextBox.Location = New System.Drawing.Point(-36, 253)
+        Me.Saryal_maxTextBox.Name = "Saryal_maxTextBox"
+        Me.Saryal_maxTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Saryal_maxTextBox.TabIndex = 145
+        '
+        'Loc_nameTextBox
+        '
+        Me.Loc_nameTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Loc_nameTextBox.Location = New System.Drawing.Point(-36, 290)
+        Me.Loc_nameTextBox.Name = "Loc_nameTextBox"
+        Me.Loc_nameTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Loc_nameTextBox.TabIndex = 146
+        '
+        'Comp_note1TextBox
+        '
+        Me.Comp_note1TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Comp_note1TextBox.Location = New System.Drawing.Point(-36, 50)
+        Me.Comp_note1TextBox.Name = "Comp_note1TextBox"
+        Me.Comp_note1TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Comp_note1TextBox.TabIndex = 147
+        '
+        'Sroom_nameTextBox
+        '
+        Me.Sroom_nameTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Sroom_nameTextBox.Location = New System.Drawing.Point(97, 455)
+        Me.Sroom_nameTextBox.Name = "Sroom_nameTextBox"
+        Me.Sroom_nameTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.Sroom_nameTextBox.TabIndex = 148
+        '
+        'Inv_startTextBox1
+        '
+        Me.Inv_startTextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Inv_startTextBox1.Location = New System.Drawing.Point(-36, 203)
+        Me.Inv_startTextBox1.Name = "Inv_startTextBox1"
+        Me.Inv_startTextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.Inv_startTextBox1.TabIndex = 165
+        '
+        'SET_INVARCHR147TextBox
+        '
+        Me.SET_INVARCHR147TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SET_INVARCHR147TextBox.Location = New System.Drawing.Point(148, 320)
+        Me.SET_INVARCHR147TextBox.Name = "SET_INVARCHR147TextBox"
+        Me.SET_INVARCHR147TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.SET_INVARCHR147TextBox.TabIndex = 166
+        '
+        'SignaturePictureBox
+        '
+        Me.SignaturePictureBox.Location = New System.Drawing.Point(2, 2)
+        Me.SignaturePictureBox.Name = "SignaturePictureBox"
+        Me.SignaturePictureBox.Size = New System.Drawing.Size(1, 1)
+        Me.SignaturePictureBox.TabIndex = 167
+        Me.SignaturePictureBox.TabStop = False
+        '
+        'btnNextItem
+        '
+        Me.btnNextItem.BackColor = System.Drawing.SystemColors.Desktop
+        Me.btnNextItem.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnNextItem.ForeColor = System.Drawing.Color.White
+        Me.btnNextItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnNextItem.Location = New System.Drawing.Point(369, 20)
+        Me.btnNextItem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnNextItem.Name = "btnNextItem"
+        Me.btnNextItem.Size = New System.Drawing.Size(80, 46)
+        Me.btnNextItem.TabIndex = 7
+        Me.btnNextItem.Text = "السابق"
+        Me.btnNextItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNextItem.UseVisualStyleBackColor = False
+        '
+        'pnl
+        '
+        Me.pnl.Controls.Add(Me.StonePriceType3TextBox)
+        Me.pnl.Controls.Add(Me.StonePriceType2TextBox)
+        Me.pnl.Controls.Add(Me.StonePriceType1TextBox)
+        Me.pnl.Controls.Add(Me.CacherTextBox)
+        Me.pnl.Controls.Add(Me.ItemIDTextBox)
+        Me.pnl.Controls.Add(Me.SET_INVARCHR169TextBox)
+        Me.pnl.Controls.Add(Me.SET_INVARCHR168TextBox)
+        Me.pnl.Controls.Add(Me.SET_INVARCHR167TextBox)
+        Me.pnl.Controls.Add(Me.StoneWeight3TextBox1)
+        Me.pnl.Controls.Add(Me.StonePrice3TextBox1)
+        Me.pnl.Controls.Add(Me.StoneColor3TextBox1)
+        Me.pnl.Controls.Add(Me.StoneName3TextBox1)
+        Me.pnl.Controls.Add(Me.StoneWeight2TextBox1)
+        Me.pnl.Controls.Add(Me.StonePrice2TextBox1)
+        Me.pnl.Controls.Add(Me.StoneColor2TextBox1)
+        Me.pnl.Controls.Add(Me.StoneName2TextBox1)
+        Me.pnl.Controls.Add(Me.StoneColor1TextBox1)
+        Me.pnl.Controls.Add(Me.StoneName1TextBox)
+        Me.pnl.Controls.Add(Me.ActiveCheckBox)
+        Me.pnl.Controls.Add(Me.SET_INVARCHR147TextBox)
+        Me.pnl.Controls.Add(Me.SET_INVARCHR151TextBox)
+        Me.pnl.Controls.Add(Me.DateDateTimePicker)
+        Me.pnl.Controls.Add(Me.Inv_startTextBox1)
+        Me.pnl.Controls.Add(Me.Sroom_nameTextBox)
+        Me.pnl.Controls.Add(Me.Comp_note1TextBox)
+        Me.pnl.Controls.Add(Me.Loc_nameTextBox)
+        Me.pnl.Controls.Add(Me.Saryal_maxTextBox)
+        Me.pnl.Controls.Add(Me.Inv_startTextBox)
+        Me.pnl.Controls.Add(Me.CashTextBox)
+        Me.pnl.Controls.Add(Me.QuntTextBox)
+        Me.pnl.Controls.Add(Me.Item_totalPriceTextBox)
+        Me.pnl.Controls.Add(Me.Item_extrasMAZANTextBox)
+        Me.pnl.Controls.Add(Me.Item_extrasPRICETextBox)
+        Me.pnl.Controls.Add(Me.NotsTextBox)
+        Me.pnl.Controls.Add(Me.Item_gramMadeTextBox)
+        Me.pnl.Controls.Add(Me.Item_gramTextBox)
+        Me.pnl.Controls.Add(Me.Item_GramPriceTextBox)
+        Me.pnl.Controls.Add(Me.Item_despTextBox)
+        Me.pnl.Controls.Add(Me.Item_nameTextBox)
+        Me.pnl.Controls.Add(Me.UserIDTextBox1)
+        Me.pnl.Controls.Add(Me.CastomeridTextBox)
+        Me.pnl.Controls.Add(Me.IDTextBox1)
+        Me.pnl.Controls.Add(Me.CashTextBox1)
+        Me.pnl.Controls.Add(Me.Item_cantreyTextBox)
+        Me.pnl.Controls.Add(Me.Invoc_date_timeTextBox)
+        Me.pnl.Controls.Add(Me.Item_totalPriceTextBox1)
+        Me.pnl.Controls.Add(Me.Invoc_timeTextBox)
+        Me.pnl.Controls.Add(Me.CacherIDTextBox)
+        Me.pnl.Controls.Add(Me.Invoc_timeDateTimePicker)
+        Me.pnl.Location = New System.Drawing.Point(1269, 38)
+        Me.pnl.Name = "pnl"
+        Me.pnl.Size = New System.Drawing.Size(226, 14)
+        Me.pnl.TabIndex = 168
+        '
+        'StonePriceType3TextBox
+        '
+        Me.StonePriceType3TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StonePriceType3TextBox.Location = New System.Drawing.Point(46, 104)
+        Me.StonePriceType3TextBox.Name = "StonePriceType3TextBox"
+        Me.StonePriceType3TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.StonePriceType3TextBox.TabIndex = 211
+        '
+        'StonePriceType2TextBox
+        '
+        Me.StonePriceType2TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StonePriceType2TextBox.Location = New System.Drawing.Point(46, 77)
+        Me.StonePriceType2TextBox.Name = "StonePriceType2TextBox"
+        Me.StonePriceType2TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.StonePriceType2TextBox.TabIndex = 210
+        '
+        'StonePriceType1TextBox
+        '
+        Me.StonePriceType1TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StonePriceType1TextBox.Location = New System.Drawing.Point(46, 50)
+        Me.StonePriceType1TextBox.Name = "StonePriceType1TextBox"
+        Me.StonePriceType1TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.StonePriceType1TextBox.TabIndex = 209
+        '
+        'CacherTextBox
+        '
+        Me.CacherTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CacherTextBox.Location = New System.Drawing.Point(97, 482)
+        Me.CacherTextBox.Name = "CacherTextBox"
+        Me.CacherTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.CacherTextBox.TabIndex = 208
+        '
+        'ItemIDTextBox
+        '
+        Me.ItemIDTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ItemIDTextBox.Location = New System.Drawing.Point(148, 104)
+        Me.ItemIDTextBox.Name = "ItemIDTextBox"
+        Me.ItemIDTextBox.Size = New System.Drawing.Size(51, 22)
+        Me.ItemIDTextBox.TabIndex = 207
+        '
+        'SET_INVARCHR169TextBox
+        '
+        Me.SET_INVARCHR169TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SET_INVARCHR169TextBox.Location = New System.Drawing.Point(-36, 354)
+        Me.SET_INVARCHR169TextBox.Name = "SET_INVARCHR169TextBox"
+        Me.SET_INVARCHR169TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.SET_INVARCHR169TextBox.TabIndex = 0
+        '
+        'SET_INVARCHR168TextBox
+        '
+        Me.SET_INVARCHR168TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SET_INVARCHR168TextBox.Location = New System.Drawing.Point(-36, 414)
+        Me.SET_INVARCHR168TextBox.Name = "SET_INVARCHR168TextBox"
+        Me.SET_INVARCHR168TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.SET_INVARCHR168TextBox.TabIndex = 191
+        '
+        'SET_INVARCHR167TextBox
+        '
+        Me.SET_INVARCHR167TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SET_INVARCHR167TextBox.Location = New System.Drawing.Point(-36, 387)
+        Me.SET_INVARCHR167TextBox.Name = "SET_INVARCHR167TextBox"
+        Me.SET_INVARCHR167TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.SET_INVARCHR167TextBox.TabIndex = 190
+        '
+        'StoneWeight3TextBox1
+        '
+        Me.StoneWeight3TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneWeight3TextBox1.Location = New System.Drawing.Point(97, 347)
+        Me.StoneWeight3TextBox1.Name = "StoneWeight3TextBox1"
+        Me.StoneWeight3TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneWeight3TextBox1.TabIndex = 189
+        '
+        'StonePrice3TextBox1
+        '
+        Me.StonePrice3TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StonePrice3TextBox1.Location = New System.Drawing.Point(97, 320)
+        Me.StonePrice3TextBox1.Name = "StonePrice3TextBox1"
+        Me.StonePrice3TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StonePrice3TextBox1.TabIndex = 188
+        '
+        'StoneColor3TextBox1
+        '
+        Me.StoneColor3TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneColor3TextBox1.Location = New System.Drawing.Point(97, 293)
+        Me.StoneColor3TextBox1.Name = "StoneColor3TextBox1"
+        Me.StoneColor3TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneColor3TextBox1.TabIndex = 187
+        '
+        'StoneName3TextBox1
+        '
+        Me.StoneName3TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneName3TextBox1.Location = New System.Drawing.Point(97, 266)
+        Me.StoneName3TextBox1.Name = "StoneName3TextBox1"
+        Me.StoneName3TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneName3TextBox1.TabIndex = 186
+        '
+        'StoneWeight2TextBox1
+        '
+        Me.StoneWeight2TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneWeight2TextBox1.Location = New System.Drawing.Point(97, 239)
+        Me.StoneWeight2TextBox1.Name = "StoneWeight2TextBox1"
+        Me.StoneWeight2TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneWeight2TextBox1.TabIndex = 185
+        '
+        'StonePrice2TextBox1
+        '
+        Me.StonePrice2TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StonePrice2TextBox1.Location = New System.Drawing.Point(97, 212)
+        Me.StonePrice2TextBox1.Name = "StonePrice2TextBox1"
+        Me.StonePrice2TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StonePrice2TextBox1.TabIndex = 184
+        '
+        'StoneColor2TextBox1
+        '
+        Me.StoneColor2TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneColor2TextBox1.Location = New System.Drawing.Point(97, 185)
+        Me.StoneColor2TextBox1.Name = "StoneColor2TextBox1"
+        Me.StoneColor2TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneColor2TextBox1.TabIndex = 183
+        '
+        'StoneName2TextBox1
+        '
+        Me.StoneName2TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneName2TextBox1.Location = New System.Drawing.Point(97, 158)
+        Me.StoneName2TextBox1.Name = "StoneName2TextBox1"
+        Me.StoneName2TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneName2TextBox1.TabIndex = 182
+        '
+        'StoneColor1TextBox1
+        '
+        Me.StoneColor1TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneColor1TextBox1.Location = New System.Drawing.Point(97, 77)
+        Me.StoneColor1TextBox1.Name = "StoneColor1TextBox1"
+        Me.StoneColor1TextBox1.Size = New System.Drawing.Size(51, 22)
+        Me.StoneColor1TextBox1.TabIndex = 181
+        '
+        'StoneName1TextBox
+        '
+        Me.StoneName1TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.StoneName1TextBox.Location = New System.Drawing.Point(97, 50)
+        Me.StoneName1TextBox.Name = "StoneName1TextBox"
+        Me.StoneName1TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.StoneName1TextBox.TabIndex = 180
+        '
+        'ActiveCheckBox
+        '
+        Me.ActiveCheckBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ActiveCheckBox.Checked = True
+        Me.ActiveCheckBox.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ActiveCheckBox.Location = New System.Drawing.Point(97, 509)
+        Me.ActiveCheckBox.Name = "ActiveCheckBox"
+        Me.ActiveCheckBox.Size = New System.Drawing.Size(51, 24)
+        Me.ActiveCheckBox.TabIndex = 167
+        Me.ActiveCheckBox.Text = "CheckBox1"
+        Me.ActiveCheckBox.UseVisualStyleBackColor = True
+        '
+        'SET_INVARCHR151TextBox
+        '
+        Me.SET_INVARCHR151TextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SET_INVARCHR151TextBox.Location = New System.Drawing.Point(-36, 83)
+        Me.SET_INVARCHR151TextBox.Name = "SET_INVARCHR151TextBox"
+        Me.SET_INVARCHR151TextBox.Size = New System.Drawing.Size(51, 22)
+        Me.SET_INVARCHR151TextBox.TabIndex = 166
+        '
+        'lblTotalPriceTitle
+        '
+        Me.lblTotalPriceTitle.BackColor = System.Drawing.Color.DimGray
+        Me.lblTotalPriceTitle.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalPriceTitle.ForeColor = System.Drawing.Color.Black
+        Me.lblTotalPriceTitle.Location = New System.Drawing.Point(418, 573)
+        Me.lblTotalPriceTitle.Name = "lblTotalPriceTitle"
+        Me.lblTotalPriceTitle.Size = New System.Drawing.Size(85, 27)
+        Me.lblTotalPriceTitle.TabIndex = 192
+        Me.lblTotalPriceTitle.Text = "مبلغ الضريبه"
+        Me.lblTotalPriceTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ComBxGoCaret999
+        '
+        Me.ComBxGoCaret999.BackColor = System.Drawing.Color.Silver
+        Me.ComBxGoCaret999.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComBxGoCaret999.FormattingEnabled = True
+        Me.ComBxGoCaret999.Location = New System.Drawing.Point(486, 624)
+        Me.ComBxGoCaret999.Name = "ComBxGoCaret999"
+        Me.ComBxGoCaret999.Size = New System.Drawing.Size(96, 22)
+        Me.ComBxGoCaret999.TabIndex = 197
+        '
+        'TXTGoCaret999
+        '
+        Me.TXTGoCaret999.BackColor = System.Drawing.Color.Silver
+        Me.TXTGoCaret999.Location = New System.Drawing.Point(389, 624)
+        Me.TXTGoCaret999.Name = "TXTGoCaret999"
+        Me.TXTGoCaret999.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TXTGoCaret999.Size = New System.Drawing.Size(97, 22)
+        Me.TXTGoCaret999.TabIndex = 196
+        Me.TXTGoCaret999.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtQunt
+        '
+        Me.txtQunt.BackColor = System.Drawing.Color.LimeGreen
+        Me.txtQunt.Location = New System.Drawing.Point(322, 624)
+        Me.txtQunt.Name = "txtQunt"
+        Me.txtQunt.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtQunt.Size = New System.Drawing.Size(67, 22)
+        Me.txtQunt.TabIndex = 195
+        Me.txtQunt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtWeight
+        '
+        Me.txtWeight.BackColor = System.Drawing.Color.LimeGreen
+        Me.txtWeight.Location = New System.Drawing.Point(582, 624)
+        Me.txtWeight.Name = "txtWeight"
+        Me.txtWeight.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtWeight.Size = New System.Drawing.Size(85, 22)
+        Me.txtWeight.TabIndex = 194
+        Me.txtWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblNetCaret
+        '
+        Me.lblNetCaret.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetCaret.Location = New System.Drawing.Point(486, 602)
+        Me.lblNetCaret.Name = "lblNetCaret"
+        Me.lblNetCaret.Size = New System.Drawing.Size(96, 20)
+        Me.lblNetCaret.TabIndex = 202
+        Me.lblNetCaret.Text = "العيار الصافي"
+        Me.lblNetCaret.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblNetWeight
+        '
+        Me.lblNetWeight.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetWeight.ForeColor = System.Drawing.Color.Black
+        Me.lblNetWeight.Location = New System.Drawing.Point(389, 602)
+        Me.lblNetWeight.Name = "lblNetWeight"
+        Me.lblNetWeight.Size = New System.Drawing.Size(97, 20)
+        Me.lblNetWeight.TabIndex = 201
+        Me.lblNetWeight.Text = "الوزن الصافي"
+        Me.lblNetWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblQunt
+        '
+        Me.lblQunt.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQunt.ForeColor = System.Drawing.Color.Black
+        Me.lblQunt.Location = New System.Drawing.Point(322, 602)
+        Me.lblQunt.Name = "lblQunt"
+        Me.lblQunt.Size = New System.Drawing.Size(67, 20)
+        Me.lblQunt.TabIndex = 200
+        Me.lblQunt.Text = "العدد"
+        Me.lblQunt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblbayKarat
+        '
+        Me.lblbayKarat.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblbayKarat.ForeColor = System.Drawing.Color.Black
+        Me.lblbayKarat.Location = New System.Drawing.Point(667, 602)
+        Me.lblbayKarat.Name = "lblbayKarat"
+        Me.lblbayKarat.Size = New System.Drawing.Size(52, 20)
+        Me.lblbayKarat.TabIndex = 199
+        Me.lblbayKarat.Text = "العيار"
+        Me.lblbayKarat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Bay_mazanLabel
+        '
+        Me.Bay_mazanLabel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bay_mazanLabel.ForeColor = System.Drawing.Color.Black
+        Me.Bay_mazanLabel.Location = New System.Drawing.Point(582, 602)
+        Me.Bay_mazanLabel.Name = "Bay_mazanLabel"
+        Me.Bay_mazanLabel.Size = New System.Drawing.Size(85, 20)
+        Me.Bay_mazanLabel.TabIndex = 198
+        Me.Bay_mazanLabel.Text = "الوزن"
+        Me.Bay_mazanLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TeBoxItem_Des
+        '
+        Me.TeBoxItem_Des.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.TeBoxItem_Des.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.TeBoxItem_Des.BackColor = System.Drawing.Color.Silver
+        Me.TeBoxItem_Des.FormattingEnabled = True
+        Me.TeBoxItem_Des.Location = New System.Drawing.Point(719, 624)
+        Me.TeBoxItem_Des.Name = "TeBoxItem_Des"
+        Me.TeBoxItem_Des.Size = New System.Drawing.Size(250, 22)
+        Me.TeBoxItem_Des.TabIndex = 203
+        '
+        'LabItem_Des
+        '
+        Me.LabItem_Des.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabItem_Des.ForeColor = System.Drawing.Color.Black
+        Me.LabItem_Des.Location = New System.Drawing.Point(719, 602)
+        Me.LabItem_Des.Name = "LabItem_Des"
+        Me.LabItem_Des.Size = New System.Drawing.Size(250, 19)
+        Me.LabItem_Des.TabIndex = 204
+        Me.LabItem_Des.Text = "الوصف"
+        Me.LabItem_Des.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.BackColor = System.Drawing.Color.OliveDrab
+        Me.LinkLabel1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Cyan
+        Me.LinkLabel1.Location = New System.Drawing.Point(152, 602)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(85, 20)
+        Me.LinkLabel1.TabIndex = 206
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "حساب السعر"
+        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txtPrice
+        '
+        Me.txtPrice.BackColor = System.Drawing.Color.LimeGreen
+        Me.txtPrice.Location = New System.Drawing.Point(152, 624)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtPrice.Size = New System.Drawing.Size(85, 22)
+        Me.txtPrice.TabIndex = 205
+        Me.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Bay_gram_priceLabel
+        '
+        Me.Bay_gram_priceLabel.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Bay_gram_priceLabel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bay_gram_priceLabel.LinkColor = System.Drawing.Color.PaleGreen
+        Me.Bay_gram_priceLabel.Location = New System.Drawing.Point(239, 602)
+        Me.Bay_gram_priceLabel.Name = "Bay_gram_priceLabel"
+        Me.Bay_gram_priceLabel.Size = New System.Drawing.Size(81, 20)
+        Me.Bay_gram_priceLabel.TabIndex = 208
+        Me.Bay_gram_priceLabel.TabStop = True
+        Me.Bay_gram_priceLabel.Text = "حساب سعر الجرام"
+        Me.Bay_gram_priceLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'txtGramPrice
+        '
+        Me.txtGramPrice.BackColor = System.Drawing.Color.LimeGreen
+        Me.txtGramPrice.Location = New System.Drawing.Point(239, 624)
+        Me.txtGramPrice.Name = "txtGramPrice"
+        Me.txtGramPrice.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtGramPrice.Size = New System.Drawing.Size(81, 22)
+        Me.txtGramPrice.TabIndex = 207
+        Me.txtGramPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'BtnAddPur
+        '
+        Me.BtnAddPur.BackColor = System.Drawing.Color.White
+        Me.BtnAddPur.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnAddPur.ForeColor = System.Drawing.Color.White
+        Me.BtnAddPur.Location = New System.Drawing.Point(106, 603)
+        Me.BtnAddPur.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnAddPur.Name = "BtnAddPur"
+        Me.BtnAddPur.Size = New System.Drawing.Size(45, 43)
+        Me.BtnAddPur.TabIndex = 190
+        Me.BtnAddPur.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnAddPur.UseVisualStyleBackColor = False
+        '
+        'txtlblGoldPurPrice
+        '
+        Me.txtlblGoldPurPrice.BackColor = System.Drawing.Color.Tan
+        Me.txtlblGoldPurPrice.Location = New System.Drawing.Point(2, 624)
+        Me.txtlblGoldPurPrice.Name = "txtlblGoldPurPrice"
+        Me.txtlblGoldPurPrice.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtlblGoldPurPrice.Size = New System.Drawing.Size(100, 22)
+        Me.txtlblGoldPurPrice.TabIndex = 209
+        Me.txtlblGoldPurPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblGoldPurPrice
+        '
+        Me.lblGoldPurPrice.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGoldPurPrice.ForeColor = System.Drawing.Color.Black
+        Me.lblGoldPurPrice.Location = New System.Drawing.Point(2, 602)
+        Me.lblGoldPurPrice.Name = "lblGoldPurPrice"
+        Me.lblGoldPurPrice.Size = New System.Drawing.Size(100, 20)
+        Me.lblGoldPurPrice.TabIndex = 210
+        Me.lblGoldPurPrice.Text = "قيمة الذهب"
+        Me.lblGoldPurPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn1, Me.colItem_Des, Me.colbay_val, Me.colbay_mazan, Me.colGoldCaret999, Me.colGoldWeight999, Me.colbay_gram_price, Me.colTotalPrice, Me.colQunt, Me.colAddToItem, Me.colcastomer_id, Me.colCashier, Me.colB_gold_id, Me.colNote})
+        Me.DataGridView1.Location = New System.Drawing.Point(975, 453)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(419, 178)
+        Me.DataGridView1.TabIndex = 211
+        '
+        'DataGridViewButtonColumn1
+        '
+        Me.DataGridViewButtonColumn1.HeaderText = "Delete"
+        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
+        Me.DataGridViewButtonColumn1.ReadOnly = True
+        Me.DataGridViewButtonColumn1.Width = 46
+        '
+        'colItem_Des
+        '
+        Me.colItem_Des.HeaderText = "Item_Des"
+        Me.colItem_Des.Name = "colItem_Des"
+        Me.colItem_Des.ReadOnly = True
+        Me.colItem_Des.Width = 80
+        '
+        'colbay_val
+        '
+        Me.colbay_val.HeaderText = "bay_val"
+        Me.colbay_val.Name = "colbay_val"
+        Me.colbay_val.ReadOnly = True
+        Me.colbay_val.Width = 71
+        '
+        'colbay_mazan
+        '
+        Me.colbay_mazan.HeaderText = "bay_mazan"
+        Me.colbay_mazan.Name = "colbay_mazan"
+        Me.colbay_mazan.ReadOnly = True
+        Me.colbay_mazan.Width = 89
+        '
+        'colGoldCaret999
+        '
+        Me.colGoldCaret999.HeaderText = "GoldCaret999"
+        Me.colGoldCaret999.Name = "colGoldCaret999"
+        Me.colGoldCaret999.ReadOnly = True
+        Me.colGoldCaret999.Width = 99
+        '
+        'colGoldWeight999
+        '
+        Me.colGoldWeight999.HeaderText = "GoldWeight999"
+        Me.colGoldWeight999.Name = "colGoldWeight999"
+        Me.colGoldWeight999.ReadOnly = True
+        Me.colGoldWeight999.Width = 109
+        '
+        'colbay_gram_price
+        '
+        Me.colbay_gram_price.HeaderText = "bay_gram_price"
+        Me.colbay_gram_price.Name = "colbay_gram_price"
+        Me.colbay_gram_price.ReadOnly = True
+        Me.colbay_gram_price.Width = 112
+        '
+        'colTotalPrice
+        '
+        Me.colTotalPrice.HeaderText = "TotalPrice"
+        Me.colTotalPrice.Name = "colTotalPrice"
+        Me.colTotalPrice.ReadOnly = True
+        Me.colTotalPrice.Width = 80
+        '
+        'colQunt
+        '
+        Me.colQunt.HeaderText = "Qunt"
+        Me.colQunt.Name = "colQunt"
+        Me.colQunt.ReadOnly = True
+        Me.colQunt.Width = 56
+        '
+        'colAddToItem
+        '
+        Me.colAddToItem.HeaderText = "AddToItem"
+        Me.colAddToItem.Name = "colAddToItem"
+        Me.colAddToItem.ReadOnly = True
+        Me.colAddToItem.Visible = False
+        Me.colAddToItem.Width = 109
+        '
+        'colcastomer_id
+        '
+        Me.colcastomer_id.HeaderText = "castomer_id"
+        Me.colcastomer_id.Name = "colcastomer_id"
+        Me.colcastomer_id.ReadOnly = True
+        Me.colcastomer_id.Visible = False
+        Me.colcastomer_id.Width = 118
+        '
+        'colCashier
+        '
+        Me.colCashier.HeaderText = "Cashier"
+        Me.colCashier.Name = "colCashier"
+        Me.colCashier.ReadOnly = True
+        Me.colCashier.Visible = False
+        Me.colCashier.Width = 83
+        '
+        'colB_gold_id
+        '
+        Me.colB_gold_id.HeaderText = "B_gold_id"
+        Me.colB_gold_id.Name = "colB_gold_id"
+        Me.colB_gold_id.ReadOnly = True
+        Me.colB_gold_id.Visible = False
+        Me.colB_gold_id.Width = 102
+        '
+        'colNote
+        '
+        Me.colNote.HeaderText = "Note"
+        Me.colNote.Name = "colNote"
+        Me.colNote.ReadOnly = True
+        Me.colNote.Visible = False
+        Me.colNote.Width = 68
+        '
+        'btnGoldCh
+        '
+        Me.btnGoldCh.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.btnGoldCh.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGoldCh.ForeColor = System.Drawing.Color.Black
+        Me.btnGoldCh.Location = New System.Drawing.Point(2, 573)
+        Me.btnGoldCh.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnGoldCh.Name = "btnGoldCh"
+        Me.btnGoldCh.Size = New System.Drawing.Size(83, 27)
+        Me.btnGoldCh.TabIndex = 212
+        Me.btnGoldCh.Text = "تبديل ذهب"
+        Me.btnGoldCh.UseVisualStyleBackColor = False
+        '
+        'cmbKarat
+        '
+        Me.cmbKarat.BackColor = System.Drawing.Color.LimeGreen
+        Me.cmbKarat.Location = New System.Drawing.Point(667, 624)
+        Me.cmbKarat.Name = "cmbKarat"
+        Me.cmbKarat.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cmbKarat.Size = New System.Drawing.Size(52, 22)
+        Me.cmbKarat.TabIndex = 213
+        Me.cmbKarat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GoldInvoice
+        '
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(973, 649)
+        Me.Controls.Add(Me.cmbKarat)
+        Me.Controls.Add(Me.btnGoldCh)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.lblGoldPurPrice)
+        Me.Controls.Add(Me.txtlblGoldPurPrice)
+        Me.Controls.Add(Me.BtnAddPur)
+        Me.Controls.Add(Me.Bay_gram_priceLabel)
+        Me.Controls.Add(Me.txtGramPrice)
+        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.txtPrice)
+        Me.Controls.Add(Me.TeBoxItem_Des)
+        Me.Controls.Add(Me.LabItem_Des)
+        Me.Controls.Add(Me.lblNetCaret)
+        Me.Controls.Add(Me.lblNetWeight)
+        Me.Controls.Add(Me.lblQunt)
+        Me.Controls.Add(Me.lblbayKarat)
+        Me.Controls.Add(Me.Bay_mazanLabel)
+        Me.Controls.Add(Me.ComBxGoCaret999)
+        Me.Controls.Add(Me.TXTGoCaret999)
+        Me.Controls.Add(Me.txtQunt)
+        Me.Controls.Add(Me.txtWeight)
+        Me.Controls.Add(Me.lblTotalPriceTitle)
+        Me.Controls.Add(Me.txtTotalPriceValue)
+        Me.Controls.Add(Me.pnl)
+        Me.Controls.Add(Me.txtTpriceTtax)
+        Me.Controls.Add(Me.SignaturePictureBox)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblInvoiceValue)
+        Me.Controls.Add(Me.lblInvoiceTitle)
+        Me.Controls.Add(Me.FotoPictureBox)
+        Me.Controls.Add(Me.lblNote)
+        Me.Controls.Add(Me.gbData)
+        Me.Controls.Add(Me.txtNotes)
+        Me.Controls.Add(Me.grid)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "GoldInvoice"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        CType(Me.grid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbData.ResumeLayout(False)
+        Me.gbData.PerformLayout()
+        CType(Me.FotoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SignaturePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl.ResumeLayout(False)
+        Me.pnl.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents txtBarCode As System.Windows.Forms.TextBox
+    Friend WithEvents IDTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents CastomeridTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents UserIDTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Item_nameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_despTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_GramPriceTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_gramTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_gramMadeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_extrasPRICETextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_extrasMAZANTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_totalPriceTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents CashTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_cantreyTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Invoc_timeDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents CacherIDTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents cmbCashier As System.Windows.Forms.ComboBox
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+
+    Friend WithEvents Invoc_timeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Item_totalPriceTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents DateDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Invoc_date_timeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents CashTextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents grid As System.Windows.Forms.DataGridView
+    Friend WithEvents gbData As System.Windows.Forms.GroupBox
+    Friend WithEvents lblInvoiceValue As System.Windows.Forms.Label
+    Friend WithEvents btnPayPrint As System.Windows.Forms.Button
+    Friend WithEvents FotoPictureBox As System.Windows.Forms.PictureBox
+
+    Friend WithEvents NotsTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents QuntTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents txtNotes As System.Windows.Forms.TextBox
+
+    Friend WithEvents Inv_startTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents cmbItem As System.Windows.Forms.ComboBox
+
+    Friend WithEvents Saryal_maxTextBox As System.Windows.Forms.TextBox
+
+    Friend WithEvents Loc_nameTextBox As System.Windows.Forms.TextBox
+
+    Friend WithEvents Comp_note1TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Sroom_nameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents lblCashier As System.Windows.Forms.Label
+    Friend WithEvents lblItem As System.Windows.Forms.Label
+    Friend WithEvents lblNote As System.Windows.Forms.Label
+    Friend WithEvents lblBarCode As System.Windows.Forms.Label
+    Friend WithEvents lblInvoiceTitle As System.Windows.Forms.Label
+    Friend WithEvents Inv_startTextBox1 As System.Windows.Forms.TextBox
+
+    Friend WithEvents SET_INVARCHR147TextBox As System.Windows.Forms.TextBox
+
+
+    'Partial Public Class TestSigCapt
+    '    ''' <summary>
+    '    ''' Required designer variable.
+    '    ''' </summary>
+    '    Private components As System.ComponentModel.IContainer = Nothing
+
+    '    ''' <summary>
+    '    ''' Clean up any resources being used.
+    '    ''' </summary>
+    '    ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    '    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+    '        If disposing AndAlso (components IsNot Nothing) Then
+    '            components.Dispose()
+    '        End If
+    '        MyBase.Dispose(disposing)
+    '    End Sub
+
+    '#Region "Windows Form Designer generated code"
+
+    '    ''' <summary>
+    '    ''' Required method for Designer support - do not modify
+    '    ''' the contents of this method with the code editor.
+    '    ''' </summary>
+
+    '    'Private Sub InitializeComponent()
+    '    '    Me.sigImage = New System.Windows.Forms.PictureBox()
+    '    '    Me.btnSign = New System.Windows.Forms.Button()
+    '    Me.txtDisplay = New System.Windows.Forms.TextBox()
+    '    Me.btnExit = New System.Windows.Forms.Button()
+    '    CType(Me.sigImage, System.ComponentModel.ISupportInitialize).BeginInit()
+    'Me.SuspendLayout()
+    '
+    'sigImage
+    '
+    '    Me.sigImage.BackColor = System.Drawing.Color.Black
+    '    Me.sigImage.Location = New System.Drawing.Point(19, 242)
+    '    Me.sigImage.Name = "sigImage"
+    '    Me.sigImage.Size = New System.Drawing.Size(161, 109)
+    '    Me.sigImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+    '    Me.sigImage.TabIndex = 0
+    '    Me.sigImage.TabStop = False
+    ''
+    ''btnSign
+    ''
+    '    Me.btnSign.Location = New System.Drawing.Point(19, 143)
+    '    Me.btnSign.Name = "btnSign"
+    '    Me.btnSign.Size = New System.Drawing.Size(94, 44)
+    '    Me.btnSign.TabIndex = 1
+    '    Me.btnSign.Text = "Sign"
+    '    Me.btnSign.UseVisualStyleBackColor = True
+    ''
+    ''txtDisplay
+    ''
+    '    Me.txtDisplay.Location = New System.Drawing.Point(358, 67)
+    '    Me.txtDisplay.Multiline = True
+    '    Me.txtDisplay.Name = "txtDisplay"
+    '    Me.txtDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+    '    Me.txtDisplay.Size = New System.Drawing.Size(402, 212)
+    '    Me.txtDisplay.TabIndex = 2
+    ''
+    ''btnExit
+    ''
+    '    Me.btnExit.Location = New System.Drawing.Point(119, 143)
+    '    Me.btnExit.Name = "btnExit"
+    '    Me.btnExit.Size = New System.Drawing.Size(94, 44)
+    '    Me.btnExit.TabIndex = 3
+    '    Me.btnExit.Text = "Exit"
+    '    Me.btnExit.UseVisualStyleBackColor = True
+    '
+    'TestSigCapt
+    '
+    'Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+    'Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+    'Me.ClientSize = New System.Drawing.Size(869, 557)
+    'Me.Controls.Add(Me.btnExit)
+    'Me.Controls.Add(Me.txtDisplay)
+    'Me.Controls.Add(Me.btnSign)
+    'Me.Controls.Add(Me.sigImage)
+    'Me.Name = "TestSigCapt"
+    'Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+    'Me.Text = "TestSigCapt"
+    'CType(Me.sigImage, System.ComponentModel.ISupportInitialize).EndInit()
+    'Me.ResumeLayout(False)
+    'Me.PerformLayout()
+
+    '    End Sub
+
+    '#End Region
+
+    Private sigImage As System.Windows.Forms.PictureBox
+    Private WithEvents btnSign As System.Windows.Forms.Button
+    Private txtDisplay As System.Windows.Forms.TextBox
+    Private WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents SignaturePictureBox As System.Windows.Forms.PictureBox
+    Friend WithEvents btnNextItem As System.Windows.Forms.Button
+    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents pnl As System.Windows.Forms.Panel
+    Friend WithEvents SET_INVARCHR151TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents GoldSilverAvailableTableAdapter As DT_restrant.DT_restrantDataSetTableAdapters.GoldSilverAvailableTableAdapter
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents ActiveCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents lblInvoiceDate As System.Windows.Forms.Label
+    Friend WithEvents dtpInvoiceDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents StoneColor3TextBox1 As TextBox
+    Friend WithEvents StoneName3TextBox1 As TextBox
+    Friend WithEvents StoneWeight2TextBox1 As TextBox
+    Friend WithEvents StonePrice2TextBox1 As TextBox
+    Friend WithEvents StoneColor2TextBox1 As TextBox
+    Friend WithEvents StoneName2TextBox1 As TextBox
+    Friend WithEvents StoneColor1TextBox1 As TextBox
+    Friend WithEvents StoneName1TextBox As TextBox
+    Friend WithEvents StoneWeight3TextBox1 As TextBox
+    Friend WithEvents StonePrice3TextBox1 As TextBox
+    Friend WithEvents SET_INVARCHR167TextBox As TextBox
+    Friend WithEvents SET_INVARCHR168TextBox As TextBox
+    Friend WithEvents SET_INVARCHR169TextBox As TextBox
+    Friend WithEvents ItemIDTextBox As TextBox
+    Friend WithEvents CacherTextBox As TextBox
+    Friend WithEvents StonePriceType3TextBox As TextBox
+    Friend WithEvents StonePriceType2TextBox As TextBox
+    Friend WithEvents StonePriceType1TextBox As TextBox
+    Friend WithEvents txtTotalPriceValue As TextBox
+    Friend WithEvents labItemNmeInInvoce As System.Windows.Forms.Label
+    Friend WithEvents txtItemNmeInInvoce As System.Windows.Forms.TextBox
+    Friend WithEvents btnItemName As System.Windows.Forms.Button
+    Friend WithEvents txtMakeCharge As System.Windows.Forms.TextBox
+    Friend WithEvents lblMakeCharge As System.Windows.Forms.Label
+    Friend WithEvents lblKarat As System.Windows.Forms.Label
+    Friend WithEvents txtKarat As System.Windows.Forms.TextBox
+    Friend WithEvents lblQty As System.Windows.Forms.Label
+    Friend WithEvents lblMetalPrice As System.Windows.Forms.Label
+    Friend WithEvents lblPricePerGram As System.Windows.Forms.Label
+    Friend WithEvents cmbStoneName3 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtStonePrice3 As System.Windows.Forms.TextBox
+    Friend WithEvents lblMetalWeight As System.Windows.Forms.Label
+    Friend WithEvents cmbStoneName2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtStoneWeight3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtQty As System.Windows.Forms.TextBox
+    Friend WithEvents txtStoneColor2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtStoneColor3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMetalPrice As System.Windows.Forms.TextBox
+    Friend WithEvents txtStoneWeight2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCostPerItem As System.Windows.Forms.TextBox
+    Friend WithEvents txtStonePrice2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMetalWeight As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtStonePrice1 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbStoneName1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtPricePerGram As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtStoneWeight1 As System.Windows.Forms.TextBox
+    Friend WithEvents lblStoneColor As System.Windows.Forms.Label
+    Friend WithEvents lblCostPerItem As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtStoneColor1 As System.Windows.Forms.TextBox
+    Friend WithEvents lblStonePrice As System.Windows.Forms.Label
+    Friend WithEvents lblStoneWeight As System.Windows.Forms.Label
+    Friend WithEvents txtTotalPrice As System.Windows.Forms.TextBox
+    Friend WithEvents lblTotalPrice As System.Windows.Forms.Label
+    Friend WithEvents lblStoneName As System.Windows.Forms.Label
+    Friend WithEvents lblPr As Label
+    Friend WithEvents txtTaxAmo As TextBox
+    Friend WithEvents lblTaxAm As Label
+    Friend WithEvents BtnTax As Button
+    Friend WithEvents txtTaxTextAm As TextBox
+    Friend WithEvents txtTpriceTtax As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblTotalPriceTitle As Label
+    Friend WithEvents colDelete As DataGridViewButtonColumn
+    Friend WithEvents colTaxTextAm As DataGridViewTextBoxColumn
+    Friend WithEvents colTaxAmo As DataGridViewTextBoxColumn
+    Friend WithEvents colModify As DataGridViewButtonColumn
+    Friend WithEvents colCastomerid As DataGridViewTextBoxColumn
+    Friend WithEvents colcacher As DataGridViewTextBoxColumn
+    Friend WithEvents colItemID As DataGridViewTextBoxColumn
+    Friend WithEvents colItemName As DataGridViewTextBoxColumn
+    Friend WithEvents colGramPrice As DataGridViewTextBoxColumn
+    Friend WithEvents colGoldWeight As DataGridViewTextBoxColumn
+    Friend WithEvents colGoledKarat As DataGridViewTextBoxColumn
+    Friend WithEvents colGoledPrice As DataGridViewTextBoxColumn
+    Friend WithEvents colGoledMakeCharge As DataGridViewTextBoxColumn
+    Friend WithEvents colTotalGoledPrice As DataGridViewTextBoxColumn
+    Friend WithEvents colGoledPiecesQuantity As DataGridViewTextBoxColumn
+    Friend WithEvents colStonName1 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonWeight1 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonColor1 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonPrice1 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonName2 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonWeight2 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonColor2 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonPrice2 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonName3 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonWeight3 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonColor3 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonPrice3 As DataGridViewTextBoxColumn
+    Friend WithEvents colGoledPurchasPrice As DataGridViewTextBoxColumn
+    Friend WithEvents coldate As DataGridViewTextBoxColumn
+    Friend WithEvents coluserID As DataGridViewTextBoxColumn
+    Friend WithEvents colSroomName As DataGridViewTextBoxColumn
+    Friend WithEvents colInvocDateTime As DataGridViewTextBoxColumn
+    Friend WithEvents colNots As DataGridViewTextBoxColumn
+    Friend WithEvents colItemCantrey As DataGridViewTextBoxColumn
+    Friend WithEvents colStonePriceType1 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonePriceType2 As DataGridViewTextBoxColumn
+    Friend WithEvents colStonePriceType3 As DataGridViewTextBoxColumn
+    Friend WithEvents ComBxGoCaret999 As ComboBox
+    Friend WithEvents TXTGoCaret999 As TextBox
+    Friend WithEvents txtQunt As TextBox
+    Friend WithEvents txtWeight As TextBox
+    Friend WithEvents lblNetCaret As Label
+    Friend WithEvents lblNetWeight As Label
+    Friend WithEvents lblQunt As Label
+    Friend WithEvents lblbayKarat As Label
+    Friend WithEvents Bay_mazanLabel As Label
+    Friend WithEvents TeBoxItem_Des As ComboBox
+    Friend WithEvents LabItem_Des As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Bay_gram_priceLabel As LinkLabel
+    Friend WithEvents txtGramPrice As TextBox
+    Friend WithEvents BtnAddPur As Button
+    Friend WithEvents txtlblGoldPurPrice As TextBox
+    Friend WithEvents lblGoldPurPrice As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridViewButtonColumn1 As DataGridViewButtonColumn
+    Friend WithEvents colItem_Des As DataGridViewTextBoxColumn
+    Friend WithEvents colbay_val As DataGridViewTextBoxColumn
+    Friend WithEvents colbay_mazan As DataGridViewTextBoxColumn
+    Friend WithEvents colGoldCaret999 As DataGridViewTextBoxColumn
+    Friend WithEvents colGoldWeight999 As DataGridViewTextBoxColumn
+    Friend WithEvents colbay_gram_price As DataGridViewTextBoxColumn
+    Friend WithEvents colTotalPrice As DataGridViewTextBoxColumn
+    Friend WithEvents colQunt As DataGridViewTextBoxColumn
+    Friend WithEvents colAddToItem As DataGridViewTextBoxColumn
+    Friend WithEvents colcastomer_id As DataGridViewTextBoxColumn
+    Friend WithEvents colCashier As DataGridViewTextBoxColumn
+    Friend WithEvents colB_gold_id As DataGridViewTextBoxColumn
+    Friend WithEvents colNote As DataGridViewTextBoxColumn
+    Friend WithEvents btnGoldCh As Button
+    Friend WithEvents cmbKarat As TextBox
+End Class
+
+

@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="txtHeaderLeft">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Know Your Customer (KYC)</Value>
+                    <Style>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Left>0.25in</Left>
+            <Height>0.35in</Height>
+            <Width>2.69583in</Width>
+            <Style />
+          </Textbox>
+          <Rectangle Name="rectPEP">
+            <ReportItems>
+              <Textbox Name="txtPEPLeftTitle">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>2. Are you or any of your relatives a Politically Exposed Person (PEP)?</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Height>0.22in</Height>
+                <Width>3.8in</Width>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtPEPRightTitle">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>هل أنت أو أحد أقاربك من الأشخاص المعرضين سياسيًا (PEP)؟</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Left>3.9in</Left>
+                <Height>0.22in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtPEPYes">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ Yes – I am or a relative</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.25in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>2</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtPEPNo">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ No</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.43in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>3</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtPEPYesAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ نعم – أنا أو أحد الأقارب</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.25in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtPEPNoAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ لا</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.43in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>5</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <Top>3.4in</Top>
+            <Left>0.25in</Left>
+            <Height>0.7in</Height>
+            <Width>9.39792in</Width>
+            <ZIndex>1</ZIndex>
+            <Style />
+          </Rectangle>
+          <Textbox Name="txtNationalityRight">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>الجنسية:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.5in</Top>
+            <Left>4.70694in</Left>
+            <Height>0.25in</Height>
+            <Width>1.02431in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtNationalityValueAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!Nationality.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.5in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.25in</Height>
+            <Width>1.79931in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtNationalityValue">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!Nationality.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.5in</Top>
+            <Left>1.29167in</Left>
+            <Height>0.25in</Height>
+            <Width>1.65417in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtNationalityLeft">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Nationality:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.5in</Top>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Width>0.82292in</Width>
+            <ZIndex>5</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtPhoneRight">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>رقم الهاتف:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.15in</Top>
+            <Left>4.70694in</Left>
+            <Height>0.25in</Height>
+            <Width>1.02431in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtMobileValueAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!MobileNumber.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.15in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.25in</Height>
+            <Width>1.79931in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtMobileValue">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!MobileNumber.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.15in</Top>
+            <Left>1.29167in</Left>
+            <Height>0.25in</Height>
+            <Width>1.65417in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtPhoneLeft">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Mobile Number:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.15in</Top>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Width>0.82292in</Width>
+            <ZIndex>9</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtCivilRight">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>الرقم المدني:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.8in</Top>
+            <Left>4.70694in</Left>
+            <Height>0.25in</Height>
+            <Width>1.02431in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtCivilIDValueAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!CivilID.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.8in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.25in</Height>
+            <Width>1.79931in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtCivilIDValue">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!CivilID.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.8in</Top>
+            <Left>1.29167in</Left>
+            <Height>0.25in</Height>
+            <Width>1.65417in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtCivilLeft">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Civil ID:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.8in</Top>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Width>0.82292in</Width>
+            <ZIndex>13</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtNameRight">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>الاسم الكامل:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.45in</Top>
+            <Left>4.70694in</Left>
+            <Height>0.25in</Height>
+            <Width>1.02431in</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtFullNameValueAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!FullName.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.48056in</Top>
+            <Left>3.04306in</Left>
+            <Height>0.25in</Height>
+            <Width>1.79931in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtFullNameValue">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!FullName.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.45in</Top>
+            <Left>1.29167in</Left>
+            <Height>0.25in</Height>
+            <Width>1.65417in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <BottomBorder>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtNameLeft">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Full Name:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.45in</Top>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Width>0.82292in</Width>
+            <ZIndex>17</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtHeaderRight">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>نموذج اعرف عميلك (KYC)</Value>
+                    <Style>
+                      <FontSize>16pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Left>3.01528in</Left>
+            <Height>0.35in</Height>
+            <Width>2.71597in</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Rectangle Name="rectSource">
+            <ReportItems>
+              <Textbox Name="txtSourceLeftTitle">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>3. Please explain the source of funds used for this purchase:</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Height>0.22in</Height>
+                <Width>3.8in</Width>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtSourceRightTitle">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>يرجى توضيح مصدر الأموال المستخدمة في هذا الشراء:</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Left>3.9in</Left>
+                <Height>0.22in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSourceSalary">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ Salary</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.25in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>2</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtSourceBusiness">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ Business Income</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.43in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>3</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtSourceBank">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ Bank Financing</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.61in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>4</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtSourceGift">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ Inheritance / Gift</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.79in</Top>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>5</ZIndex>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtSourceOther">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Other:</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.97in</Top>
+                <Height>0.18in</Height>
+                <Width>1in</Width>
+                <ZIndex>6</ZIndex>
+                <Style />
+              </Textbox>
+              <Line Name="lineSourceOther">
+                <Top>1.15in</Top>
+                <Left>1.1in</Left>
+                <Height>0in</Height>
+                <Width>2.5in</Width>
+                <ZIndex>7</ZIndex>
+                <Style />
+              </Line>
+              <Textbox Name="txtSourceSalaryAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ راتب</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.25in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>8</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSourceBusinessAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ دخل تجاري</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.43in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>9</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSourceBankAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ تمويل بنكي</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.61in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>10</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSourceGiftAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>☐ ميراث / هبة</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.79in</Top>
+                <Left>3.9in</Left>
+                <Height>0.18in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>11</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSourceOtherAr">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>أخرى:</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.97in</Top>
+                <Left>6.7in</Left>
+                <Height>0.18in</Height>
+                <Width>1in</Width>
+                <ZIndex>12</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Line Name="lineSourceOtherAr">
+                <Top>1.15in</Top>
+                <Left>4in</Left>
+                <Height>0in</Height>
+                <Width>2.5in</Width>
+                <ZIndex>13</ZIndex>
+                <Style />
+              </Line>
+            </ReportItems>
+            <Top>4.2in</Top>
+            <Left>0.25in</Left>
+            <Height>1.4in</Height>
+            <Width>9.39792in</Width>
+            <ZIndex>19</ZIndex>
+            <Style />
+          </Rectangle>
+          <Rectangle Name="rectDeclaration">
+            <ReportItems>
+              <Textbox Name="txtDeclarationLeft">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>I confirm these answers are correct and I am responsible for their accuracy.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Height>0.3in</Height>
+                <Width>3.8in</Width>
+                <Style />
+              </Textbox>
+              <Textbox Name="txtDeclarationRight">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>أؤكد أن هذه الإجابات صحيحة وأنا مسؤول عن دقتها</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Left>3.9in</Left>
+                <Height>0.3in</Height>
+                <Width>3.8in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Textbox Name="txtSignLeft">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Signature:</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.4in</Top>
+                <Height>0.2in</Height>
+                <Width>1in</Width>
+                <ZIndex>2</ZIndex>
+                <Style />
+              </Textbox>
+              <Line Name="lineSignLeft">
+                <Top>0.65in</Top>
+                <Left>1.1in</Left>
+                <Height>0in</Height>
+                <Width>2.5in</Width>
+                <ZIndex>3</ZIndex>
+                <Style />
+              </Line>
+              <Textbox Name="txtSignRight">
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>التوقيع:</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <Top>0.4in</Top>
+                <Left>3.9in</Left>
+                <Height>0.2in</Height>
+                <Width>1in</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                  <Direction>RTL</Direction>
+                </Style>
+              </Textbox>
+              <Line Name="lineSignRight">
+                <Top>0.65in</Top>
+                <Left>5in</Left>
+                <Height>0in</Height>
+                <Width>2.5in</Width>
+                <ZIndex>5</ZIndex>
+                <Style />
+              </Line>
+            </ReportItems>
+            <Top>5.7in</Top>
+            <Left>0.25in</Left>
+            <Height>1in</Height>
+            <Width>9.39792in</Width>
+            <ZIndex>20</ZIndex>
+            <Style />
+          </Rectangle>
+          <Textbox Name="txtPurposeLeftTitle">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>1. Select the purpose(s) of your purchases</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.79167in</Top>
+            <Left>0.24167in</Left>
+            <Height>0.22in</Height>
+            <Width>2.69028in</Width>
+            <ZIndex>21</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtPurposeInvest">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ Investment</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.04167in</Top>
+            <Left>0.24167in</Left>
+            <Height>0.24778in</Height>
+            <Width>2.69028in</Width>
+            <ZIndex>22</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtPurposeSave">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ Saving</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.345in</Top>
+            <Left>0.24167in</Left>
+            <Height>0.26333in</Height>
+            <Width>2.69028in</Width>
+            <ZIndex>23</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtPurposeGift">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ Gifts to Friends / Family</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.65in</Top>
+            <Left>0.24167in</Left>
+            <Height>0.25472in</Height>
+            <Width>2.69028in</Width>
+            <ZIndex>24</ZIndex>
+            <Style />
+          </Textbox>
+          <Textbox Name="txtPurposeOther">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Other:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.9325in</Top>
+            <Left>0.24167in</Left>
+            <Height>0.27194in</Height>
+            <Width>1.31458in</Width>
+            <ZIndex>25</ZIndex>
+            <Style />
+          </Textbox>
+          <Line Name="linePurposeOther">
+            <Top>3.20444in</Top>
+            <Left>1.625in</Left>
+            <Height>0in</Height>
+            <Width>1.48403in</Width>
+            <ZIndex>26</ZIndex>
+            <Style />
+          </Line>
+          <Textbox Name="txtPurposeRightTitle">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>حدد الغرض / الأغراض من مشترياتك</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.80556in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.23389in</Height>
+            <Width>2.71597in</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtPurposeInvestAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ استثمار</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.06944in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.23389in</Height>
+            <Width>2.71597in</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtPurposeSaveAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ ادخار</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.345in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.26333in</Height>
+            <Width>2.71597in</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtPurposeGiftAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>☐ هدايا للأصدقاء أو العائلة</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.65in</Top>
+            <Left>3.01528in</Left>
+            <Height>0.25472in</Height>
+            <Width>2.71597in</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Textbox Name="txtPurposeOtherAr">
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>أخرى:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.9325in</Top>
+            <Left>4.74167in</Left>
+            <Height>0.27194in</Height>
+            <Width>0.98958in</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <TextAlign>Right</TextAlign>
+              <Direction>RTL</Direction>
+            </Style>
+          </Textbox>
+          <Line Name="linePurposeOtherAr">
+            <Top>3.20444in</Top>
+            <Left>3.17847in</Left>
+            <Height>0in</Height>
+            <Width>1.49861in</Width>
+            <ZIndex>32</ZIndex>
+            <Style />
+          </Line>
+        </ReportItems>
+        <Height>17.78cm</Height>
+        <Style />
+      </Body>
+      <Width>35.83517cm</Width>
+      <Page>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>14.8cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="FullName">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Full Name / الاسم الكامل</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CivilID">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Civil ID / الرقم المدني</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MobileNumber">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Mobile Number / رقم الهاتف</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Nationality">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Nationality / الجنسية</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>FullName</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>CivilID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>MobileNumber</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Nationality</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d9d0667a-afa8-4222-9875-cf7e14cc7640</rd:ReportID>
+</Report>

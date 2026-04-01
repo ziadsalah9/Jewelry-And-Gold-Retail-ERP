@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="852b9c18-449f-4adc-9b03-2714897d8105" parentDesignerName="DT_restrantCache" codeGenerationMode="Client and Server" synchronizeInOneTransaction="false" clientFileLocation="51ce1a97-d978-44de-9f23-cc9d12edcc2c" serverFileLocation="51ce1a97-d978-44de-9f23-cc9d12edcc2c" isRootSyncDesigner="true" rootSyncDesignerShouldGenerateCode="true" isClientSyncDesigner="false" isServerSyncDesigner="false" changeTrackingType="CoupledChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncAdapters>
+    <syncAdapter Id="20a289f9-b6c7-4483-9403-829f91dcaca8" name="DIMON_detelsSyncAdapter" tableName="DIMON_detels">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+  </syncAdapters>
+  <syncTables>
+    <syncTable Id="f153581d-b981-4650-b33a-a5cdd97cec07" name="DIMON_detelsSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="DIMON_detels" deletedItemsTableName="DIMON_detels_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.DIMON_detels" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="0e65c2a8-6d07-422c-bef7-f7745a6ac000" name="DIMON_detelsSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="ffaa5aa4-6b0c-4f52-a5b8-0eacac595730" name="DT_restrantCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <serverSyncProvider>
+    <serverSyncProvider Id="dbe82749-cecd-420d-874e-a15155c61a5d" name="DT_restrantCacheServerSyncProvider">
+      <syncAdapters>
+        <syncAdapterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncAdapter" />
+      </syncAdapters>
+      <syncConnection>
+        <syncConnectionMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/ServerConnection" />
+      </syncConnection>
+      <selectNewAnchorCommand>
+        <syncAdapterCommandMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/selectNewAnchorCmd" />
+      </selectNewAnchorCommand>
+    </serverSyncProvider>
+  </serverSyncProvider>
+  <syncAgent>
+    <syncAgent name="DT_restrantCacheSyncAgent" synchronizeInOneTransaction="false">
+      <serverSyncProvider>
+        <serverSyncProviderMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DT_restrantCacheServerSyncProvider" />
+      </serverSyncProvider>
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DT_restrantCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/DIMON_detelsSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncAdapterCommands>
+    <syncAdapterCommand Id="70b417af-c399-45ea-8884-43f74d71227e" commandText=" SET IDENTITY_INSERT dbo.DIMON_detels ON INSERT INTO dbo.DIMON_detels ([DIMOND_ID], [DIMO_dep], [DIM_na9awa], [DIMO_mezan], [ext_coler], [qult], [sarual], [val_gold], [GOLD_mezan], [test_1], [test_11], [test_12], [test_13], [test_14], [test_15], [test_16], [test_17], [test_18], [test_19], [test_110], [test_111], [test_112], [test_113], [test_114], [test_115], [test_116], [test_117], [test_118], [test_119], [date_creted], [ITEM_IMGE], [Item_Actv], [CostToSeller], [TaxExempt], [Documents], [Cut1], [Clarity1], [Cut2], [Clarity2], [Cut3], [Clarity3], [IsDiamond1], [IsDiamond2], [IsDiamond3], [LastEditDate], [CreationDate]) VALUES (@DIMOND_ID, @DIMO_dep, @DIM_na9awa, @DIMO_mezan, @ext_coler, @qult, @sarual, @val_gold, @GOLD_mezan, @test_1, @test_11, @test_12, @test_13, @test_14, @test_15, @test_16, @test_17, @test_18, @test_19, @test_110, @test_111, @test_112, @test_113, @test_114, @test_115, @test_116, @test_117, @test_118, @test_119, @date_creted, @ITEM_IMGE, @Item_Actv, @CostToSeller, @TaxExempt, @Documents, @Cut1, @Clarity1, @Cut2, @Clarity2, @Cut3, @Clarity3, @IsDiamond1, @IsDiamond2, @IsDiamond3, @LastEditDate, @CreationDate) SET @sync_row_count = @@rowcount SET IDENTITY_INSERT dbo.DIMON_detels OFF " commandType="Text" name="DIMON_detelsSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMOND_ID" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMO_dep" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIM_na9awa" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMO_mezan" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@ext_coler" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@qult" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sarual" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@val_gold" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@GOLD_mezan" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_11" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_12" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_13" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_14" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_15" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_16" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_17" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_18" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_19" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_110" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_111" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_112" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_113" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_114" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_115" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_116" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_117" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_118" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_119" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@date_creted" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@ITEM_IMGE" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Item_Actv" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@CostToSeller" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@TaxExempt" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Documents" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut2" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity2" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut3" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity3" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond2" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond3" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@LastEditDate" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@CreationDate" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_row_count" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="1ea3d476-2261-4715-8ee8-bf92f0d3d908" commandText="DELETE FROM dbo.DIMON_detels WHERE ([DIMOND_ID] = @DIMOND_ID) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="DIMON_detelsSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMOND_ID1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_force_write" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_last_received_anchor" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_row_count1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="05b9e196-b18d-4cc5-a141-de2b9db55d81" commandText="UPDATE dbo.DIMON_detels SET [DIMO_dep] = @DIMO_dep, [DIM_na9awa] = @DIM_na9awa, [DIMO_mezan] = @DIMO_mezan, [ext_coler] = @ext_coler, [qult] = @qult, [sarual] = @sarual, [val_gold] = @val_gold, [GOLD_mezan] = @GOLD_mezan, [test_1] = @test_1, [test_11] = @test_11, [test_12] = @test_12, [test_13] = @test_13, [test_14] = @test_14, [test_15] = @test_15, [test_16] = @test_16, [test_17] = @test_17, [test_18] = @test_18, [test_19] = @test_19, [test_110] = @test_110, [test_111] = @test_111, [test_112] = @test_112, [test_113] = @test_113, [test_114] = @test_114, [test_115] = @test_115, [test_116] = @test_116, [test_117] = @test_117, [test_118] = @test_118, [test_119] = @test_119, [date_creted] = @date_creted, [ITEM_IMGE] = @ITEM_IMGE, [Item_Actv] = @Item_Actv, [CostToSeller] = @CostToSeller, [TaxExempt] = @TaxExempt, [Documents] = @Documents, [Cut1] = @Cut1, [Clarity1] = @Clarity1, [Cut2] = @Cut2, [Clarity2] = @Clarity2, [Cut3] = @Cut3, [Clarity3] = @Clarity3, [IsDiamond1] = @IsDiamond1, [IsDiamond2] = @IsDiamond2, [IsDiamond3] = @IsDiamond3, [LastEditDate] = @LastEditDate, [CreationDate] = @CreationDate WHERE ([DIMOND_ID] = @DIMOND_ID) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="DIMON_detelsSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMO_dep1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIM_na9awa1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMO_mezan1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@ext_coler1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@qult1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sarual1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@val_gold1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@GOLD_mezan1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_120" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1110" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_121" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_131" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_141" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_151" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_161" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_171" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_181" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_191" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1101" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1111" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1121" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1131" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1141" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1151" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1161" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1171" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1181" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@test_1191" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@date_creted1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@ITEM_IMGE1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Item_Actv1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@CostToSeller1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@TaxExempt1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Documents1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut11" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity11" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut21" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity21" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Cut31" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@Clarity31" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond11" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond21" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@IsDiamond31" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@LastEditDate1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@CreationDate1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMOND_ID2" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_force_write1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_last_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_row_count2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="1f988970-796e-4194-9d0d-ec42f301ab47" commandText="SELECT [DIMOND_ID], [DeletionDate] FROM dbo.DIMON_detels_Tombstone WHERE ([DIMOND_ID] = @DIMOND_ID)" commandType="Text" name="DIMON_detelsSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMOND_ID3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="aef03ade-b2cb-4ec2-bee8-e2b8cf9d3d12" commandText="SELECT [DIMOND_ID], [DIMO_dep], [DIM_na9awa], [DIMO_mezan], [ext_coler], [qult], [sarual], [val_gold], [GOLD_mezan], [test_1], [test_11], [test_12], [test_13], [test_14], [test_15], [test_16], [test_17], [test_18], [test_19], [test_110], [test_111], [test_112], [test_113], [test_114], [test_115], [test_116], [test_117], [test_118], [test_119], [date_creted], [ITEM_IMGE], [Item_Actv], [CostToSeller], [TaxExempt], [Documents], [Cut1], [Clarity1], [Cut2], [Clarity2], [Cut3], [Clarity3], [IsDiamond1], [IsDiamond2], [IsDiamond3], [LastEditDate], [CreationDate] FROM dbo.DIMON_detels WHERE ([DIMOND_ID] = @DIMOND_ID)" commandType="Text" name="DIMON_detelsSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@DIMOND_ID4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="49d22769-4b0a-49f6-9cf8-83ddd4943e30" commandText="SELECT [DIMOND_ID], [DIMO_dep], [DIM_na9awa], [DIMO_mezan], [ext_coler], [qult], [sarual], [val_gold], [GOLD_mezan], [test_1], [test_11], [test_12], [test_13], [test_14], [test_15], [test_16], [test_17], [test_18], [test_19], [test_110], [test_111], [test_112], [test_113], [test_114], [test_115], [test_116], [test_117], [test_118], [test_119], [date_creted], [ITEM_IMGE], [Item_Actv], [CostToSeller], [TaxExempt], [Documents], [Cut1], [Clarity1], [Cut2], [Clarity2], [Cut3], [Clarity3], [IsDiamond1], [IsDiamond2], [IsDiamond3], [LastEditDate], [CreationDate] FROM dbo.DIMON_detels WHERE ([CreationDate] &gt; @sync_last_received_anchor AND [CreationDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="DIMON_detelsSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_last_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_new_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="90ac9442-21a8-4c9c-94f5-7a6276b086c0" commandText="SELECT [DIMOND_ID], [DeletionDate] FROM dbo.DIMON_detels_Tombstone WHERE (@sync_initialized = 1 AND [DeletionDate] &gt; @sync_last_received_anchor AND [DeletionDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="DIMON_detelsSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_initialized" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_last_received_anchor3" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_new_received_anchor1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="de6ac686-93b8-4690-b5c3-f088dc25f7bf" commandText="SELECT [DIMOND_ID], [DIMO_dep], [DIM_na9awa], [DIMO_mezan], [ext_coler], [qult], [sarual], [val_gold], [GOLD_mezan], [test_1], [test_11], [test_12], [test_13], [test_14], [test_15], [test_16], [test_17], [test_18], [test_19], [test_110], [test_111], [test_112], [test_113], [test_114], [test_115], [test_116], [test_117], [test_118], [test_119], [date_creted], [ITEM_IMGE], [Item_Actv], [CostToSeller], [TaxExempt], [Documents], [Cut1], [Clarity1], [Cut2], [Clarity2], [Cut3], [Clarity3], [IsDiamond1], [IsDiamond2], [IsDiamond3], [LastEditDate], [CreationDate] FROM dbo.DIMON_detels WHERE ([LastEditDate] &gt; @sync_last_received_anchor AND [LastEditDate] &lt;= @sync_new_received_anchor AND [CreationDate] &lt;= @sync_last_received_anchor)" commandType="Text" name="DIMON_detelsSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_last_received_anchor4" />
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_new_received_anchor2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="1055aaac-6351-4324-9746-ec30e98d25e1" commandText="Select @sync_new_received_anchor = GETUTCDATE()" commandType="Text" name="selectNewAnchorCmd" commandKind="SelectNewAnchorCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/852b9c18-449f-4adc-9b03-2714897d8105/@sync_new_received_anchor3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+  </syncAdapterCommands>
+  <syncAdapterCommandParameters>
+    <syncAdapterCommandParameter Id="1fc21e48-0733-4f64-941e-60055fbdad34" parameterType="Int" parameterName="@DIMOND_ID" name="@DIMOND_ID" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b98fd928-03ac-497b-b4d1-53ef792465d8" parameterType="NVarChar" parameterName="@DIMO_dep" name="@DIMO_dep" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dc45e897-7ce8-4f3e-bc11-75211db206d7" parameterType="NVarChar" parameterName="@DIM_na9awa" name="@DIM_na9awa" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="491d8086-3fee-4a1d-9f92-16f7451a0250" parameterType="Decimal" parameterName="@DIMO_mezan" name="@DIMO_mezan" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="036f1670-60c3-47cf-b762-f9b45b4d9a77" parameterType="NVarChar" parameterName="@ext_coler" name="@ext_coler" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d7eb407f-6f68-4fb0-9789-c0ae70b7fa7d" parameterType="NVarChar" parameterName="@qult" name="@qult" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="452579fd-bed9-46d8-b7ac-f5a6f3b3a084" parameterType="NVarChar" parameterName="@sarual" name="@sarual" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b8d6726a-4c0e-45c3-8f0b-3bee75246e8f" parameterType="Int" parameterName="@val_gold" name="@val_gold" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ad8c0232-d05e-4d70-a00f-7768c1da8cbe" parameterType="Decimal" parameterName="@GOLD_mezan" name="@GOLD_mezan" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="75f4f47a-f476-41b7-b71e-1491bac9ffcc" parameterType="NVarChar" parameterName="@test_1" name="@test_1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1ab98ccc-ea3b-4b21-9177-1fad3ddac84c" parameterType="NVarChar" parameterName="@test_11" name="@test_11" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0b606f6e-2c11-403b-adda-574c4be17b0e" parameterType="Decimal" parameterName="@test_12" name="@test_12" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7a8056fb-a790-473a-a1c0-52ee0b8c5f1a" parameterType="Decimal" parameterName="@test_13" name="@test_13" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5cc6287d-752d-4d68-a1cb-095ce53cb3f4" parameterType="NVarChar" parameterName="@test_14" name="@test_14" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="efda4c2f-a04c-4f3b-8095-dfd32f6e459c" parameterType="NVarChar" parameterName="@test_15" name="@test_15" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0d4d6316-9cb4-4464-9c6c-1c6f08c02aa8" parameterType="Decimal" parameterName="@test_16" name="@test_16" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0e8f9c7d-a98d-4f98-ab43-6c7ab941cd15" parameterType="NVarChar" parameterName="@test_17" name="@test_17" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a3690a66-aba7-4b38-8348-09e3a9b8312f" parameterType="NVarChar" parameterName="@test_18" name="@test_18" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="25daf32b-3016-49d7-b67a-ab3bfb360b69" parameterType="Decimal" parameterName="@test_19" name="@test_19" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b6a38eda-f001-4724-9c2c-4ebc5d6fe385" parameterType="NVarChar" parameterName="@test_110" name="@test_110" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1cafc2c2-043c-4a1b-9771-7868af1a10c3" parameterType="NVarChar" parameterName="@test_111" name="@test_111" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a7494437-48bf-4eee-9093-125b03929ac0" parameterType="NVarChar" parameterName="@test_112" name="@test_112" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="80544d29-82e6-41f1-9d0e-e964932b02e5" parameterType="NVarChar" parameterName="@test_113" name="@test_113" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dfc8e7fc-cc77-478d-aff9-75547d312321" parameterType="NVarChar" parameterName="@test_114" name="@test_114" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="42d06cfe-586f-4d59-a688-603aec404726" parameterType="NVarChar" parameterName="@test_115" name="@test_115" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3481992f-b1b2-4642-9b8f-610854626f80" parameterType="NVarChar" parameterName="@test_116" name="@test_116" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9a08c464-a46e-49ef-8383-8b821dcc2528" parameterType="NVarChar" parameterName="@test_117" name="@test_117" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4b4bfffc-f8e9-4acc-b5a5-669ae7128365" parameterType="NVarChar" parameterName="@test_118" name="@test_118" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="23bc0915-f370-4b6c-b9ca-e4036b4d9a7c" parameterType="NVarChar" parameterName="@test_119" name="@test_119" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b64235cd-0bb0-454b-8770-1594025bcaab" parameterType="Date" parameterName="@date_creted" name="@date_creted" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="64f7605b-66c4-4a8c-abf6-26cd043a140b" parameterType="Image" parameterName="@ITEM_IMGE" name="@ITEM_IMGE" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="009fd976-1f47-42c7-81ba-4745f50cc6bf" parameterType="Int" parameterName="@Item_Actv" name="@Item_Actv" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c8aa4405-e41d-4939-b837-ff153c120cb1" parameterType="Decimal" parameterName="@CostToSeller" name="@CostToSeller" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3c6df742-f0ee-4bc2-b8ab-65049b0fd0e2" parameterType="Bit" parameterName="@TaxExempt" name="@TaxExempt" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="019070ab-2c01-4f91-a609-0f3b51cc9784" parameterType="Image" parameterName="@Documents" name="@Documents" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d7d92d0b-0475-4dfa-8065-4636b80efc1b" parameterType="NVarChar" parameterName="@Cut1" name="@Cut1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="60d19cd3-83ff-4aee-a13f-8f92fbf67e59" parameterType="NVarChar" parameterName="@Clarity1" name="@Clarity1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="cdeb9f26-d64a-46d6-8c31-b5a99f59480a" parameterType="NVarChar" parameterName="@Cut2" name="@Cut2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="50e87f10-acaa-4446-9a0d-475621d0b19b" parameterType="NVarChar" parameterName="@Clarity2" name="@Clarity2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f5372318-ad5d-4abc-b6a9-e83ac63ad774" parameterType="NVarChar" parameterName="@Cut3" name="@Cut3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="00e34c15-cf0e-477b-b317-0225610688a8" parameterType="NVarChar" parameterName="@Clarity3" name="@Clarity3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4f037095-758c-46c9-988d-86b710981296" parameterType="Bit" parameterName="@IsDiamond1" name="@IsDiamond1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="713fd03a-124c-4bfe-8440-08a96a1ffa14" parameterType="Bit" parameterName="@IsDiamond2" name="@IsDiamond2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c104c7dd-340c-44f0-9d84-6d40d7efbcff" parameterType="Bit" parameterName="@IsDiamond3" name="@IsDiamond3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="64ea22d4-fbb4-4a73-a668-848586ddfdb2" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="aabdb06d-c0ab-4a9e-825c-38862bb6cbfc" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="141b97fd-cb16-4252-8821-374194a23ddd" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="aba73250-5739-47db-a01f-f87946667af6" parameterType="Int" parameterName="@DIMOND_ID" name="@DIMOND_ID1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7ae3645d-2110-4f0b-a15c-75ef8d6f8254" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dfd1c22e-0848-407d-912b-d37693d97a64" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5aea259a-4e71-4ec0-9a61-b37a6b9f5cde" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count1" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="5e069e5d-2583-4380-9d60-cf45fcf65bed" parameterType="NVarChar" parameterName="@DIMO_dep" name="@DIMO_dep1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7cf6e237-92e6-460d-98c1-77351c4e2493" parameterType="NVarChar" parameterName="@DIM_na9awa" name="@DIM_na9awa1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="80174988-92c4-4564-9d94-17a87d6f68ce" parameterType="Decimal" parameterName="@DIMO_mezan" name="@DIMO_mezan1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c7be5337-e250-47ca-8fcd-9af1e2aef4a7" parameterType="NVarChar" parameterName="@ext_coler" name="@ext_coler1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f8730e1d-ef26-4014-adcc-352c74810196" parameterType="NVarChar" parameterName="@qult" name="@qult1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="47dd6f6f-faa4-4e9c-91ea-2b3cfc9fb83d" parameterType="NVarChar" parameterName="@sarual" name="@sarual1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="104a85aa-1054-4daf-a7f1-eb77ea08144b" parameterType="Int" parameterName="@val_gold" name="@val_gold1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="725ce906-8efe-4d89-a3fd-7bae99333aef" parameterType="Decimal" parameterName="@GOLD_mezan" name="@GOLD_mezan1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="26b9c935-0319-4689-9b58-411b4bb7d997" parameterType="NVarChar" parameterName="@test_1" name="@test_120" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8b6fc270-bdac-48aa-8413-eb74f5fa1c92" parameterType="NVarChar" parameterName="@test_11" name="@test_1110" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c4f5efc1-ada9-4b01-ada7-3deb50d5f53f" parameterType="Decimal" parameterName="@test_12" name="@test_121" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bbe5c3ed-a1db-4586-9fb1-b6b981cac733" parameterType="Decimal" parameterName="@test_13" name="@test_131" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7557cd3a-415b-4a6a-9d9a-61f8f53c287f" parameterType="NVarChar" parameterName="@test_14" name="@test_141" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ad3c9460-c51b-45dd-b23f-68720c041173" parameterType="NVarChar" parameterName="@test_15" name="@test_151" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="90555d3f-edd8-4f57-8843-0f7616375442" parameterType="Decimal" parameterName="@test_16" name="@test_161" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0c40cef3-90f7-4846-baea-46cedeec5bc0" parameterType="NVarChar" parameterName="@test_17" name="@test_171" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a2e0b9ac-1a80-4042-962e-2361d640032d" parameterType="NVarChar" parameterName="@test_18" name="@test_181" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="76d43ea3-c839-4630-9e08-96291bd04e50" parameterType="Decimal" parameterName="@test_19" name="@test_191" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3e848344-d542-4306-85e7-e67941ec295c" parameterType="NVarChar" parameterName="@test_110" name="@test_1101" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b8a2ce89-51ff-4e4a-8b5a-39eb04efed60" parameterType="NVarChar" parameterName="@test_111" name="@test_1111" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6ead659c-e86b-4cc6-a73c-b749101b539a" parameterType="NVarChar" parameterName="@test_112" name="@test_1121" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="62dd8ec2-23a3-476b-9769-35e7a84b41ca" parameterType="NVarChar" parameterName="@test_113" name="@test_1131" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b165ea11-6684-4032-be52-10ef6340e0a1" parameterType="NVarChar" parameterName="@test_114" name="@test_1141" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="acfe6caf-56b8-46a4-a534-354bb8534d99" parameterType="NVarChar" parameterName="@test_115" name="@test_1151" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c21da658-aba7-45d3-b883-d45fc570a985" parameterType="NVarChar" parameterName="@test_116" name="@test_1161" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e82174c1-4aeb-4d2e-a377-9f051f17825b" parameterType="NVarChar" parameterName="@test_117" name="@test_1171" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="871a0189-0eeb-4099-881d-15850ae7d38e" parameterType="NVarChar" parameterName="@test_118" name="@test_1181" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b16161c4-27f4-480a-b230-a9ae5236d690" parameterType="NVarChar" parameterName="@test_119" name="@test_1191" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f864dd22-6c1a-44b5-8de6-0d3e8953540f" parameterType="Date" parameterName="@date_creted" name="@date_creted1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4f86fade-a3f4-4b39-91a0-048ac00bd552" parameterType="Image" parameterName="@ITEM_IMGE" name="@ITEM_IMGE1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="14c9c835-803c-4dec-bec6-6bf4afa16249" parameterType="Int" parameterName="@Item_Actv" name="@Item_Actv1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="efb190c2-7996-4ff8-bc6f-f48adc74218f" parameterType="Decimal" parameterName="@CostToSeller" name="@CostToSeller1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9dcebbec-51f2-4f8c-b096-4b52b9f22ffd" parameterType="Bit" parameterName="@TaxExempt" name="@TaxExempt1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="016c8734-36a0-4f57-a713-4955adbf2f8a" parameterType="Image" parameterName="@Documents" name="@Documents1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c2a702ad-a054-4bba-bc67-d79f7019f089" parameterType="NVarChar" parameterName="@Cut1" name="@Cut11" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9e8b5bbc-1c9f-4e2b-ab99-f5958cc85873" parameterType="NVarChar" parameterName="@Clarity1" name="@Clarity11" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2d530773-3e5b-4edd-bb21-4bdb04bbc96b" parameterType="NVarChar" parameterName="@Cut2" name="@Cut21" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="72616045-d306-4804-86dc-178ba9cdd0e0" parameterType="NVarChar" parameterName="@Clarity2" name="@Clarity21" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2ba88cd4-2d5b-4fcc-9384-8d835c1415ce" parameterType="NVarChar" parameterName="@Cut3" name="@Cut31" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bd02c6a5-a06c-423e-bc1b-1bbb5b43a028" parameterType="NVarChar" parameterName="@Clarity3" name="@Clarity31" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fa17187a-0db8-42eb-a2d4-9dec310bcb0b" parameterType="Bit" parameterName="@IsDiamond1" name="@IsDiamond11" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="94ede9d1-bf3a-4ee8-acd6-e94cdc440e3c" parameterType="Bit" parameterName="@IsDiamond2" name="@IsDiamond21" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8a1fe4f2-2ecb-4567-8a48-091d4a04e8a5" parameterType="Bit" parameterName="@IsDiamond3" name="@IsDiamond31" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1aea0b75-bdef-4ea4-a41c-f9413a33f2d0" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="61e029a2-aafe-469b-8750-5ff5b578869f" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="681949c8-d92f-46b6-b686-2df28677b422" parameterType="Int" parameterName="@DIMOND_ID" name="@DIMOND_ID2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7692646c-90dd-4605-bad3-a70c808aa746" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c8d5c94e-e426-4acc-84cb-5258f4d864a2" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="638b9b5b-e4d4-4917-8712-fd55fd2d5bb5" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count2" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="dda4f289-4d06-4b2f-a6ab-6aa1d1f73b04" parameterType="Int" parameterName="@DIMOND_ID" name="@DIMOND_ID3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ca3cc8bd-47e0-4e75-8a5f-cb80f2e41b33" parameterType="Int" parameterName="@DIMOND_ID" name="@DIMOND_ID4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f886d6fa-4368-4902-b8ad-8b50b5f3856d" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d9ed7ca5-d533-4a50-b924-79ddc66a0f37" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ba4666f8-7dd1-47e8-b237-203dff6c2613" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7e2f930c-d4c8-4130-ac0b-1ace385c7732" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="29f372d9-177d-4adf-ba3a-8431f49d5770" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="65a80af8-7994-4132-bcc3-8f3b134feaba" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9dc66c69-461b-4d67-9d48-2fa6a16710dd" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b84ca667-6836-4609-904f-99fee7f74aec" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor3" parameterDirection="Output" />
+  </syncAdapterCommandParameters>
+  <syncConnections>
+    <syncConnection Id="fe8222d9-840e-458b-8602-841624e0b6ff" name="ClientConnection" connectionDisplayString="ClientDT_restrantConnectionString (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="ClientDT_restrantConnectionString" appSettingsPropertyReference="" />
+    <syncConnection Id="06445baf-19d3-42cf-b8bf-c0155c07d7fd" name="ServerConnection" connectionDisplayString="DT_restrantConnectionString10 (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="DT_restrantConnectionString10" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>
