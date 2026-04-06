@@ -638,6 +638,12 @@
     <Compile Include="ReportGoldSellShort.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReportGoldShellMinistrial.Designer.vb">
+      <DependentUpon>ReportGoldShellMinistrial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGoldShellMinistrial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ReportSilverProfit.Designer.vb">
       <DependentUpon>ReportSilverProfit.vb</DependentUpon>
     </Compile>
@@ -6637,6 +6643,9 @@
     <EmbeddedResource Include="PaymentMethodsControl.resx">
       <DependentUpon>PaymentMethodsControl.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGoldShellMinistrial.resx">
+      <DependentUpon>ReportGoldShellMinistrial.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportSilverProfit.resx">
       <DependentUpon>ReportSilverProfit.vb</DependentUpon>
     </EmbeddedResource>
@@ -6665,6 +6674,7 @@
     <EmbeddedResource Include="Report\rptGoldGoldVoucherAl-serkal.rdlc" />
     <EmbeddedResource Include="Report\rptGoldGoldVoucherReceiveAl-serkal.rdlc" />
     <EmbeddedResource Include="Report\rptGoldGoldVoucherReceive.rdlc" />
+    <EmbeddedResource Include="Report\rptGoldSellMinistrial.rdlc" />
     <EmbeddedResource Include="Report\rptSilverProfitsReport.rdlc" />
     <EmbeddedResource Include="Report\rptGoldProfitsReport.rdlc" />
     <EmbeddedResource Include="Report\rptGoldSellPay-2.rdlc">
