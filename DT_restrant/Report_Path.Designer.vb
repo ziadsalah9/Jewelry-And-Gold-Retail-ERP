@@ -23,6 +23,31 @@ Partial Class Report_Path
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Grid = New System.Windows.Forms.DataGridView()
+        Me.colDiamondSellShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldVoucherReserve = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDiamondSellPayDetails = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDiamondBuyPayDetails_A4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldBuyPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colBondCashPersonal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colBondCashComp = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDiamondSellDetailedPortrait = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTPSellBuyWholesaleInvoce = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colExpensesInv = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colBondCashDetailed = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSilverSellPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSilverBuyPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSilverSellReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldSellReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldGoldVoucher = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSilvertemAvailable = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GoldSellReportShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colAccessoriesReportShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colWholesaleInvoce = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colWholesaleInvoceReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coltxtGoldProfitsReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coltxtDiamondSellShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldSellReportShortKYC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSilverProfitsReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Re_Path_DiaSelShort = New System.Windows.Forms.TextBox()
         Me.TEXTDiaRepRwitRHeadR = New System.Windows.Forms.TextBox()
@@ -62,12 +87,16 @@ Partial Class Report_Path
         Me.lblSilverItemRemaining = New System.Windows.Forms.LinkLabel()
         Me.txtSilverItemRemaining = New System.Windows.Forms.TextBox()
         Me.GboxSilver = New System.Windows.Forms.GroupBox()
+        Me.lblSilverProfitsReport = New System.Windows.Forms.LinkLabel()
+        Me.txtSilverProfitsReport = New System.Windows.Forms.TextBox()
         Me.lblSilvertemAvailable = New System.Windows.Forms.LinkLabel()
         Me.txtSilvertemAvailable = New System.Windows.Forms.TextBox()
         Me.GboxDia = New System.Windows.Forms.GroupBox()
         Me.lblDiamondSellShort = New System.Windows.Forms.LinkLabel()
         Me.txtDiamondSellShort = New System.Windows.Forms.TextBox()
         Me.GboxGold = New System.Windows.Forms.GroupBox()
+        Me.lblGoldSellReportminstrial = New System.Windows.Forms.LinkLabel()
+        Me.txtGoldSellReportminstrial = New System.Windows.Forms.TextBox()
         Me.txtGoldSellReportShortKYC = New System.Windows.Forms.TextBox()
         Me.lblGoldSellReportShortKYC = New System.Windows.Forms.LinkLabel()
         Me.txtGoldProfitsReport = New System.Windows.Forms.TextBox()
@@ -85,33 +114,7 @@ Partial Class Report_Path
         Me.lblWholesaleInvoce = New System.Windows.Forms.LinkLabel()
         Me.txtWholesaleInvoceReport = New System.Windows.Forms.TextBox()
         Me.lblWholesaleInvoceReport = New System.Windows.Forms.LinkLabel()
-        Me.lblSilverProfitsReport = New System.Windows.Forms.LinkLabel()
-        Me.txtSilverProfitsReport = New System.Windows.Forms.TextBox()
-        Me.colDiamondSellShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGoldVoucherReserve = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDiamondSellPayDetails = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDiamondBuyPayDetails_A4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGoldBuyPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBondCashPersonal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBondCashComp = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDiamondSellDetailedPortrait = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTPSellBuyWholesaleInvoce = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colExpensesInv = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBondCashDetailed = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSilverSellPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSilverBuyPay = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSilverSellReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGoldSellReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGoldGoldVoucher = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSilvertemAvailable = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GoldSellReportShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colAccessoriesReportShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colWholesaleInvoce = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colWholesaleInvoceReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.coltxtGoldProfitsReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.coltxtDiamondSellShort = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGoldSellReportShortKYC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSilverProfitsReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGoldInvoceMinisterialReport = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GboxSilver.SuspendLayout()
         Me.GboxDia.SuspendLayout()
@@ -124,19 +127,197 @@ Partial Class Report_Path
         'Grid
         '
         Me.Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colDiamondSellShort, Me.colGoldVoucherReserve, Me.colDiamondSellPayDetails, Me.colDiamondBuyPayDetails_A4, Me.colGoldBuyPay, Me.colBondCashPersonal, Me.colBondCashComp, Me.colDiamondSellDetailedPortrait, Me.colTPSellBuyWholesaleInvoce, Me.colExpensesInv, Me.colBondCashDetailed, Me.colSilverSellPay, Me.colSilverBuyPay, Me.colSilverSellReport, Me.colGoldSellReport, Me.colGoldGoldVoucher, Me.colSilvertemAvailable, Me.GoldSellReportShort, Me.colAccessoriesReportShort, Me.colWholesaleInvoce, Me.colWholesaleInvoceReport, Me.coltxtGoldProfitsReport, Me.coltxtDiamondSellShort, Me.colGoldSellReportShortKYC, Me.colSilverProfitsReport})
-        Me.Grid.Location = New System.Drawing.Point(4, 514)
+        Me.Grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colDiamondSellShort, Me.colGoldVoucherReserve, Me.colDiamondSellPayDetails, Me.colDiamondBuyPayDetails_A4, Me.colGoldBuyPay, Me.colBondCashPersonal, Me.colBondCashComp, Me.colDiamondSellDetailedPortrait, Me.colTPSellBuyWholesaleInvoce, Me.colExpensesInv, Me.colBondCashDetailed, Me.colSilverSellPay, Me.colSilverBuyPay, Me.colSilverSellReport, Me.colGoldSellReport, Me.colGoldGoldVoucher, Me.colSilvertemAvailable, Me.GoldSellReportShort, Me.colAccessoriesReportShort, Me.colWholesaleInvoce, Me.colWholesaleInvoceReport, Me.coltxtGoldProfitsReport, Me.coltxtDiamondSellShort, Me.colGoldSellReportShortKYC, Me.colSilverProfitsReport, Me.colGoldInvoceMinisterialReport})
+        Me.Grid.Location = New System.Drawing.Point(5, 633)
+        Me.Grid.Margin = New System.Windows.Forms.Padding(4)
         Me.Grid.Name = "Grid"
-        Me.Grid.Size = New System.Drawing.Size(1037, 95)
+        Me.Grid.RowHeadersWidth = 51
+        Me.Grid.Size = New System.Drawing.Size(1383, 117)
         Me.Grid.TabIndex = 0
+        '
+        'colDiamondSellShort
+        '
+        Me.colDiamondSellShort.HeaderText = "DiamondSellShort"
+        Me.colDiamondSellShort.MinimumWidth = 6
+        Me.colDiamondSellShort.Name = "colDiamondSellShort"
+        Me.colDiamondSellShort.Width = 125
+        '
+        'colGoldVoucherReserve
+        '
+        Me.colGoldVoucherReserve.HeaderText = "GoldVoucherReserve"
+        Me.colGoldVoucherReserve.MinimumWidth = 6
+        Me.colGoldVoucherReserve.Name = "colGoldVoucherReserve"
+        Me.colGoldVoucherReserve.Width = 125
+        '
+        'colDiamondSellPayDetails
+        '
+        Me.colDiamondSellPayDetails.HeaderText = "DiamondSellPayDetails"
+        Me.colDiamondSellPayDetails.MinimumWidth = 6
+        Me.colDiamondSellPayDetails.Name = "colDiamondSellPayDetails"
+        Me.colDiamondSellPayDetails.Width = 125
+        '
+        'colDiamondBuyPayDetails_A4
+        '
+        Me.colDiamondBuyPayDetails_A4.HeaderText = "DiamondBuyPayDetails_A4"
+        Me.colDiamondBuyPayDetails_A4.MinimumWidth = 6
+        Me.colDiamondBuyPayDetails_A4.Name = "colDiamondBuyPayDetails_A4"
+        Me.colDiamondBuyPayDetails_A4.Width = 125
+        '
+        'colGoldBuyPay
+        '
+        Me.colGoldBuyPay.HeaderText = "GoldBuyPay"
+        Me.colGoldBuyPay.MinimumWidth = 6
+        Me.colGoldBuyPay.Name = "colGoldBuyPay"
+        Me.colGoldBuyPay.Width = 125
+        '
+        'colBondCashPersonal
+        '
+        Me.colBondCashPersonal.HeaderText = "BondCashPersonal"
+        Me.colBondCashPersonal.MinimumWidth = 6
+        Me.colBondCashPersonal.Name = "colBondCashPersonal"
+        Me.colBondCashPersonal.Width = 125
+        '
+        'colBondCashComp
+        '
+        Me.colBondCashComp.HeaderText = "BondCashComp"
+        Me.colBondCashComp.MinimumWidth = 6
+        Me.colBondCashComp.Name = "colBondCashComp"
+        Me.colBondCashComp.Width = 125
+        '
+        'colDiamondSellDetailedPortrait
+        '
+        Me.colDiamondSellDetailedPortrait.HeaderText = "DiamondSellDetailedPortrait"
+        Me.colDiamondSellDetailedPortrait.MinimumWidth = 6
+        Me.colDiamondSellDetailedPortrait.Name = "colDiamondSellDetailedPortrait"
+        Me.colDiamondSellDetailedPortrait.Width = 125
+        '
+        'colTPSellBuyWholesaleInvoce
+        '
+        Me.colTPSellBuyWholesaleInvoce.HeaderText = "TPSellBuyWholesaleInvoce"
+        Me.colTPSellBuyWholesaleInvoce.MinimumWidth = 6
+        Me.colTPSellBuyWholesaleInvoce.Name = "colTPSellBuyWholesaleInvoce"
+        Me.colTPSellBuyWholesaleInvoce.Width = 125
+        '
+        'colExpensesInv
+        '
+        Me.colExpensesInv.HeaderText = "ExpensesInv"
+        Me.colExpensesInv.MinimumWidth = 6
+        Me.colExpensesInv.Name = "colExpensesInv"
+        Me.colExpensesInv.Width = 125
+        '
+        'colBondCashDetailed
+        '
+        Me.colBondCashDetailed.HeaderText = "BondCashDetailed"
+        Me.colBondCashDetailed.MinimumWidth = 6
+        Me.colBondCashDetailed.Name = "colBondCashDetailed"
+        Me.colBondCashDetailed.Width = 125
+        '
+        'colSilverSellPay
+        '
+        Me.colSilverSellPay.HeaderText = "SilverSellPay"
+        Me.colSilverSellPay.MinimumWidth = 6
+        Me.colSilverSellPay.Name = "colSilverSellPay"
+        Me.colSilverSellPay.Width = 125
+        '
+        'colSilverBuyPay
+        '
+        Me.colSilverBuyPay.HeaderText = "SilverBuyPay"
+        Me.colSilverBuyPay.MinimumWidth = 6
+        Me.colSilverBuyPay.Name = "colSilverBuyPay"
+        Me.colSilverBuyPay.Width = 125
+        '
+        'colSilverSellReport
+        '
+        Me.colSilverSellReport.HeaderText = "SilverSellReport"
+        Me.colSilverSellReport.MinimumWidth = 6
+        Me.colSilverSellReport.Name = "colSilverSellReport"
+        Me.colSilverSellReport.Width = 125
+        '
+        'colGoldSellReport
+        '
+        Me.colGoldSellReport.HeaderText = "GoldSellReport"
+        Me.colGoldSellReport.MinimumWidth = 6
+        Me.colGoldSellReport.Name = "colGoldSellReport"
+        Me.colGoldSellReport.Width = 125
+        '
+        'colGoldGoldVoucher
+        '
+        Me.colGoldGoldVoucher.HeaderText = "GoldGoldVoucher"
+        Me.colGoldGoldVoucher.MinimumWidth = 6
+        Me.colGoldGoldVoucher.Name = "colGoldGoldVoucher"
+        Me.colGoldGoldVoucher.Width = 125
+        '
+        'colSilvertemAvailable
+        '
+        Me.colSilvertemAvailable.HeaderText = "colSilvertemAvailable"
+        Me.colSilvertemAvailable.MinimumWidth = 6
+        Me.colSilvertemAvailable.Name = "colSilvertemAvailable"
+        Me.colSilvertemAvailable.Width = 125
+        '
+        'GoldSellReportShort
+        '
+        Me.GoldSellReportShort.HeaderText = "colGoldSellReportShort"
+        Me.GoldSellReportShort.MinimumWidth = 6
+        Me.GoldSellReportShort.Name = "GoldSellReportShort"
+        Me.GoldSellReportShort.Width = 125
+        '
+        'colAccessoriesReportShort
+        '
+        Me.colAccessoriesReportShort.HeaderText = "AccessoriesReportShort"
+        Me.colAccessoriesReportShort.MinimumWidth = 6
+        Me.colAccessoriesReportShort.Name = "colAccessoriesReportShort"
+        Me.colAccessoriesReportShort.Width = 125
+        '
+        'colWholesaleInvoce
+        '
+        Me.colWholesaleInvoce.HeaderText = "WholesaleInvoce"
+        Me.colWholesaleInvoce.MinimumWidth = 6
+        Me.colWholesaleInvoce.Name = "colWholesaleInvoce"
+        Me.colWholesaleInvoce.Width = 125
+        '
+        'colWholesaleInvoceReport
+        '
+        Me.colWholesaleInvoceReport.HeaderText = "WholesaleInvoceReport"
+        Me.colWholesaleInvoceReport.MinimumWidth = 6
+        Me.colWholesaleInvoceReport.Name = "colWholesaleInvoceReport"
+        Me.colWholesaleInvoceReport.Width = 125
+        '
+        'coltxtGoldProfitsReport
+        '
+        Me.coltxtGoldProfitsReport.HeaderText = "GoldProfitsReport"
+        Me.coltxtGoldProfitsReport.MinimumWidth = 6
+        Me.coltxtGoldProfitsReport.Name = "coltxtGoldProfitsReport"
+        Me.coltxtGoldProfitsReport.Width = 125
+        '
+        'coltxtDiamondSellShort
+        '
+        Me.coltxtDiamondSellShort.HeaderText = "txtDiamondSellShort"
+        Me.coltxtDiamondSellShort.MinimumWidth = 6
+        Me.coltxtDiamondSellShort.Name = "coltxtDiamondSellShort"
+        Me.coltxtDiamondSellShort.Width = 125
+        '
+        'colGoldSellReportShortKYC
+        '
+        Me.colGoldSellReportShortKYC.HeaderText = "GoldSellReportShortKYC"
+        Me.colGoldSellReportShortKYC.MinimumWidth = 6
+        Me.colGoldSellReportShortKYC.Name = "colGoldSellReportShortKYC"
+        Me.colGoldSellReportShortKYC.Width = 125
+        '
+        'colSilverProfitsReport
+        '
+        Me.colSilverProfitsReport.HeaderText = "SilverProfitsReport"
+        Me.colSilverProfitsReport.MinimumWidth = 6
+        Me.colSilverProfitsReport.Name = "colSilverProfitsReport"
+        Me.colSilverProfitsReport.Width = 125
         '
         'LinkLabel1
         '
         Me.LinkLabel1.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel1.Location = New System.Drawing.Point(196, 14)
+        Me.LinkLabel1.Location = New System.Drawing.Point(261, 17)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LinkLabel1.Size = New System.Drawing.Size(169, 18)
+        Me.LinkLabel1.Size = New System.Drawing.Size(225, 22)
         Me.LinkLabel1.TabIndex = 1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "تقرير الالماس المختصر"
@@ -146,27 +327,30 @@ Partial Class Report_Path
         '
         Me.Re_Path_DiaSelShort.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.Re_Path_DiaSelShort.ForeColor = System.Drawing.Color.Black
-        Me.Re_Path_DiaSelShort.Location = New System.Drawing.Point(8, 14)
+        Me.Re_Path_DiaSelShort.Location = New System.Drawing.Point(11, 17)
+        Me.Re_Path_DiaSelShort.Margin = New System.Windows.Forms.Padding(4)
         Me.Re_Path_DiaSelShort.Name = "Re_Path_DiaSelShort"
-        Me.Re_Path_DiaSelShort.Size = New System.Drawing.Size(182, 24)
+        Me.Re_Path_DiaSelShort.Size = New System.Drawing.Size(241, 28)
         Me.Re_Path_DiaSelShort.TabIndex = 2
         '
         'TEXTDiaRepRwitRHeadR
         '
         Me.TEXTDiaRepRwitRHeadR.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.TEXTDiaRepRwitRHeadR.ForeColor = System.Drawing.Color.Black
-        Me.TEXTDiaRepRwitRHeadR.Location = New System.Drawing.Point(8, 38)
+        Me.TEXTDiaRepRwitRHeadR.Location = New System.Drawing.Point(11, 47)
+        Me.TEXTDiaRepRwitRHeadR.Margin = New System.Windows.Forms.Padding(4)
         Me.TEXTDiaRepRwitRHeadR.Name = "TEXTDiaRepRwitRHeadR"
-        Me.TEXTDiaRepRwitRHeadR.Size = New System.Drawing.Size(182, 24)
+        Me.TEXTDiaRepRwitRHeadR.Size = New System.Drawing.Size(241, 28)
         Me.TEXTDiaRepRwitRHeadR.TabIndex = 5
         '
         'LinkLabel2
         '
         Me.LinkLabel2.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel2.Location = New System.Drawing.Point(196, 41)
+        Me.LinkLabel2.Location = New System.Drawing.Point(261, 50)
+        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LinkLabel2.Size = New System.Drawing.Size(169, 18)
+        Me.LinkLabel2.Size = New System.Drawing.Size(225, 22)
         Me.LinkLabel2.TabIndex = 4
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "تقري بيع الالماس مع  الرأس والتذيل"
@@ -176,18 +360,20 @@ Partial Class Report_Path
         '
         Me.TeBoxDmonBAY.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.TeBoxDmonBAY.ForeColor = System.Drawing.Color.Black
-        Me.TeBoxDmonBAY.Location = New System.Drawing.Point(8, 62)
+        Me.TeBoxDmonBAY.Location = New System.Drawing.Point(11, 76)
+        Me.TeBoxDmonBAY.Margin = New System.Windows.Forms.Padding(4)
         Me.TeBoxDmonBAY.Name = "TeBoxDmonBAY"
-        Me.TeBoxDmonBAY.Size = New System.Drawing.Size(182, 24)
+        Me.TeBoxDmonBAY.Size = New System.Drawing.Size(241, 28)
         Me.TeBoxDmonBAY.TabIndex = 7
         '
         'LinkLabel3
         '
         Me.LinkLabel3.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel3.Location = New System.Drawing.Point(196, 69)
+        Me.LinkLabel3.Location = New System.Drawing.Point(261, 85)
+        Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LinkLabel3.Size = New System.Drawing.Size(169, 18)
+        Me.LinkLabel3.Size = New System.Drawing.Size(225, 22)
         Me.LinkLabel3.TabIndex = 9
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "تقرير شراء الالماس"
@@ -196,9 +382,10 @@ Partial Class Report_Path
         'LinkLabel4
         '
         Me.LinkLabel4.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel4.Location = New System.Drawing.Point(209, 19)
+        Me.LinkLabel4.Location = New System.Drawing.Point(279, 23)
+        Me.LinkLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(157, 20)
+        Me.LinkLabel4.Size = New System.Drawing.Size(209, 25)
         Me.LinkLabel4.TabIndex = 12
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "تقرير شراء الذهب"
@@ -208,17 +395,19 @@ Partial Class Report_Path
         '
         Me.TtBoxGoldBay.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.TtBoxGoldBay.ForeColor = System.Drawing.Color.Black
-        Me.TtBoxGoldBay.Location = New System.Drawing.Point(6, 19)
+        Me.TtBoxGoldBay.Location = New System.Drawing.Point(8, 23)
+        Me.TtBoxGoldBay.Margin = New System.Windows.Forms.Padding(4)
         Me.TtBoxGoldBay.Name = "TtBoxGoldBay"
-        Me.TtBoxGoldBay.Size = New System.Drawing.Size(197, 24)
+        Me.TtBoxGoldBay.Size = New System.Drawing.Size(261, 28)
         Me.TtBoxGoldBay.TabIndex = 10
         '
         'btnDefault
         '
         Me.btnDefault.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.btnDefault.Location = New System.Drawing.Point(4, 4)
+        Me.btnDefault.Location = New System.Drawing.Point(5, 5)
+        Me.btnDefault.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDefault.Name = "btnDefault"
-        Me.btnDefault.Size = New System.Drawing.Size(83, 32)
+        Me.btnDefault.Size = New System.Drawing.Size(111, 39)
         Me.btnDefault.TabIndex = 13
         Me.btnDefault.Text = "افتراضي"
         Me.btnDefault.UseVisualStyleBackColor = True
@@ -226,9 +415,10 @@ Partial Class Report_Path
         'LinkLabel5
         '
         Me.LinkLabel5.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel5.Location = New System.Drawing.Point(208, 22)
+        Me.LinkLabel5.Location = New System.Drawing.Point(277, 27)
+        Me.LinkLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(186, 17)
+        Me.LinkLabel5.Size = New System.Drawing.Size(248, 21)
         Me.LinkLabel5.TabIndex = 16
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "تقرير سند القبض النقدي"
@@ -238,17 +428,19 @@ Partial Class Report_Path
         '
         Me.RepSndToCust.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.RepSndToCust.ForeColor = System.Drawing.Color.Black
-        Me.RepSndToCust.Location = New System.Drawing.Point(11, 18)
+        Me.RepSndToCust.Location = New System.Drawing.Point(15, 22)
+        Me.RepSndToCust.Margin = New System.Windows.Forms.Padding(4)
         Me.RepSndToCust.Name = "RepSndToCust"
-        Me.RepSndToCust.Size = New System.Drawing.Size(191, 24)
+        Me.RepSndToCust.Size = New System.Drawing.Size(253, 28)
         Me.RepSndToCust.TabIndex = 14
         '
         'LinkLabel6
         '
         Me.LinkLabel6.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel6.Location = New System.Drawing.Point(209, 39)
+        Me.LinkLabel6.Location = New System.Drawing.Point(279, 48)
+        Me.LinkLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(157, 24)
+        Me.LinkLabel6.Size = New System.Drawing.Size(209, 30)
         Me.LinkLabel6.TabIndex = 19
         Me.LinkLabel6.TabStop = True
         Me.LinkLabel6.Text = "تقرير سند الصرف ذهب/فضه"
@@ -258,17 +450,19 @@ Partial Class Report_Path
         '
         Me.RepSndToGOLED.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.RepSndToGOLED.ForeColor = System.Drawing.Color.Black
-        Me.RepSndToGOLED.Location = New System.Drawing.Point(6, 43)
+        Me.RepSndToGOLED.Location = New System.Drawing.Point(8, 53)
+        Me.RepSndToGOLED.Margin = New System.Windows.Forms.Padding(4)
         Me.RepSndToGOLED.Name = "RepSndToGOLED"
-        Me.RepSndToGOLED.Size = New System.Drawing.Size(197, 24)
+        Me.RepSndToGOLED.Size = New System.Drawing.Size(261, 28)
         Me.RepSndToGOLED.TabIndex = 17
         '
         'LinkLabel7
         '
         Me.LinkLabel7.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel7.Location = New System.Drawing.Point(208, 48)
+        Me.LinkLabel7.Location = New System.Drawing.Point(277, 59)
+        Me.LinkLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel7.Name = "LinkLabel7"
-        Me.LinkLabel7.Size = New System.Drawing.Size(186, 17)
+        Me.LinkLabel7.Size = New System.Drawing.Size(248, 21)
         Me.LinkLabel7.TabIndex = 22
         Me.LinkLabel7.TabStop = True
         Me.LinkLabel7.Text = "تقرير سند القبض النقدي شركات"
@@ -278,18 +472,20 @@ Partial Class Report_Path
         '
         Me.RepSndToComp.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.RepSndToComp.ForeColor = System.Drawing.Color.Black
-        Me.RepSndToComp.Location = New System.Drawing.Point(11, 43)
+        Me.RepSndToComp.Location = New System.Drawing.Point(15, 53)
+        Me.RepSndToComp.Margin = New System.Windows.Forms.Padding(4)
         Me.RepSndToComp.Name = "RepSndToComp"
-        Me.RepSndToComp.Size = New System.Drawing.Size(191, 24)
+        Me.RepSndToComp.Size = New System.Drawing.Size(253, 28)
         Me.RepSndToComp.TabIndex = 20
         '
         'LinkLabel8
         '
         Me.LinkLabel8.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel8.Location = New System.Drawing.Point(196, 90)
+        Me.LinkLabel8.Location = New System.Drawing.Point(261, 111)
+        Me.LinkLabel8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel8.Name = "LinkLabel8"
         Me.LinkLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LinkLabel8.Size = New System.Drawing.Size(169, 18)
+        Me.LinkLabel8.Size = New System.Drawing.Size(225, 22)
         Me.LinkLabel8.TabIndex = 24
         Me.LinkLabel8.TabStop = True
         Me.LinkLabel8.Text = "تقرير الالماس التفصيلي"
@@ -299,17 +495,19 @@ Partial Class Report_Path
         '
         Me.rptDiamondSellDetailedPortrait.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.rptDiamondSellDetailedPortrait.ForeColor = System.Drawing.Color.Black
-        Me.rptDiamondSellDetailedPortrait.Location = New System.Drawing.Point(8, 86)
+        Me.rptDiamondSellDetailedPortrait.Location = New System.Drawing.Point(11, 106)
+        Me.rptDiamondSellDetailedPortrait.Margin = New System.Windows.Forms.Padding(4)
         Me.rptDiamondSellDetailedPortrait.Name = "rptDiamondSellDetailedPortrait"
-        Me.rptDiamondSellDetailedPortrait.Size = New System.Drawing.Size(182, 24)
+        Me.rptDiamondSellDetailedPortrait.Size = New System.Drawing.Size(241, 28)
         Me.rptDiamondSellDetailedPortrait.TabIndex = 23
         '
         'LinkLabel9
         '
         Me.LinkLabel9.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel9.Location = New System.Drawing.Point(208, 98)
+        Me.LinkLabel9.Location = New System.Drawing.Point(277, 121)
+        Me.LinkLabel9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel9.Name = "LinkLabel9"
-        Me.LinkLabel9.Size = New System.Drawing.Size(186, 17)
+        Me.LinkLabel9.Size = New System.Drawing.Size(248, 21)
         Me.LinkLabel9.TabIndex = 27
         Me.LinkLabel9.TabStop = True
         Me.LinkLabel9.Text = " فاتورة الشركات"
@@ -319,17 +517,19 @@ Partial Class Report_Path
         '
         Me.ReportTPSellBuyWholesaleInvoce.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.ReportTPSellBuyWholesaleInvoce.ForeColor = System.Drawing.Color.Black
-        Me.ReportTPSellBuyWholesaleInvoce.Location = New System.Drawing.Point(11, 93)
+        Me.ReportTPSellBuyWholesaleInvoce.Location = New System.Drawing.Point(15, 114)
+        Me.ReportTPSellBuyWholesaleInvoce.Margin = New System.Windows.Forms.Padding(4)
         Me.ReportTPSellBuyWholesaleInvoce.Name = "ReportTPSellBuyWholesaleInvoce"
-        Me.ReportTPSellBuyWholesaleInvoce.Size = New System.Drawing.Size(191, 24)
+        Me.ReportTPSellBuyWholesaleInvoce.Size = New System.Drawing.Size(253, 28)
         Me.ReportTPSellBuyWholesaleInvoce.TabIndex = 26
         '
         'LinkLabel10
         '
         Me.LinkLabel10.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel10.Location = New System.Drawing.Point(208, 123)
+        Me.LinkLabel10.Location = New System.Drawing.Point(277, 151)
+        Me.LinkLabel10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel10.Name = "LinkLabel10"
-        Me.LinkLabel10.Size = New System.Drawing.Size(186, 17)
+        Me.LinkLabel10.Size = New System.Drawing.Size(248, 21)
         Me.LinkLabel10.TabIndex = 30
         Me.LinkLabel10.TabStop = True
         Me.LinkLabel10.Text = "المصروفات"
@@ -339,17 +539,19 @@ Partial Class Report_Path
         '
         Me.rptExpensesInv.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.rptExpensesInv.ForeColor = System.Drawing.Color.Black
-        Me.rptExpensesInv.Location = New System.Drawing.Point(11, 118)
+        Me.rptExpensesInv.Location = New System.Drawing.Point(15, 145)
+        Me.rptExpensesInv.Margin = New System.Windows.Forms.Padding(4)
         Me.rptExpensesInv.Name = "rptExpensesInv"
-        Me.rptExpensesInv.Size = New System.Drawing.Size(191, 24)
+        Me.rptExpensesInv.Size = New System.Drawing.Size(253, 28)
         Me.rptExpensesInv.TabIndex = 29
         '
         'LinkLabel11
         '
         Me.LinkLabel11.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.LinkLabel11.Location = New System.Drawing.Point(208, 72)
+        Me.LinkLabel11.Location = New System.Drawing.Point(277, 89)
+        Me.LinkLabel11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel11.Name = "LinkLabel11"
-        Me.LinkLabel11.Size = New System.Drawing.Size(186, 17)
+        Me.LinkLabel11.Size = New System.Drawing.Size(248, 21)
         Me.LinkLabel11.TabIndex = 33
         Me.LinkLabel11.TabStop = True
         Me.LinkLabel11.Text = "تقرير سند الصرف/القبض نقدي تفصيلي"
@@ -359,17 +561,19 @@ Partial Class Report_Path
         '
         Me.rptBondCashDetailed.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.rptBondCashDetailed.ForeColor = System.Drawing.Color.Black
-        Me.rptBondCashDetailed.Location = New System.Drawing.Point(11, 68)
+        Me.rptBondCashDetailed.Location = New System.Drawing.Point(15, 84)
+        Me.rptBondCashDetailed.Margin = New System.Windows.Forms.Padding(4)
         Me.rptBondCashDetailed.Name = "rptBondCashDetailed"
-        Me.rptBondCashDetailed.Size = New System.Drawing.Size(191, 24)
+        Me.rptBondCashDetailed.Size = New System.Drawing.Size(253, 28)
         Me.rptBondCashDetailed.TabIndex = 32
         '
         'lblGoldVoucherReserve
         '
         Me.lblGoldVoucherReserve.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblGoldVoucherReserve.Location = New System.Drawing.Point(209, 63)
+        Me.lblGoldVoucherReserve.Location = New System.Drawing.Point(279, 78)
+        Me.lblGoldVoucherReserve.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGoldVoucherReserve.Name = "lblGoldVoucherReserve"
-        Me.lblGoldVoucherReserve.Size = New System.Drawing.Size(170, 24)
+        Me.lblGoldVoucherReserve.Size = New System.Drawing.Size(227, 30)
         Me.lblGoldVoucherReserve.TabIndex = 36
         Me.lblGoldVoucherReserve.TabStop = True
         Me.lblGoldVoucherReserve.Text = "تقرير سند القبض ذهب/فضه"
@@ -379,25 +583,28 @@ Partial Class Report_Path
         '
         Me.txtGoldVoucherReserve.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtGoldVoucherReserve.ForeColor = System.Drawing.Color.Black
-        Me.txtGoldVoucherReserve.Location = New System.Drawing.Point(6, 67)
+        Me.txtGoldVoucherReserve.Location = New System.Drawing.Point(8, 82)
+        Me.txtGoldVoucherReserve.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGoldVoucherReserve.Name = "txtGoldVoucherReserve"
-        Me.txtGoldVoucherReserve.Size = New System.Drawing.Size(197, 24)
+        Me.txtGoldVoucherReserve.Size = New System.Drawing.Size(261, 28)
         Me.txtGoldVoucherReserve.TabIndex = 35
         '
         'txtSilverInvoce
         '
         Me.txtSilverInvoce.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverInvoce.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverInvoce.Location = New System.Drawing.Point(6, 16)
+        Me.txtSilverInvoce.Location = New System.Drawing.Point(8, 20)
+        Me.txtSilverInvoce.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverInvoce.Name = "txtSilverInvoce"
-        Me.txtSilverInvoce.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverInvoce.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverInvoce.TabIndex = 38
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(4, 35)
+        Me.btnSave.Location = New System.Drawing.Point(5, 43)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(83, 28)
+        Me.btnSave.Size = New System.Drawing.Size(111, 34)
         Me.btnSave.TabIndex = 39
         Me.btnSave.Text = "حفظ"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -406,9 +613,10 @@ Partial Class Report_Path
         '
         Me.lblSilverInvoce.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverInvoce.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverInvoce.Location = New System.Drawing.Point(192, 16)
+        Me.lblSilverInvoce.Location = New System.Drawing.Point(256, 20)
+        Me.lblSilverInvoce.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverInvoce.Name = "lblSilverInvoce"
-        Me.lblSilverInvoce.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilverInvoce.Size = New System.Drawing.Size(215, 30)
         Me.lblSilverInvoce.TabIndex = 40
         Me.lblSilverInvoce.TabStop = True
         Me.lblSilverInvoce.Text = "فاتورت بيع الفضه"
@@ -417,9 +625,10 @@ Partial Class Report_Path
         '
         Me.lblSilverSellReport.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverSellReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverSellReport.Location = New System.Drawing.Point(192, 65)
+        Me.lblSilverSellReport.Location = New System.Drawing.Point(256, 80)
+        Me.lblSilverSellReport.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverSellReport.Name = "lblSilverSellReport"
-        Me.lblSilverSellReport.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilverSellReport.Size = New System.Drawing.Size(215, 30)
         Me.lblSilverSellReport.TabIndex = 43
         Me.lblSilverSellReport.TabStop = True
         Me.lblSilverSellReport.Text = "تقرير بيع الفضه تفصيلي"
@@ -428,18 +637,20 @@ Partial Class Report_Path
         '
         Me.txtSilverSellReport.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverSellReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverSellReport.Location = New System.Drawing.Point(6, 64)
+        Me.txtSilverSellReport.Location = New System.Drawing.Point(8, 79)
+        Me.txtSilverSellReport.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverSellReport.Name = "txtSilverSellReport"
-        Me.txtSilverSellReport.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverSellReport.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverSellReport.TabIndex = 41
         '
         'lblSilverSellReportShort
         '
         Me.lblSilverSellReportShort.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverSellReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverSellReportShort.Location = New System.Drawing.Point(192, 91)
+        Me.lblSilverSellReportShort.Location = New System.Drawing.Point(256, 112)
+        Me.lblSilverSellReportShort.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverSellReportShort.Name = "lblSilverSellReportShort"
-        Me.lblSilverSellReportShort.Size = New System.Drawing.Size(161, 17)
+        Me.lblSilverSellReportShort.Size = New System.Drawing.Size(215, 21)
         Me.lblSilverSellReportShort.TabIndex = 45
         Me.lblSilverSellReportShort.TabStop = True
         Me.lblSilverSellReportShort.Text = "فاتورت بيع الفضه مختصر "
@@ -448,18 +659,20 @@ Partial Class Report_Path
         '
         Me.txtSilverSellReportShort.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverSellReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverSellReportShort.Location = New System.Drawing.Point(6, 88)
+        Me.txtSilverSellReportShort.Location = New System.Drawing.Point(8, 108)
+        Me.txtSilverSellReportShort.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverSellReportShort.Name = "txtSilverSellReportShort"
-        Me.txtSilverSellReportShort.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverSellReportShort.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverSellReportShort.TabIndex = 44
         '
         'lblSilverItemDetails
         '
         Me.lblSilverItemDetails.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverItemDetails.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverItemDetails.Location = New System.Drawing.Point(192, 109)
+        Me.lblSilverItemDetails.Location = New System.Drawing.Point(256, 134)
+        Me.lblSilverItemDetails.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverItemDetails.Name = "lblSilverItemDetails"
-        Me.lblSilverItemDetails.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilverItemDetails.Size = New System.Drawing.Size(215, 30)
         Me.lblSilverItemDetails.TabIndex = 47
         Me.lblSilverItemDetails.TabStop = True
         Me.lblSilverItemDetails.Text = "تقرير اصناف الفضه"
@@ -468,18 +681,20 @@ Partial Class Report_Path
         '
         Me.txtSilverItemDetails.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverItemDetails.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverItemDetails.Location = New System.Drawing.Point(6, 112)
+        Me.txtSilverItemDetails.Location = New System.Drawing.Point(8, 138)
+        Me.txtSilverItemDetails.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverItemDetails.Name = "txtSilverItemDetails"
-        Me.txtSilverItemDetails.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverItemDetails.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverItemDetails.TabIndex = 46
         '
         'lblSilverItemSold
         '
         Me.lblSilverItemSold.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverItemSold.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverItemSold.Location = New System.Drawing.Point(192, 40)
+        Me.lblSilverItemSold.Location = New System.Drawing.Point(256, 49)
+        Me.lblSilverItemSold.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverItemSold.Name = "lblSilverItemSold"
-        Me.lblSilverItemSold.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilverItemSold.Size = New System.Drawing.Size(215, 30)
         Me.lblSilverItemSold.TabIndex = 49
         Me.lblSilverItemSold.TabStop = True
         Me.lblSilverItemSold.Text = "فاتورة شراء الفضه"
@@ -488,18 +703,20 @@ Partial Class Report_Path
         '
         Me.txtSilverBay.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverBay.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverBay.Location = New System.Drawing.Point(6, 40)
+        Me.txtSilverBay.Location = New System.Drawing.Point(8, 49)
+        Me.txtSilverBay.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverBay.Name = "txtSilverBay"
-        Me.txtSilverBay.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverBay.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverBay.TabIndex = 48
         '
         'lblSilverItemRemaining
         '
         Me.lblSilverItemRemaining.BackColor = System.Drawing.Color.Bisque
         Me.lblSilverItemRemaining.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverItemRemaining.Location = New System.Drawing.Point(192, 134)
+        Me.lblSilverItemRemaining.Location = New System.Drawing.Point(256, 165)
+        Me.lblSilverItemRemaining.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilverItemRemaining.Name = "lblSilverItemRemaining"
-        Me.lblSilverItemRemaining.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilverItemRemaining.Size = New System.Drawing.Size(215, 30)
         Me.lblSilverItemRemaining.TabIndex = 51
         Me.lblSilverItemRemaining.TabStop = True
         Me.lblSilverItemRemaining.Text = "تقرير اصناف الفضه المباعه"
@@ -508,9 +725,10 @@ Partial Class Report_Path
         '
         Me.txtSilverItemRemaining.BackColor = System.Drawing.Color.Bisque
         Me.txtSilverItemRemaining.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverItemRemaining.Location = New System.Drawing.Point(6, 136)
+        Me.txtSilverItemRemaining.Location = New System.Drawing.Point(8, 167)
+        Me.txtSilverItemRemaining.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilverItemRemaining.Name = "txtSilverItemRemaining"
-        Me.txtSilverItemRemaining.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilverItemRemaining.Size = New System.Drawing.Size(239, 28)
         Me.txtSilverItemRemaining.TabIndex = 50
         '
         'GboxSilver
@@ -532,20 +750,45 @@ Partial Class Report_Path
         Me.GboxSilver.Controls.Add(Me.txtSilverSellReportShort)
         Me.GboxSilver.Controls.Add(Me.txtSilverItemDetails)
         Me.GboxSilver.Controls.Add(Me.lblSilverSellReportShort)
-        Me.GboxSilver.Location = New System.Drawing.Point(641, 3)
+        Me.GboxSilver.Location = New System.Drawing.Point(855, 4)
+        Me.GboxSilver.Margin = New System.Windows.Forms.Padding(4)
         Me.GboxSilver.Name = "GboxSilver"
-        Me.GboxSilver.Size = New System.Drawing.Size(397, 270)
+        Me.GboxSilver.Padding = New System.Windows.Forms.Padding(4)
+        Me.GboxSilver.Size = New System.Drawing.Size(529, 332)
         Me.GboxSilver.TabIndex = 52
         Me.GboxSilver.TabStop = False
         Me.GboxSilver.Text = "تقارير الفضه"
+        '
+        'lblSilverProfitsReport
+        '
+        Me.lblSilverProfitsReport.BackColor = System.Drawing.Color.Bisque
+        Me.lblSilverProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
+        Me.lblSilverProfitsReport.Location = New System.Drawing.Point(257, 228)
+        Me.lblSilverProfitsReport.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSilverProfitsReport.Name = "lblSilverProfitsReport"
+        Me.lblSilverProfitsReport.Size = New System.Drawing.Size(215, 30)
+        Me.lblSilverProfitsReport.TabIndex = 55
+        Me.lblSilverProfitsReport.TabStop = True
+        Me.lblSilverProfitsReport.Text = "ارباح الفضه"
+        '
+        'txtSilverProfitsReport
+        '
+        Me.txtSilverProfitsReport.BackColor = System.Drawing.Color.Bisque
+        Me.txtSilverProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
+        Me.txtSilverProfitsReport.Location = New System.Drawing.Point(9, 228)
+        Me.txtSilverProfitsReport.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSilverProfitsReport.Name = "txtSilverProfitsReport"
+        Me.txtSilverProfitsReport.Size = New System.Drawing.Size(239, 28)
+        Me.txtSilverProfitsReport.TabIndex = 54
         '
         'lblSilvertemAvailable
         '
         Me.lblSilvertemAvailable.BackColor = System.Drawing.Color.Bisque
         Me.lblSilvertemAvailable.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilvertemAvailable.Location = New System.Drawing.Point(192, 160)
+        Me.lblSilvertemAvailable.Location = New System.Drawing.Point(256, 197)
+        Me.lblSilvertemAvailable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSilvertemAvailable.Name = "lblSilvertemAvailable"
-        Me.lblSilvertemAvailable.Size = New System.Drawing.Size(161, 24)
+        Me.lblSilvertemAvailable.Size = New System.Drawing.Size(215, 30)
         Me.lblSilvertemAvailable.TabIndex = 53
         Me.lblSilvertemAvailable.TabStop = True
         Me.lblSilvertemAvailable.Text = "تقرير اصناف الفضه المتوفره"
@@ -554,9 +797,10 @@ Partial Class Report_Path
         '
         Me.txtSilvertemAvailable.BackColor = System.Drawing.Color.Bisque
         Me.txtSilvertemAvailable.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilvertemAvailable.Location = New System.Drawing.Point(6, 160)
+        Me.txtSilvertemAvailable.Location = New System.Drawing.Point(8, 197)
+        Me.txtSilvertemAvailable.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSilvertemAvailable.Name = "txtSilvertemAvailable"
-        Me.txtSilvertemAvailable.Size = New System.Drawing.Size(180, 24)
+        Me.txtSilvertemAvailable.Size = New System.Drawing.Size(239, 28)
         Me.txtSilvertemAvailable.TabIndex = 52
         '
         'GboxDia
@@ -572,9 +816,11 @@ Partial Class Report_Path
         Me.GboxDia.Controls.Add(Me.TeBoxDmonBAY)
         Me.GboxDia.Controls.Add(Me.LinkLabel3)
         Me.GboxDia.Controls.Add(Me.rptDiamondSellDetailedPortrait)
-        Me.GboxDia.Location = New System.Drawing.Point(267, 4)
+        Me.GboxDia.Location = New System.Drawing.Point(356, 5)
+        Me.GboxDia.Margin = New System.Windows.Forms.Padding(4)
         Me.GboxDia.Name = "GboxDia"
-        Me.GboxDia.Size = New System.Drawing.Size(372, 157)
+        Me.GboxDia.Padding = New System.Windows.Forms.Padding(4)
+        Me.GboxDia.Size = New System.Drawing.Size(496, 193)
         Me.GboxDia.TabIndex = 53
         Me.GboxDia.TabStop = False
         Me.GboxDia.Text = "تقارير  الالماس"
@@ -582,10 +828,11 @@ Partial Class Report_Path
         'lblDiamondSellShort
         '
         Me.lblDiamondSellShort.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblDiamondSellShort.Location = New System.Drawing.Point(196, 115)
+        Me.lblDiamondSellShort.Location = New System.Drawing.Point(261, 142)
+        Me.lblDiamondSellShort.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiamondSellShort.Name = "lblDiamondSellShort"
         Me.lblDiamondSellShort.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblDiamondSellShort.Size = New System.Drawing.Size(169, 18)
+        Me.lblDiamondSellShort.Size = New System.Drawing.Size(225, 22)
         Me.lblDiamondSellShort.TabIndex = 26
         Me.lblDiamondSellShort.TabStop = True
         Me.lblDiamondSellShort.Text = "تقرير الالماس التفصيلي"
@@ -595,14 +842,17 @@ Partial Class Report_Path
         '
         Me.txtDiamondSellShort.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtDiamondSellShort.ForeColor = System.Drawing.Color.Black
-        Me.txtDiamondSellShort.Location = New System.Drawing.Point(8, 111)
+        Me.txtDiamondSellShort.Location = New System.Drawing.Point(11, 137)
+        Me.txtDiamondSellShort.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiamondSellShort.Name = "txtDiamondSellShort"
-        Me.txtDiamondSellShort.Size = New System.Drawing.Size(182, 24)
+        Me.txtDiamondSellShort.Size = New System.Drawing.Size(241, 28)
         Me.txtDiamondSellShort.TabIndex = 25
         '
         'GboxGold
         '
         Me.GboxGold.BackColor = System.Drawing.Color.Wheat
+        Me.GboxGold.Controls.Add(Me.lblGoldSellReportminstrial)
+        Me.GboxGold.Controls.Add(Me.txtGoldSellReportminstrial)
         Me.GboxGold.Controls.Add(Me.txtGoldSellReportShortKYC)
         Me.GboxGold.Controls.Add(Me.lblGoldSellReportShortKYC)
         Me.GboxGold.Controls.Add(Me.txtGoldProfitsReport)
@@ -617,28 +867,54 @@ Partial Class Report_Path
         Me.GboxGold.Controls.Add(Me.LinkLabel6)
         Me.GboxGold.Controls.Add(Me.txtGoldVoucherReserve)
         Me.GboxGold.Controls.Add(Me.lblGoldVoucherReserve)
-        Me.GboxGold.Location = New System.Drawing.Point(239, 167)
+        Me.GboxGold.Location = New System.Drawing.Point(319, 206)
+        Me.GboxGold.Margin = New System.Windows.Forms.Padding(4)
         Me.GboxGold.Name = "GboxGold"
-        Me.GboxGold.Size = New System.Drawing.Size(400, 290)
+        Me.GboxGold.Padding = New System.Windows.Forms.Padding(4)
+        Me.GboxGold.Size = New System.Drawing.Size(533, 357)
         Me.GboxGold.TabIndex = 54
         Me.GboxGold.TabStop = False
         Me.GboxGold.Text = "تقارير الذهب"
+        '
+        'lblGoldSellReportminstrial
+        '
+        Me.lblGoldSellReportminstrial.Font = New System.Drawing.Font("Calibri", 10.0!)
+        Me.lblGoldSellReportminstrial.Location = New System.Drawing.Point(279, 181)
+        Me.lblGoldSellReportminstrial.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGoldSellReportminstrial.Name = "lblGoldSellReportminstrial"
+        Me.lblGoldSellReportminstrial.Size = New System.Drawing.Size(209, 30)
+        Me.lblGoldSellReportminstrial.TabIndex = 46
+        Me.lblGoldSellReportminstrial.TabStop = True
+        Me.lblGoldSellReportminstrial.Text = "تقرير الذهب وزارى"
+        Me.lblGoldSellReportminstrial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtGoldSellReportminstrial
+        '
+        Me.txtGoldSellReportminstrial.Font = New System.Drawing.Font("Calibri", 10.0!)
+        Me.txtGoldSellReportminstrial.ForeColor = System.Drawing.Color.Black
+        Me.txtGoldSellReportminstrial.Location = New System.Drawing.Point(10, 181)
+        Me.txtGoldSellReportminstrial.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtGoldSellReportminstrial.Name = "txtGoldSellReportminstrial"
+        Me.txtGoldSellReportminstrial.Size = New System.Drawing.Size(261, 28)
+        Me.txtGoldSellReportminstrial.TabIndex = 45
         '
         'txtGoldSellReportShortKYC
         '
         Me.txtGoldSellReportShortKYC.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtGoldSellReportShortKYC.ForeColor = System.Drawing.Color.Black
-        Me.txtGoldSellReportShortKYC.Location = New System.Drawing.Point(6, 171)
+        Me.txtGoldSellReportShortKYC.Location = New System.Drawing.Point(10, 260)
+        Me.txtGoldSellReportShortKYC.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGoldSellReportShortKYC.Name = "txtGoldSellReportShortKYC"
-        Me.txtGoldSellReportShortKYC.Size = New System.Drawing.Size(197, 24)
+        Me.txtGoldSellReportShortKYC.Size = New System.Drawing.Size(261, 28)
         Me.txtGoldSellReportShortKYC.TabIndex = 43
         '
         'lblGoldSellReportShortKYC
         '
         Me.lblGoldSellReportShortKYC.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblGoldSellReportShortKYC.Location = New System.Drawing.Point(209, 170)
+        Me.lblGoldSellReportShortKYC.Location = New System.Drawing.Point(279, 258)
+        Me.lblGoldSellReportShortKYC.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGoldSellReportShortKYC.Name = "lblGoldSellReportShortKYC"
-        Me.lblGoldSellReportShortKYC.Size = New System.Drawing.Size(157, 24)
+        Me.lblGoldSellReportShortKYC.Size = New System.Drawing.Size(209, 30)
         Me.lblGoldSellReportShortKYC.TabIndex = 44
         Me.lblGoldSellReportShortKYC.TabStop = True
         Me.lblGoldSellReportShortKYC.Text = "المستفيد الفعلي"
@@ -648,17 +924,19 @@ Partial Class Report_Path
         '
         Me.txtGoldProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtGoldProfitsReport.ForeColor = System.Drawing.Color.Black
-        Me.txtGoldProfitsReport.Location = New System.Drawing.Point(6, 144)
+        Me.txtGoldProfitsReport.Location = New System.Drawing.Point(10, 219)
+        Me.txtGoldProfitsReport.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGoldProfitsReport.Name = "txtGoldProfitsReport"
-        Me.txtGoldProfitsReport.Size = New System.Drawing.Size(197, 24)
+        Me.txtGoldProfitsReport.Size = New System.Drawing.Size(261, 28)
         Me.txtGoldProfitsReport.TabIndex = 41
         '
         'lblGoldProfitsReport
         '
         Me.lblGoldProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblGoldProfitsReport.Location = New System.Drawing.Point(209, 143)
+        Me.lblGoldProfitsReport.Location = New System.Drawing.Point(279, 221)
+        Me.lblGoldProfitsReport.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGoldProfitsReport.Name = "lblGoldProfitsReport"
-        Me.lblGoldProfitsReport.Size = New System.Drawing.Size(157, 24)
+        Me.lblGoldProfitsReport.Size = New System.Drawing.Size(209, 30)
         Me.lblGoldProfitsReport.TabIndex = 42
         Me.lblGoldProfitsReport.TabStop = True
         Me.lblGoldProfitsReport.Text = "ارباح الذهب"
@@ -668,17 +946,19 @@ Partial Class Report_Path
         '
         Me.txtGoldSellReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtGoldSellReportShort.ForeColor = System.Drawing.Color.Black
-        Me.txtGoldSellReportShort.Location = New System.Drawing.Point(6, 118)
+        Me.txtGoldSellReportShort.Location = New System.Drawing.Point(8, 145)
+        Me.txtGoldSellReportShort.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGoldSellReportShort.Name = "txtGoldSellReportShort"
-        Me.txtGoldSellReportShort.Size = New System.Drawing.Size(197, 24)
+        Me.txtGoldSellReportShort.Size = New System.Drawing.Size(261, 28)
         Me.txtGoldSellReportShort.TabIndex = 39
         '
         'lblGoldSellReportShort
         '
         Me.lblGoldSellReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblGoldSellReportShort.Location = New System.Drawing.Point(209, 117)
+        Me.lblGoldSellReportShort.Location = New System.Drawing.Point(279, 144)
+        Me.lblGoldSellReportShort.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGoldSellReportShort.Name = "lblGoldSellReportShort"
-        Me.lblGoldSellReportShort.Size = New System.Drawing.Size(157, 24)
+        Me.lblGoldSellReportShort.Size = New System.Drawing.Size(209, 30)
         Me.lblGoldSellReportShort.TabIndex = 40
         Me.lblGoldSellReportShort.TabStop = True
         Me.lblGoldSellReportShort.Text = "تقرير الذهب مختصر"
@@ -688,17 +968,19 @@ Partial Class Report_Path
         '
         Me.txtGoldSellReport.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtGoldSellReport.ForeColor = System.Drawing.Color.Black
-        Me.txtGoldSellReport.Location = New System.Drawing.Point(6, 93)
+        Me.txtGoldSellReport.Location = New System.Drawing.Point(8, 114)
+        Me.txtGoldSellReport.Margin = New System.Windows.Forms.Padding(4)
         Me.txtGoldSellReport.Name = "txtGoldSellReport"
-        Me.txtGoldSellReport.Size = New System.Drawing.Size(197, 24)
+        Me.txtGoldSellReport.Size = New System.Drawing.Size(261, 28)
         Me.txtGoldSellReport.TabIndex = 37
         '
         'lblGoldSellReport
         '
         Me.lblGoldSellReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblGoldSellReport.Location = New System.Drawing.Point(209, 89)
+        Me.lblGoldSellReport.Location = New System.Drawing.Point(279, 110)
+        Me.lblGoldSellReport.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGoldSellReport.Name = "lblGoldSellReport"
-        Me.lblGoldSellReport.Size = New System.Drawing.Size(157, 24)
+        Me.lblGoldSellReport.Size = New System.Drawing.Size(209, 30)
         Me.lblGoldSellReport.TabIndex = 38
         Me.lblGoldSellReport.TabStop = True
         Me.lblGoldSellReport.Text = "تقرير الذهب تفصيلي"
@@ -717,9 +999,11 @@ Partial Class Report_Path
         Me.GboxBond.Controls.Add(Me.LinkLabel9)
         Me.GboxBond.Controls.Add(Me.rptBondCashDetailed)
         Me.GboxBond.Controls.Add(Me.rptExpensesInv)
-        Me.GboxBond.Location = New System.Drawing.Point(641, 279)
+        Me.GboxBond.Location = New System.Drawing.Point(855, 343)
+        Me.GboxBond.Margin = New System.Windows.Forms.Padding(4)
         Me.GboxBond.Name = "GboxBond"
-        Me.GboxBond.Size = New System.Drawing.Size(400, 150)
+        Me.GboxBond.Padding = New System.Windows.Forms.Padding(4)
+        Me.GboxBond.Size = New System.Drawing.Size(533, 185)
         Me.GboxBond.TabIndex = 56
         Me.GboxBond.TabStop = False
         Me.GboxBond.Text = "تقارير سندات القبض والصرف"
@@ -729,9 +1013,11 @@ Partial Class Report_Path
         Me.GroupBox1.BackColor = System.Drawing.Color.Wheat
         Me.GroupBox1.Controls.Add(Me.txtAccessoriesReportShort)
         Me.GroupBox1.Controls.Add(Me.lblAccessoriesReportShort)
-        Me.GroupBox1.Location = New System.Drawing.Point(239, 458)
+        Me.GroupBox1.Location = New System.Drawing.Point(319, 564)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(400, 50)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(533, 62)
         Me.GroupBox1.TabIndex = 55
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "تقارير الساعات"
@@ -740,17 +1026,19 @@ Partial Class Report_Path
         '
         Me.txtAccessoriesReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtAccessoriesReportShort.ForeColor = System.Drawing.Color.Black
-        Me.txtAccessoriesReportShort.Location = New System.Drawing.Point(6, 19)
+        Me.txtAccessoriesReportShort.Location = New System.Drawing.Point(8, 23)
+        Me.txtAccessoriesReportShort.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAccessoriesReportShort.Name = "txtAccessoriesReportShort"
-        Me.txtAccessoriesReportShort.Size = New System.Drawing.Size(197, 24)
+        Me.txtAccessoriesReportShort.Size = New System.Drawing.Size(261, 28)
         Me.txtAccessoriesReportShort.TabIndex = 35
         '
         'lblAccessoriesReportShort
         '
         Me.lblAccessoriesReportShort.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblAccessoriesReportShort.Location = New System.Drawing.Point(209, 20)
+        Me.lblAccessoriesReportShort.Location = New System.Drawing.Point(279, 25)
+        Me.lblAccessoriesReportShort.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAccessoriesReportShort.Name = "lblAccessoriesReportShort"
-        Me.lblAccessoriesReportShort.Size = New System.Drawing.Size(170, 24)
+        Me.lblAccessoriesReportShort.Size = New System.Drawing.Size(227, 30)
         Me.lblAccessoriesReportShort.TabIndex = 36
         Me.lblAccessoriesReportShort.TabStop = True
         Me.lblAccessoriesReportShort.Text = "تقرير الساعات المختصر"
@@ -763,9 +1051,11 @@ Partial Class Report_Path
         Me.GroupBox2.Controls.Add(Me.lblWholesaleInvoce)
         Me.GroupBox2.Controls.Add(Me.txtWholesaleInvoceReport)
         Me.GroupBox2.Controls.Add(Me.lblWholesaleInvoceReport)
-        Me.GroupBox2.Location = New System.Drawing.Point(641, 431)
+        Me.GroupBox2.Location = New System.Drawing.Point(855, 530)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(400, 77)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(533, 95)
         Me.GroupBox2.TabIndex = 57
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "تقارير سندات القبض والصرف"
@@ -774,17 +1064,19 @@ Partial Class Report_Path
         '
         Me.txtWholesaleInvoce.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtWholesaleInvoce.ForeColor = System.Drawing.Color.Black
-        Me.txtWholesaleInvoce.Location = New System.Drawing.Point(4, 19)
+        Me.txtWholesaleInvoce.Location = New System.Drawing.Point(5, 23)
+        Me.txtWholesaleInvoce.Margin = New System.Windows.Forms.Padding(4)
         Me.txtWholesaleInvoce.Name = "txtWholesaleInvoce"
-        Me.txtWholesaleInvoce.Size = New System.Drawing.Size(191, 24)
+        Me.txtWholesaleInvoce.Size = New System.Drawing.Size(253, 28)
         Me.txtWholesaleInvoce.TabIndex = 14
         '
         'lblWholesaleInvoce
         '
         Me.lblWholesaleInvoce.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblWholesaleInvoce.Location = New System.Drawing.Point(201, 23)
+        Me.lblWholesaleInvoce.Location = New System.Drawing.Point(268, 28)
+        Me.lblWholesaleInvoce.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWholesaleInvoce.Name = "lblWholesaleInvoce"
-        Me.lblWholesaleInvoce.Size = New System.Drawing.Size(186, 17)
+        Me.lblWholesaleInvoce.Size = New System.Drawing.Size(248, 21)
         Me.lblWholesaleInvoce.TabIndex = 16
         Me.lblWholesaleInvoce.TabStop = True
         Me.lblWholesaleInvoce.Text = "فاتورة الجمله"
@@ -794,173 +1086,37 @@ Partial Class Report_Path
         '
         Me.txtWholesaleInvoceReport.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.txtWholesaleInvoceReport.ForeColor = System.Drawing.Color.Black
-        Me.txtWholesaleInvoceReport.Location = New System.Drawing.Point(4, 44)
+        Me.txtWholesaleInvoceReport.Location = New System.Drawing.Point(5, 54)
+        Me.txtWholesaleInvoceReport.Margin = New System.Windows.Forms.Padding(4)
         Me.txtWholesaleInvoceReport.Name = "txtWholesaleInvoceReport"
-        Me.txtWholesaleInvoceReport.Size = New System.Drawing.Size(191, 24)
+        Me.txtWholesaleInvoceReport.Size = New System.Drawing.Size(253, 28)
         Me.txtWholesaleInvoceReport.TabIndex = 20
         '
         'lblWholesaleInvoceReport
         '
         Me.lblWholesaleInvoceReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblWholesaleInvoceReport.Location = New System.Drawing.Point(201, 49)
+        Me.lblWholesaleInvoceReport.Location = New System.Drawing.Point(268, 60)
+        Me.lblWholesaleInvoceReport.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWholesaleInvoceReport.Name = "lblWholesaleInvoceReport"
-        Me.lblWholesaleInvoceReport.Size = New System.Drawing.Size(186, 17)
+        Me.lblWholesaleInvoceReport.Size = New System.Drawing.Size(248, 21)
         Me.lblWholesaleInvoceReport.TabIndex = 22
         Me.lblWholesaleInvoceReport.TabStop = True
         Me.lblWholesaleInvoceReport.Text = "تقرير فاتورة الجمله"
         Me.lblWholesaleInvoceReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblSilverProfitsReport
+        'colGoldInvoceMinisterialReport
         '
-        Me.lblSilverProfitsReport.BackColor = System.Drawing.Color.Bisque
-        Me.lblSilverProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblSilverProfitsReport.Location = New System.Drawing.Point(193, 185)
-        Me.lblSilverProfitsReport.Name = "lblSilverProfitsReport"
-        Me.lblSilverProfitsReport.Size = New System.Drawing.Size(161, 24)
-        Me.lblSilverProfitsReport.TabIndex = 55
-        Me.lblSilverProfitsReport.TabStop = True
-        Me.lblSilverProfitsReport.Text = "ارباح الفضه"
-        '
-        'txtSilverProfitsReport
-        '
-        Me.txtSilverProfitsReport.BackColor = System.Drawing.Color.Bisque
-        Me.txtSilverProfitsReport.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.txtSilverProfitsReport.Location = New System.Drawing.Point(7, 185)
-        Me.txtSilverProfitsReport.Name = "txtSilverProfitsReport"
-        Me.txtSilverProfitsReport.Size = New System.Drawing.Size(180, 24)
-        Me.txtSilverProfitsReport.TabIndex = 54
-        '
-        'colDiamondSellShort
-        '
-        Me.colDiamondSellShort.HeaderText = "DiamondSellShort"
-        Me.colDiamondSellShort.Name = "colDiamondSellShort"
-        '
-        'colGoldVoucherReserve
-        '
-        Me.colGoldVoucherReserve.HeaderText = "GoldVoucherReserve"
-        Me.colGoldVoucherReserve.Name = "colGoldVoucherReserve"
-        '
-        'colDiamondSellPayDetails
-        '
-        Me.colDiamondSellPayDetails.HeaderText = "DiamondSellPayDetails"
-        Me.colDiamondSellPayDetails.Name = "colDiamondSellPayDetails"
-        '
-        'colDiamondBuyPayDetails_A4
-        '
-        Me.colDiamondBuyPayDetails_A4.HeaderText = "DiamondBuyPayDetails_A4"
-        Me.colDiamondBuyPayDetails_A4.Name = "colDiamondBuyPayDetails_A4"
-        '
-        'colGoldBuyPay
-        '
-        Me.colGoldBuyPay.HeaderText = "GoldBuyPay"
-        Me.colGoldBuyPay.Name = "colGoldBuyPay"
-        '
-        'colBondCashPersonal
-        '
-        Me.colBondCashPersonal.HeaderText = "BondCashPersonal"
-        Me.colBondCashPersonal.Name = "colBondCashPersonal"
-        '
-        'colBondCashComp
-        '
-        Me.colBondCashComp.HeaderText = "BondCashComp"
-        Me.colBondCashComp.Name = "colBondCashComp"
-        '
-        'colDiamondSellDetailedPortrait
-        '
-        Me.colDiamondSellDetailedPortrait.HeaderText = "DiamondSellDetailedPortrait"
-        Me.colDiamondSellDetailedPortrait.Name = "colDiamondSellDetailedPortrait"
-        '
-        'colTPSellBuyWholesaleInvoce
-        '
-        Me.colTPSellBuyWholesaleInvoce.HeaderText = "TPSellBuyWholesaleInvoce"
-        Me.colTPSellBuyWholesaleInvoce.Name = "colTPSellBuyWholesaleInvoce"
-        '
-        'colExpensesInv
-        '
-        Me.colExpensesInv.HeaderText = "ExpensesInv"
-        Me.colExpensesInv.Name = "colExpensesInv"
-        '
-        'colBondCashDetailed
-        '
-        Me.colBondCashDetailed.HeaderText = "BondCashDetailed"
-        Me.colBondCashDetailed.Name = "colBondCashDetailed"
-        '
-        'colSilverSellPay
-        '
-        Me.colSilverSellPay.HeaderText = "SilverSellPay"
-        Me.colSilverSellPay.Name = "colSilverSellPay"
-        '
-        'colSilverBuyPay
-        '
-        Me.colSilverBuyPay.HeaderText = "SilverBuyPay"
-        Me.colSilverBuyPay.Name = "colSilverBuyPay"
-        '
-        'colSilverSellReport
-        '
-        Me.colSilverSellReport.HeaderText = "SilverSellReport"
-        Me.colSilverSellReport.Name = "colSilverSellReport"
-        '
-        'colGoldSellReport
-        '
-        Me.colGoldSellReport.HeaderText = "GoldSellReport"
-        Me.colGoldSellReport.Name = "colGoldSellReport"
-        '
-        'colGoldGoldVoucher
-        '
-        Me.colGoldGoldVoucher.HeaderText = "GoldGoldVoucher"
-        Me.colGoldGoldVoucher.Name = "colGoldGoldVoucher"
-        '
-        'colSilvertemAvailable
-        '
-        Me.colSilvertemAvailable.HeaderText = "colSilvertemAvailable"
-        Me.colSilvertemAvailable.Name = "colSilvertemAvailable"
-        '
-        'GoldSellReportShort
-        '
-        Me.GoldSellReportShort.HeaderText = "colGoldSellReportShort"
-        Me.GoldSellReportShort.Name = "GoldSellReportShort"
-        '
-        'colAccessoriesReportShort
-        '
-        Me.colAccessoriesReportShort.HeaderText = "AccessoriesReportShort"
-        Me.colAccessoriesReportShort.Name = "colAccessoriesReportShort"
-        '
-        'colWholesaleInvoce
-        '
-        Me.colWholesaleInvoce.HeaderText = "WholesaleInvoce"
-        Me.colWholesaleInvoce.Name = "colWholesaleInvoce"
-        '
-        'colWholesaleInvoceReport
-        '
-        Me.colWholesaleInvoceReport.HeaderText = "WholesaleInvoceReport"
-        Me.colWholesaleInvoceReport.Name = "colWholesaleInvoceReport"
-        '
-        'coltxtGoldProfitsReport
-        '
-        Me.coltxtGoldProfitsReport.HeaderText = "GoldProfitsReport"
-        Me.coltxtGoldProfitsReport.Name = "coltxtGoldProfitsReport"
-        '
-        'coltxtDiamondSellShort
-        '
-        Me.coltxtDiamondSellShort.HeaderText = "txtDiamondSellShort"
-        Me.coltxtDiamondSellShort.Name = "coltxtDiamondSellShort"
-        '
-        'colGoldSellReportShortKYC
-        '
-        Me.colGoldSellReportShortKYC.HeaderText = "GoldSellReportShortKYC"
-        Me.colGoldSellReportShortKYC.Name = "colGoldSellReportShortKYC"
-        '
-        'colSilverProfitsReport
-        '
-        Me.colSilverProfitsReport.HeaderText = "SilverProfitsReport"
-        Me.colSilverProfitsReport.Name = "colSilverProfitsReport"
+        Me.colGoldInvoceMinisterialReport.HeaderText = "GoldInvoceMinisterialReport"
+        Me.colGoldInvoceMinisterialReport.MinimumWidth = 6
+        Me.colGoldInvoceMinisterialReport.Name = "colGoldInvoceMinisterialReport"
+        Me.colGoldInvoceMinisterialReport.Width = 125
         '
         'Report_Path
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1044, 612)
+        Me.ClientSize = New System.Drawing.Size(1392, 753)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GboxBond)
@@ -970,6 +1126,7 @@ Partial Class Report_Path
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnDefault)
         Me.Controls.Add(Me.Grid)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Report_Path"
@@ -1081,4 +1238,7 @@ Partial Class Report_Path
     Friend WithEvents coltxtDiamondSellShort As DataGridViewTextBoxColumn
     Friend WithEvents colGoldSellReportShortKYC As DataGridViewTextBoxColumn
     Friend WithEvents colSilverProfitsReport As DataGridViewTextBoxColumn
+    Friend WithEvents lblGoldSellReportminstrial As LinkLabel
+    Friend WithEvents txtGoldSellReportminstrial As TextBox
+    Friend WithEvents colGoldInvoceMinisterialReport As DataGridViewTextBoxColumn
 End Class

@@ -1003,4 +1003,14 @@ Public Class frmMain
     Private Sub المحذوفاتذهبفضهالماسToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles المحذوفاتذهبفضهالماسToolStripMenuItem.Click
         FrmInvDelet.ShowDialog()
     End Sub
+
+    Private Sub mnuReport_Click(sender As Object, e As EventArgs) Handles mnuReport.Click
+
+    End Sub
+
+    Private Sub ذهبToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ذهبToolStripMenuItem.Click
+
+        ReportGoldShellMinistrial.ShowDialog()
+
+    End Sub
 End Class

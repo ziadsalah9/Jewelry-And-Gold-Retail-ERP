@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_restrantDataSet1" targetNamespace="http://tempuri.org/DT_restrantDataSet1.xsd" xmlns:mstns="http://tempuri.org/DT_restrantDataSet1.xsd" xmlns="http://tempuri.org/DT_restrantDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DT_restrantConnectionString10" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DT_restrantConnectionString10 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DT_restrant.My.MySettings.GlobalReference.Default.DT_restrantConnectionString10" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViwGoldInvoceMinisterialReportTableAdapter" GeneratorDataComponentClassName="ViwGoldInvoceMinisterialReportTableAdapter" Name="ViwGoldInvoceMinisterialReport" UserDataComponentName="ViwGoldInvoceMinisterialReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DT_restrantConnectionString10 (MySettings)" DbObjectName="DT_restrant.dbo.ViwGoldInvoceMinisterialReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT item_name, Castomerid, itemID, item_gram, item_gramMade, item_extrasMAZAN, StoneWeight2, StoneWeight3, MetalPrice, TOTAL_mony, KENT, CACH, Bank1, Bank2, Bank3, Bank4, BAY_SARYAL, BAY_ID, BAYActive, Active, invoc_date_time, date, CastomerNAme, CastomerNameEn, CastomerNA, CastomerTE, CastomerADr, cacher_name, PayMethod, PayMethodAr, PayMethodEn, CastomerCAIVELidKYC, CastomerNAmeKYC, CastomerADrKYC, CastomerTEKYC, CastomerNAKYC, CastomerNameEnKYC, RecordStatus FROM dbo.ViwGoldInvoceMinisterialReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="item_name" DataSetColumn="item_name" />
+              <Mapping SourceColumn="Castomerid" DataSetColumn="Castomerid" />
+              <Mapping SourceColumn="itemID" DataSetColumn="itemID" />
+              <Mapping SourceColumn="item_gram" DataSetColumn="item_gram" />
+              <Mapping SourceColumn="item_gramMade" DataSetColumn="item_gramMade" />
+              <Mapping SourceColumn="item_extrasMAZAN" DataSetColumn="item_extrasMAZAN" />
+              <Mapping SourceColumn="StoneWeight2" DataSetColumn="StoneWeight2" />
+              <Mapping SourceColumn="StoneWeight3" DataSetColumn="StoneWeight3" />
+              <Mapping SourceColumn="MetalPrice" DataSetColumn="MetalPrice" />
+              <Mapping SourceColumn="TOTAL_mony" DataSetColumn="TOTAL_mony" />
+              <Mapping SourceColumn="KENT" DataSetColumn="KENT" />
+              <Mapping SourceColumn="CACH" DataSetColumn="CACH" />
+              <Mapping SourceColumn="Bank1" DataSetColumn="Bank1" />
+              <Mapping SourceColumn="Bank2" DataSetColumn="Bank2" />
+              <Mapping SourceColumn="Bank3" DataSetColumn="Bank3" />
+              <Mapping SourceColumn="Bank4" DataSetColumn="Bank4" />
+              <Mapping SourceColumn="BAY_SARYAL" DataSetColumn="BAY_SARYAL" />
+              <Mapping SourceColumn="BAY_ID" DataSetColumn="BAY_ID" />
+              <Mapping SourceColumn="BAYActive" DataSetColumn="BAYActive" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="invoc_date_time" DataSetColumn="invoc_date_time" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="CastomerNAme" DataSetColumn="CastomerNAme" />
+              <Mapping SourceColumn="CastomerNameEn" DataSetColumn="CastomerNameEn" />
+              <Mapping SourceColumn="CastomerNA" DataSetColumn="CastomerNA" />
+              <Mapping SourceColumn="CastomerTE" DataSetColumn="CastomerTE" />
+              <Mapping SourceColumn="CastomerADr" DataSetColumn="CastomerADr" />
+              <Mapping SourceColumn="cacher_name" DataSetColumn="cacher_name" />
+              <Mapping SourceColumn="PayMethod" DataSetColumn="PayMethod" />
+              <Mapping SourceColumn="PayMethodAr" DataSetColumn="PayMethodAr" />
+              <Mapping SourceColumn="PayMethodEn" DataSetColumn="PayMethodEn" />
+              <Mapping SourceColumn="CastomerCAIVELidKYC" DataSetColumn="CastomerCAIVELidKYC" />
+              <Mapping SourceColumn="CastomerNAmeKYC" DataSetColumn="CastomerNAmeKYC" />
+              <Mapping SourceColumn="CastomerADrKYC" DataSetColumn="CastomerADrKYC" />
+              <Mapping SourceColumn="CastomerTEKYC" DataSetColumn="CastomerTEKYC" />
+              <Mapping SourceColumn="CastomerNAKYC" DataSetColumn="CastomerNAKYC" />
+              <Mapping SourceColumn="CastomerNameEnKYC" DataSetColumn="CastomerNameEnKYC" />
+              <Mapping SourceColumn="RecordStatus" DataSetColumn="RecordStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_restrantDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DT_restrantDataSet1" msprop:Generator_DataSetName="DT_restrantDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViwGoldInvoceMinisterialReport" msprop:Generator_RowEvHandlerName="ViwGoldInvoceMinisterialReportRowChangeEventHandler" msprop:Generator_RowDeletedName="ViwGoldInvoceMinisterialReportRowDeleted" msprop:Generator_RowDeletingName="ViwGoldInvoceMinisterialReportRowDeleting" msprop:Generator_RowEvArgName="ViwGoldInvoceMinisterialReportRowChangeEvent" msprop:Generator_TablePropName="ViwGoldInvoceMinisterialReport" msprop:Generator_RowChangedName="ViwGoldInvoceMinisterialReportRowChanged" msprop:Generator_RowChangingName="ViwGoldInvoceMinisterialReportRowChanging" msprop:Generator_TableClassName="ViwGoldInvoceMinisterialReportDataTable" msprop:Generator_RowClassName="ViwGoldInvoceMinisterialReportRow" msprop:Generator_TableVarName="tableViwGoldInvoceMinisterialReport" msprop:Generator_UserTableName="ViwGoldInvoceMinisterialReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="item_name" msprop:Generator_ColumnPropNameInRow="item_name" msprop:Generator_ColumnPropNameInTable="item_nameColumn" msprop:Generator_ColumnVarNameInTable="columnitem_name" msprop:Generator_UserColumnName="item_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Castomerid" msprop:Generator_ColumnPropNameInRow="Castomerid" msprop:Generator_ColumnPropNameInTable="CastomeridColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerid" msprop:Generator_UserColumnName="Castomerid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemID" msprop:Generator_ColumnPropNameInRow="itemID" msprop:Generator_ColumnPropNameInTable="itemIDColumn" msprop:Generator_ColumnVarNameInTable="columnitemID" msprop:Generator_UserColumnName="itemID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="item_gram" msprop:Generator_ColumnPropNameInRow="item_gram" msprop:Generator_ColumnPropNameInTable="item_gramColumn" msprop:Generator_ColumnVarNameInTable="columnitem_gram" msprop:Generator_UserColumnName="item_gram" type="xs:decimal" />
+              <xs:element name="item_gramMade" msprop:Generator_ColumnPropNameInRow="item_gramMade" msprop:Generator_ColumnPropNameInTable="item_gramMadeColumn" msprop:Generator_ColumnVarNameInTable="columnitem_gramMade" msprop:Generator_UserColumnName="item_gramMade" type="xs:decimal" />
+              <xs:element name="item_extrasMAZAN" msprop:Generator_ColumnPropNameInRow="item_extrasMAZAN" msprop:Generator_ColumnPropNameInTable="item_extrasMAZANColumn" msprop:Generator_ColumnVarNameInTable="columnitem_extrasMAZAN" msprop:Generator_UserColumnName="item_extrasMAZAN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StoneWeight2" msprop:Generator_ColumnPropNameInRow="StoneWeight2" msprop:Generator_ColumnPropNameInTable="StoneWeight2Column" msprop:Generator_ColumnVarNameInTable="columnStoneWeight2" msprop:Generator_UserColumnName="StoneWeight2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StoneWeight3" msprop:Generator_ColumnPropNameInRow="StoneWeight3" msprop:Generator_ColumnPropNameInTable="StoneWeight3Column" msprop:Generator_ColumnVarNameInTable="columnStoneWeight3" msprop:Generator_UserColumnName="StoneWeight3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MetalPrice" msprop:Generator_ColumnPropNameInRow="MetalPrice" msprop:Generator_ColumnPropNameInTable="MetalPriceColumn" msprop:Generator_ColumnVarNameInTable="columnMetalPrice" msprop:Generator_UserColumnName="MetalPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_mony" msprop:Generator_ColumnPropNameInRow="TOTAL_mony" msprop:Generator_ColumnPropNameInTable="TOTAL_monyColumn" msprop:Generator_ColumnVarNameInTable="columnTOTAL_mony" msprop:Generator_UserColumnName="TOTAL_mony" type="xs:decimal" />
+              <xs:element name="KENT" msprop:Generator_ColumnPropNameInRow="KENT" msprop:Generator_ColumnPropNameInTable="KENTColumn" msprop:Generator_ColumnVarNameInTable="columnKENT" msprop:Generator_UserColumnName="KENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CACH" msprop:Generator_ColumnPropNameInRow="CACH" msprop:Generator_ColumnPropNameInTable="CACHColumn" msprop:Generator_ColumnVarNameInTable="columnCACH" msprop:Generator_UserColumnName="CACH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bank1" msprop:Generator_ColumnPropNameInRow="Bank1" msprop:Generator_ColumnPropNameInTable="Bank1Column" msprop:Generator_ColumnVarNameInTable="columnBank1" msprop:Generator_UserColumnName="Bank1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bank2" msprop:Generator_ColumnPropNameInRow="Bank2" msprop:Generator_ColumnPropNameInTable="Bank2Column" msprop:Generator_ColumnVarNameInTable="columnBank2" msprop:Generator_UserColumnName="Bank2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bank3" msprop:Generator_ColumnPropNameInRow="Bank3" msprop:Generator_ColumnPropNameInTable="Bank3Column" msprop:Generator_ColumnVarNameInTable="columnBank3" msprop:Generator_UserColumnName="Bank3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bank4" msprop:Generator_ColumnPropNameInRow="Bank4" msprop:Generator_ColumnPropNameInTable="Bank4Column" msprop:Generator_ColumnVarNameInTable="columnBank4" msprop:Generator_UserColumnName="Bank4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BAY_SARYAL" msprop:Generator_ColumnPropNameInRow="BAY_SARYAL" msprop:Generator_ColumnPropNameInTable="BAY_SARYALColumn" msprop:Generator_ColumnVarNameInTable="columnBAY_SARYAL" msprop:Generator_UserColumnName="BAY_SARYAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAY_ID" msprop:Generator_ColumnPropNameInRow="BAY_ID" msprop:Generator_ColumnPropNameInTable="BAY_IDColumn" msprop:Generator_ColumnVarNameInTable="columnBAY_ID" msprop:Generator_UserColumnName="BAY_ID" type="xs:int" />
+              <xs:element name="BAYActive" msprop:Generator_ColumnPropNameInRow="BAYActive" msprop:Generator_ColumnPropNameInTable="BAYActiveColumn" msprop:Generator_ColumnVarNameInTable="columnBAYActive" msprop:Generator_UserColumnName="BAYActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Active" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_UserColumnName="Active" type="xs:int" minOccurs="0" />
+              <xs:element name="invoc_date_time" msprop:Generator_ColumnPropNameInRow="invoc_date_time" msprop:Generator_ColumnPropNameInTable="invoc_date_timeColumn" msprop:Generator_ColumnVarNameInTable="columninvoc_date_time" msprop:Generator_UserColumnName="invoc_date_time">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msprop:Generator_ColumnPropNameInRow="_date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_UserColumnName="date" type="xs:dateTime" />
+              <xs:element name="CastomerNAme" msprop:Generator_ColumnPropNameInRow="CastomerNAme" msprop:Generator_ColumnPropNameInTable="CastomerNAmeColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNAme" msprop:Generator_UserColumnName="CastomerNAme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerNameEn" msprop:Generator_ColumnPropNameInRow="CastomerNameEn" msprop:Generator_ColumnPropNameInTable="CastomerNameEnColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNameEn" msprop:Generator_UserColumnName="CastomerNameEn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerNA" msprop:Generator_ColumnPropNameInRow="CastomerNA" msprop:Generator_ColumnPropNameInTable="CastomerNAColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNA" msprop:Generator_UserColumnName="CastomerNA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerTE" msprop:Generator_ColumnPropNameInRow="CastomerTE" msprop:Generator_ColumnPropNameInTable="CastomerTEColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerTE" msprop:Generator_UserColumnName="CastomerTE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerADr" msprop:Generator_ColumnPropNameInRow="CastomerADr" msprop:Generator_ColumnPropNameInTable="CastomerADrColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerADr" msprop:Generator_UserColumnName="CastomerADr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cacher_name" msprop:Generator_ColumnPropNameInRow="cacher_name" msprop:Generator_ColumnPropNameInTable="cacher_nameColumn" msprop:Generator_ColumnVarNameInTable="columncacher_name" msprop:Generator_UserColumnName="cacher_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PayMethod" msprop:Generator_ColumnPropNameInRow="PayMethod" msprop:Generator_ColumnPropNameInTable="PayMethodColumn" msprop:Generator_ColumnVarNameInTable="columnPayMethod" msprop:Generator_UserColumnName="PayMethod">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PayMethodAr" msprop:Generator_ColumnPropNameInRow="PayMethodAr" msprop:Generator_ColumnPropNameInTable="PayMethodArColumn" msprop:Generator_ColumnVarNameInTable="columnPayMethodAr" msprop:Generator_UserColumnName="PayMethodAr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PayMethodEn" msprop:Generator_ColumnPropNameInRow="PayMethodEn" msprop:Generator_ColumnPropNameInTable="PayMethodEnColumn" msprop:Generator_ColumnVarNameInTable="columnPayMethodEn" msprop:Generator_UserColumnName="PayMethodEn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerCAIVELidKYC" msprop:Generator_ColumnPropNameInRow="CastomerCAIVELidKYC" msprop:Generator_ColumnPropNameInTable="CastomerCAIVELidKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerCAIVELidKYC" msprop:Generator_UserColumnName="CastomerCAIVELidKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerNAmeKYC" msprop:Generator_ColumnPropNameInRow="CastomerNAmeKYC" msprop:Generator_ColumnPropNameInTable="CastomerNAmeKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNAmeKYC" msprop:Generator_UserColumnName="CastomerNAmeKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerADrKYC" msprop:Generator_ColumnPropNameInRow="CastomerADrKYC" msprop:Generator_ColumnPropNameInTable="CastomerADrKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerADrKYC" msprop:Generator_UserColumnName="CastomerADrKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerTEKYC" msprop:Generator_ColumnPropNameInRow="CastomerTEKYC" msprop:Generator_ColumnPropNameInTable="CastomerTEKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerTEKYC" msprop:Generator_UserColumnName="CastomerTEKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerNAKYC" msprop:Generator_ColumnPropNameInRow="CastomerNAKYC" msprop:Generator_ColumnPropNameInTable="CastomerNAKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNAKYC" msprop:Generator_UserColumnName="CastomerNAKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CastomerNameEnKYC" msprop:Generator_ColumnPropNameInRow="CastomerNameEnKYC" msprop:Generator_ColumnPropNameInTable="CastomerNameEnKYCColumn" msprop:Generator_ColumnVarNameInTable="columnCastomerNameEnKYC" msprop:Generator_UserColumnName="CastomerNameEnKYC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RecordStatus" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="RecordStatus" msprop:Generator_ColumnPropNameInTable="RecordStatusColumn" msprop:Generator_ColumnVarNameInTable="columnRecordStatus" msprop:Generator_UserColumnName="RecordStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViwGoldInvoceMinisterialReport" />
+      <xs:field xpath="mstns:BAY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

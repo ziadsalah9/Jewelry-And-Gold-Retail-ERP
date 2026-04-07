@@ -180,6 +180,7 @@ Partial Class frmMain
         Me.tsTransactionsPayInstallmentDiamond = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsTransactionsPayInstallmentAccessories = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExpensesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المحذوفاتذهبفضهالماسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuLicense = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsLicenseGet = New System.Windows.Forms.ToolStripMenuItem()
         Me.SelectColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -273,7 +274,9 @@ Partial Class frmMain
         Me.WebViewLinek = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.BtnWebView = New System.Windows.Forms.Button()
         Me.TimLodPrice = New System.Windows.Forms.Timer(Me.components)
-        Me.المحذوفاتذهبفضهالماسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.بحثمتعددوزارىToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ذهبToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.فضهToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlButtons.SuspendLayout()
         CType(Me.SettingsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DT_restrantDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -402,7 +405,7 @@ Partial Class frmMain
         Me.SET_INVARCHR154TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SettingsBindingSource, "SET_INVARCHR154", True))
         Me.SET_INVARCHR154TextBox.Location = New System.Drawing.Point(256, 64)
         Me.SET_INVARCHR154TextBox.Name = "SET_INVARCHR154TextBox"
-        Me.SET_INVARCHR154TextBox.Size = New System.Drawing.Size(37, 27)
+        Me.SET_INVARCHR154TextBox.Size = New System.Drawing.Size(37, 32)
         Me.SET_INVARCHR154TextBox.TabIndex = 156
         '
         'SettingsBindingSource
@@ -420,7 +423,7 @@ Partial Class frmMain
         Me.SET_INVARCHR149TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SettingsBindingSource, "SET_INVARCHR149", True))
         Me.SET_INVARCHR149TextBox.Location = New System.Drawing.Point(243, 63)
         Me.SET_INVARCHR149TextBox.Name = "SET_INVARCHR149TextBox"
-        Me.SET_INVARCHR149TextBox.Size = New System.Drawing.Size(22, 27)
+        Me.SET_INVARCHR149TextBox.Size = New System.Drawing.Size(22, 32)
         Me.SET_INVARCHR149TextBox.TabIndex = 156
         '
         'btnBulkSell
@@ -630,6 +633,7 @@ Partial Class frmMain
         Me.msMenuMain.BackColor = System.Drawing.Color.White
         Me.msMenuMain.Dock = System.Windows.Forms.DockStyle.None
         Me.msMenuMain.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.msMenuMain.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.msMenuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSettings, Me.mnuReport, Me.mnuUserManagement, Me.mnuTransactions, Me.mnuLicense, Me.SelectColorToolStripMenuItem})
         Me.msMenuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
         Me.msMenuMain.Location = New System.Drawing.Point(0, 3)
@@ -646,131 +650,131 @@ Partial Class frmMain
         Me.mnuSettings.ForeColor = System.Drawing.Color.Black
         Me.mnuSettings.ImageTransparentColor = System.Drawing.Color.Silver
         Me.mnuSettings.Name = "mnuSettings"
-        Me.mnuSettings.Size = New System.Drawing.Size(141, 47)
+        Me.mnuSettings.Size = New System.Drawing.Size(180, 47)
         Me.mnuSettings.Text = "إعدادات البرنامج"
         '
         'mnuSettingsMain
         '
         Me.mnuSettingsMain.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsSettingsMainCompanyData, Me.tsSettingsMainCountryOfOrigin, Me.tsSettingsMainGramPrice, Me.tsSettingsMainCompany, Me.اعداداتالواتسابToolStripMenuItem})
         Me.mnuSettingsMain.Name = "mnuSettingsMain"
-        Me.mnuSettingsMain.Size = New System.Drawing.Size(213, 30)
+        Me.mnuSettingsMain.Size = New System.Drawing.Size(271, 38)
         Me.mnuSettingsMain.Text = "الإعدادات الرئيسة"
         '
         'tsSettingsMainCompanyData
         '
         Me.tsSettingsMainCompanyData.Name = "tsSettingsMainCompanyData"
-        Me.tsSettingsMainCompanyData.Size = New System.Drawing.Size(222, 30)
+        Me.tsSettingsMainCompanyData.Size = New System.Drawing.Size(282, 38)
         Me.tsSettingsMainCompanyData.Text = "بيانات الشركة"
         '
         'tsSettingsMainCountryOfOrigin
         '
         Me.tsSettingsMainCountryOfOrigin.Name = "tsSettingsMainCountryOfOrigin"
-        Me.tsSettingsMainCountryOfOrigin.Size = New System.Drawing.Size(222, 30)
+        Me.tsSettingsMainCountryOfOrigin.Size = New System.Drawing.Size(282, 38)
         Me.tsSettingsMainCountryOfOrigin.Text = "مصادر التصنيع"
         '
         'tsSettingsMainGramPrice
         '
         Me.tsSettingsMainGramPrice.Name = "tsSettingsMainGramPrice"
-        Me.tsSettingsMainGramPrice.Size = New System.Drawing.Size(222, 30)
+        Me.tsSettingsMainGramPrice.Size = New System.Drawing.Size(282, 38)
         Me.tsSettingsMainGramPrice.Text = "سعر الجرام"
         '
         'tsSettingsMainCompany
         '
         Me.tsSettingsMainCompany.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsSettingsMainAddCompany, Me.tsSettingsMainAddBranch})
         Me.tsSettingsMainCompany.Name = "tsSettingsMainCompany"
-        Me.tsSettingsMainCompany.Size = New System.Drawing.Size(222, 30)
+        Me.tsSettingsMainCompany.Size = New System.Drawing.Size(282, 38)
         Me.tsSettingsMainCompany.Text = "الشركات"
         '
         'tsSettingsMainAddCompany
         '
         Me.tsSettingsMainAddCompany.Name = "tsSettingsMainAddCompany"
-        Me.tsSettingsMainAddCompany.Size = New System.Drawing.Size(178, 30)
+        Me.tsSettingsMainAddCompany.Size = New System.Drawing.Size(224, 38)
         Me.tsSettingsMainAddCompany.Text = "اضافة شركه"
         '
         'tsSettingsMainAddBranch
         '
         Me.tsSettingsMainAddBranch.Name = "tsSettingsMainAddBranch"
-        Me.tsSettingsMainAddBranch.Size = New System.Drawing.Size(178, 30)
+        Me.tsSettingsMainAddBranch.Size = New System.Drawing.Size(224, 38)
         Me.tsSettingsMainAddBranch.Text = "اضافة الفروع"
         '
         'اعداداتالواتسابToolStripMenuItem
         '
         Me.اعداداتالواتسابToolStripMenuItem.Name = "اعداداتالواتسابToolStripMenuItem"
-        Me.اعداداتالواتسابToolStripMenuItem.Size = New System.Drawing.Size(222, 30)
+        Me.اعداداتالواتسابToolStripMenuItem.Size = New System.Drawing.Size(282, 38)
         Me.اعداداتالواتسابToolStripMenuItem.Text = "اعدادات الواتس اب"
         '
         'mnuSettingsDefinition
         '
         Me.mnuSettingsDefinition.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsSettingsDefinitionStoneName, Me.tsSettingsDefinitionStoneColor, Me.tsSettingsDefinitionDiamondCut, Me.tsSettingsDefinitionAddItemCategory, Me.tsSettingsDefinitionBrands, Me.tsSettingsDefinitionItemName})
         Me.mnuSettingsDefinition.Name = "mnuSettingsDefinition"
-        Me.mnuSettingsDefinition.Size = New System.Drawing.Size(213, 30)
+        Me.mnuSettingsDefinition.Size = New System.Drawing.Size(271, 38)
         Me.mnuSettingsDefinition.Text = "تعريفات"
         '
         'tsSettingsDefinitionStoneName
         '
         Me.tsSettingsDefinitionStoneName.Name = "tsSettingsDefinitionStoneName"
-        Me.tsSettingsDefinitionStoneName.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionStoneName.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionStoneName.Text = "أنواع الأحجار"
         '
         'tsSettingsDefinitionStoneColor
         '
         Me.tsSettingsDefinitionStoneColor.Name = "tsSettingsDefinitionStoneColor"
-        Me.tsSettingsDefinitionStoneColor.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionStoneColor.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionStoneColor.Text = "ألوان الأحجار"
         '
         'tsSettingsDefinitionDiamondCut
         '
         Me.tsSettingsDefinitionDiamondCut.Name = "tsSettingsDefinitionDiamondCut"
-        Me.tsSettingsDefinitionDiamondCut.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionDiamondCut.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionDiamondCut.Text = "قصة الألماس"
         '
         'tsSettingsDefinitionAddItemCategory
         '
         Me.tsSettingsDefinitionAddItemCategory.Name = "tsSettingsDefinitionAddItemCategory"
-        Me.tsSettingsDefinitionAddItemCategory.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionAddItemCategory.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionAddItemCategory.Text = "إضافة صنف -مزادات وساعات"
         '
         'tsSettingsDefinitionBrands
         '
         Me.tsSettingsDefinitionBrands.Name = "tsSettingsDefinitionBrands"
-        Me.tsSettingsDefinitionBrands.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionBrands.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionBrands.Text = "إضافة ماركة"
         '
         'tsSettingsDefinitionItemName
         '
         Me.tsSettingsDefinitionItemName.Name = "tsSettingsDefinitionItemName"
-        Me.tsSettingsDefinitionItemName.Size = New System.Drawing.Size(299, 30)
+        Me.tsSettingsDefinitionItemName.Size = New System.Drawing.Size(379, 38)
         Me.tsSettingsDefinitionItemName.Text = "إضافة أنواع الأصناف"
         '
         'mnuSettingsLanguage
         '
         Me.mnuSettingsLanguage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsSettingsLanguageArabic, Me.tsSettingsLanguageEnglish})
         Me.mnuSettingsLanguage.Name = "mnuSettingsLanguage"
-        Me.mnuSettingsLanguage.Size = New System.Drawing.Size(213, 30)
+        Me.mnuSettingsLanguage.Size = New System.Drawing.Size(271, 38)
         Me.mnuSettingsLanguage.Text = "اختيار اللغة"
         '
         'tsSettingsLanguageArabic
         '
         Me.tsSettingsLanguageArabic.Name = "tsSettingsLanguageArabic"
-        Me.tsSettingsLanguageArabic.Size = New System.Drawing.Size(144, 30)
+        Me.tsSettingsLanguageArabic.Size = New System.Drawing.Size(183, 38)
         Me.tsSettingsLanguageArabic.Text = "العربية"
         '
         'tsSettingsLanguageEnglish
         '
         Me.tsSettingsLanguageEnglish.Name = "tsSettingsLanguageEnglish"
-        Me.tsSettingsLanguageEnglish.Size = New System.Drawing.Size(144, 30)
+        Me.tsSettingsLanguageEnglish.Size = New System.Drawing.Size(183, 38)
         Me.tsSettingsLanguageEnglish.Text = "English"
         '
         'اعداداتالتToolStripMenuItem
         '
         Me.اعداداتالتToolStripMenuItem.Name = "اعداداتالتToolStripMenuItem"
-        Me.اعداداتالتToolStripMenuItem.Size = New System.Drawing.Size(213, 30)
+        Me.اعداداتالتToolStripMenuItem.Size = New System.Drawing.Size(271, 38)
         Me.اعداداتالتToolStripMenuItem.Text = "اعدادات التقارير"
         '
         'tsSettingsProgrammer
         '
         Me.tsSettingsProgrammer.Name = "tsSettingsProgrammer"
-        Me.tsSettingsProgrammer.Size = New System.Drawing.Size(213, 30)
+        Me.tsSettingsProgrammer.Size = New System.Drawing.Size(271, 38)
         Me.tsSettingsProgrammer.Text = "إعدادات المبرمج"
         '
         'mnuReport
@@ -779,520 +783,520 @@ Partial Class frmMain
         Me.mnuReport.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold)
         Me.mnuReport.ForeColor = System.Drawing.Color.Black
         Me.mnuReport.Name = "mnuReport"
-        Me.mnuReport.Size = New System.Drawing.Size(77, 47)
+        Me.mnuReport.Size = New System.Drawing.Size(96, 47)
         Me.mnuReport.Text = "التقارير"
         '
         'mnuReportSell
         '
-        Me.mnuReportSell.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuReportSellView, Me.mnuReportSellDetailed, Me.mnuReportSellShort, Me.mnuReportItemByCarat, Me.mnuReportSellViewDeleted})
+        Me.mnuReportSell.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuReportSellView, Me.mnuReportSellDetailed, Me.mnuReportSellShort, Me.بحثمتعددوزارىToolStripMenuItem, Me.mnuReportItemByCarat, Me.mnuReportSellViewDeleted})
         Me.mnuReportSell.Name = "mnuReportSell"
-        Me.mnuReportSell.Size = New System.Drawing.Size(282, 30)
+        Me.mnuReportSell.Size = New System.Drawing.Size(356, 38)
         Me.mnuReportSell.Text = "تقارير المبيعات اليومية"
         '
         'mnuReportSellView
         '
         Me.mnuReportSellView.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportSellViewGold, Me.tsReportSellViewSilver, Me.tsReportSellViewDiamond, Me.tsReportSellViewAuction, Me.tsReportSellViewAccessories})
         Me.mnuReportSellView.Name = "mnuReportSellView"
-        Me.mnuReportSellView.Size = New System.Drawing.Size(238, 30)
+        Me.mnuReportSellView.Size = New System.Drawing.Size(297, 38)
         Me.mnuReportSellView.Text = "مراجعة الفواتير"
         '
         'tsReportSellViewGold
         '
         Me.tsReportSellViewGold.Name = "tsReportSellViewGold"
-        Me.tsReportSellViewGold.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellViewGold.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewGold.Text = "دهب"
         '
         'tsReportSellViewSilver
         '
         Me.tsReportSellViewSilver.Name = "tsReportSellViewSilver"
-        Me.tsReportSellViewSilver.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellViewSilver.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewSilver.Text = "فضة"
         '
         'tsReportSellViewDiamond
         '
         Me.tsReportSellViewDiamond.Name = "tsReportSellViewDiamond"
-        Me.tsReportSellViewDiamond.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellViewDiamond.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewDiamond.Text = "ألماس"
         '
         'tsReportSellViewAuction
         '
         Me.tsReportSellViewAuction.Name = "tsReportSellViewAuction"
-        Me.tsReportSellViewAuction.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellViewAuction.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewAuction.Text = "مزادات"
         '
         'tsReportSellViewAccessories
         '
         Me.tsReportSellViewAccessories.Name = "tsReportSellViewAccessories"
-        Me.tsReportSellViewAccessories.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellViewAccessories.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewAccessories.Text = "ساعات"
         '
         'mnuReportSellDetailed
         '
         Me.mnuReportSellDetailed.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportSellDetailedGold, Me.tsReportSellDetailedSilver, Me.tsReportSellDetailedDiamond, Me.tsReportSellDetailedAuction, Me.tsReportSellDetailedAccessories})
         Me.mnuReportSellDetailed.Name = "mnuReportSellDetailed"
-        Me.mnuReportSellDetailed.Size = New System.Drawing.Size(238, 30)
+        Me.mnuReportSellDetailed.Size = New System.Drawing.Size(297, 38)
         Me.mnuReportSellDetailed.Text = "بحث متعدد تفصيلي"
         '
         'tsReportSellDetailedGold
         '
         Me.tsReportSellDetailedGold.Name = "tsReportSellDetailedGold"
-        Me.tsReportSellDetailedGold.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellDetailedGold.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellDetailedGold.Text = "دهب"
         '
         'tsReportSellDetailedSilver
         '
         Me.tsReportSellDetailedSilver.Name = "tsReportSellDetailedSilver"
-        Me.tsReportSellDetailedSilver.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellDetailedSilver.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellDetailedSilver.Text = "فضة"
         '
         'tsReportSellDetailedDiamond
         '
         Me.tsReportSellDetailedDiamond.Name = "tsReportSellDetailedDiamond"
-        Me.tsReportSellDetailedDiamond.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellDetailedDiamond.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellDetailedDiamond.Text = "ألماس"
         '
         'tsReportSellDetailedAuction
         '
         Me.tsReportSellDetailedAuction.Name = "tsReportSellDetailedAuction"
-        Me.tsReportSellDetailedAuction.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellDetailedAuction.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellDetailedAuction.Text = "مزادات"
         '
         'tsReportSellDetailedAccessories
         '
         Me.tsReportSellDetailedAccessories.Name = "tsReportSellDetailedAccessories"
-        Me.tsReportSellDetailedAccessories.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellDetailedAccessories.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellDetailedAccessories.Text = "ساعات"
         '
         'mnuReportSellShort
         '
         Me.mnuReportSellShort.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportSellShortGold, Me.tsReportSellShortSilver, Me.tsReportSellShortDiamond, Me.tsReportSellShortAuction, Me.tsReportSellShortAccessories})
         Me.mnuReportSellShort.Name = "mnuReportSellShort"
-        Me.mnuReportSellShort.Size = New System.Drawing.Size(238, 30)
+        Me.mnuReportSellShort.Size = New System.Drawing.Size(297, 38)
         Me.mnuReportSellShort.Text = "بحث متعدد  مختصر"
         '
         'tsReportSellShortGold
         '
         Me.tsReportSellShortGold.Name = "tsReportSellShortGold"
-        Me.tsReportSellShortGold.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellShortGold.Size = New System.Drawing.Size(169, 38)
         Me.tsReportSellShortGold.Text = "دهب"
         '
         'tsReportSellShortSilver
         '
         Me.tsReportSellShortSilver.Name = "tsReportSellShortSilver"
-        Me.tsReportSellShortSilver.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellShortSilver.Size = New System.Drawing.Size(169, 38)
         Me.tsReportSellShortSilver.Text = "فضة"
         '
         'tsReportSellShortDiamond
         '
         Me.tsReportSellShortDiamond.Name = "tsReportSellShortDiamond"
-        Me.tsReportSellShortDiamond.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellShortDiamond.Size = New System.Drawing.Size(169, 38)
         Me.tsReportSellShortDiamond.Text = "ألماس"
         '
         'tsReportSellShortAuction
         '
         Me.tsReportSellShortAuction.Name = "tsReportSellShortAuction"
-        Me.tsReportSellShortAuction.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellShortAuction.Size = New System.Drawing.Size(169, 38)
         Me.tsReportSellShortAuction.Text = "مزادات"
         '
         'tsReportSellShortAccessories
         '
         Me.tsReportSellShortAccessories.Name = "tsReportSellShortAccessories"
-        Me.tsReportSellShortAccessories.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportSellShortAccessories.Size = New System.Drawing.Size(169, 38)
         Me.tsReportSellShortAccessories.Text = "ساعات"
         '
         'mnuReportItemByCarat
         '
         Me.mnuReportItemByCarat.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportItemByCaratGold, Me.tsReportItemByCaratSilver})
         Me.mnuReportItemByCarat.Name = "mnuReportItemByCarat"
-        Me.mnuReportItemByCarat.Size = New System.Drawing.Size(238, 30)
+        Me.mnuReportItemByCarat.Size = New System.Drawing.Size(297, 38)
         Me.mnuReportItemByCarat.Text = "بيان حركة الصنف"
         '
         'tsReportItemByCaratGold
         '
         Me.tsReportItemByCaratGold.Name = "tsReportItemByCaratGold"
-        Me.tsReportItemByCaratGold.Size = New System.Drawing.Size(123, 30)
+        Me.tsReportItemByCaratGold.Size = New System.Drawing.Size(224, 38)
         Me.tsReportItemByCaratGold.Text = "ذهب"
         '
         'tsReportItemByCaratSilver
         '
         Me.tsReportItemByCaratSilver.Name = "tsReportItemByCaratSilver"
-        Me.tsReportItemByCaratSilver.Size = New System.Drawing.Size(123, 30)
+        Me.tsReportItemByCaratSilver.Size = New System.Drawing.Size(224, 38)
         Me.tsReportItemByCaratSilver.Text = "فضة"
         '
         'mnuReportSellViewDeleted
         '
         Me.mnuReportSellViewDeleted.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportSellViewGoldDeleted, Me.tsReportSellViewSilverDeleted})
         Me.mnuReportSellViewDeleted.Name = "mnuReportSellViewDeleted"
-        Me.mnuReportSellViewDeleted.Size = New System.Drawing.Size(238, 30)
+        Me.mnuReportSellViewDeleted.Size = New System.Drawing.Size(297, 38)
         Me.mnuReportSellViewDeleted.Text = "الفواتير المحذوفة"
         '
         'tsReportSellViewGoldDeleted
         '
         Me.tsReportSellViewGoldDeleted.Name = "tsReportSellViewGoldDeleted"
-        Me.tsReportSellViewGoldDeleted.Size = New System.Drawing.Size(123, 30)
+        Me.tsReportSellViewGoldDeleted.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewGoldDeleted.Text = "ذهب"
         '
         'tsReportSellViewSilverDeleted
         '
         Me.tsReportSellViewSilverDeleted.Name = "tsReportSellViewSilverDeleted"
-        Me.tsReportSellViewSilverDeleted.Size = New System.Drawing.Size(123, 30)
+        Me.tsReportSellViewSilverDeleted.Size = New System.Drawing.Size(224, 38)
         Me.tsReportSellViewSilverDeleted.Text = "فضة"
         '
         'mnuReportBuy
         '
         Me.mnuReportBuy.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuReportBuyView, Me.mnuReportBuyDetailed, Me.mnuReportBuyShort})
         Me.mnuReportBuy.Name = "mnuReportBuy"
-        Me.mnuReportBuy.Size = New System.Drawing.Size(282, 30)
+        Me.mnuReportBuy.Size = New System.Drawing.Size(356, 38)
         Me.mnuReportBuy.Text = "المشتريات"
         '
         'mnuReportBuyView
         '
         Me.mnuReportBuyView.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportBuyViewGold, Me.tsReportBuyViewSilver, Me.tsReportBuyViewDiamond, Me.tsReportBuyViewAccessories})
         Me.mnuReportBuyView.Name = "mnuReportBuyView"
-        Me.mnuReportBuyView.Size = New System.Drawing.Size(249, 30)
+        Me.mnuReportBuyView.Size = New System.Drawing.Size(314, 38)
         Me.mnuReportBuyView.Text = "عرض الفاتورة"
         '
         'tsReportBuyViewGold
         '
         Me.tsReportBuyViewGold.Name = "tsReportBuyViewGold"
-        Me.tsReportBuyViewGold.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportBuyViewGold.Size = New System.Drawing.Size(169, 38)
         Me.tsReportBuyViewGold.Text = "ذهب"
         '
         'tsReportBuyViewSilver
         '
         Me.tsReportBuyViewSilver.Name = "tsReportBuyViewSilver"
-        Me.tsReportBuyViewSilver.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportBuyViewSilver.Size = New System.Drawing.Size(169, 38)
         Me.tsReportBuyViewSilver.Text = "فضة"
         '
         'tsReportBuyViewDiamond
         '
         Me.tsReportBuyViewDiamond.Name = "tsReportBuyViewDiamond"
-        Me.tsReportBuyViewDiamond.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportBuyViewDiamond.Size = New System.Drawing.Size(169, 38)
         Me.tsReportBuyViewDiamond.Text = "ألماس"
         '
         'tsReportBuyViewAccessories
         '
         Me.tsReportBuyViewAccessories.Name = "tsReportBuyViewAccessories"
-        Me.tsReportBuyViewAccessories.Size = New System.Drawing.Size(135, 30)
+        Me.tsReportBuyViewAccessories.Size = New System.Drawing.Size(169, 38)
         Me.tsReportBuyViewAccessories.Text = "ساعات"
         '
         'mnuReportBuyDetailed
         '
         Me.mnuReportBuyDetailed.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportBuyDetailedGold, Me.tsReportBuyDetailedSilver, Me.tsReportBuyDetailedDiamond, Me.tsReportBuyDetailedAuction, Me.tsReportBuyDetailedAccessories})
         Me.mnuReportBuyDetailed.Name = "mnuReportBuyDetailed"
-        Me.mnuReportBuyDetailed.Size = New System.Drawing.Size(249, 30)
+        Me.mnuReportBuyDetailed.Size = New System.Drawing.Size(314, 38)
         Me.mnuReportBuyDetailed.Text = "تقرير مشتريات تفصيلي"
         '
         'tsReportBuyDetailedGold
         '
         Me.tsReportBuyDetailedGold.Name = "tsReportBuyDetailedGold"
-        Me.tsReportBuyDetailedGold.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyDetailedGold.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyDetailedGold.Text = "ذهب"
         '
         'tsReportBuyDetailedSilver
         '
         Me.tsReportBuyDetailedSilver.Name = "tsReportBuyDetailedSilver"
-        Me.tsReportBuyDetailedSilver.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyDetailedSilver.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyDetailedSilver.Text = "فضة"
         '
         'tsReportBuyDetailedDiamond
         '
         Me.tsReportBuyDetailedDiamond.Name = "tsReportBuyDetailedDiamond"
-        Me.tsReportBuyDetailedDiamond.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyDetailedDiamond.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyDetailedDiamond.Text = "ألماس"
         '
         'tsReportBuyDetailedAuction
         '
         Me.tsReportBuyDetailedAuction.Name = "tsReportBuyDetailedAuction"
-        Me.tsReportBuyDetailedAuction.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyDetailedAuction.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyDetailedAuction.Text = "مزادات"
         '
         'tsReportBuyDetailedAccessories
         '
         Me.tsReportBuyDetailedAccessories.Name = "tsReportBuyDetailedAccessories"
-        Me.tsReportBuyDetailedAccessories.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyDetailedAccessories.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyDetailedAccessories.Text = "ساعات وماركات"
         '
         'mnuReportBuyShort
         '
         Me.mnuReportBuyShort.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportBuyShortGold, Me.tsReportBuyShortSilver, Me.tsReportBuyShortDiamond, Me.tsReportBuyShortAccessories})
         Me.mnuReportBuyShort.Name = "mnuReportBuyShort"
-        Me.mnuReportBuyShort.Size = New System.Drawing.Size(249, 30)
+        Me.mnuReportBuyShort.Size = New System.Drawing.Size(314, 38)
         Me.mnuReportBuyShort.Text = "تقرير مشتريات مختصر"
         '
         'tsReportBuyShortGold
         '
         Me.tsReportBuyShortGold.Name = "tsReportBuyShortGold"
-        Me.tsReportBuyShortGold.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyShortGold.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyShortGold.Text = "ذهب"
         '
         'tsReportBuyShortSilver
         '
         Me.tsReportBuyShortSilver.Name = "tsReportBuyShortSilver"
-        Me.tsReportBuyShortSilver.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyShortSilver.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyShortSilver.Text = "فضة"
         '
         'tsReportBuyShortDiamond
         '
         Me.tsReportBuyShortDiamond.Name = "tsReportBuyShortDiamond"
-        Me.tsReportBuyShortDiamond.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyShortDiamond.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyShortDiamond.Text = "ألماس"
         '
         'tsReportBuyShortAccessories
         '
         Me.tsReportBuyShortAccessories.Name = "tsReportBuyShortAccessories"
-        Me.tsReportBuyShortAccessories.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportBuyShortAccessories.Size = New System.Drawing.Size(247, 38)
         Me.tsReportBuyShortAccessories.Text = "ساعات وماركات"
         '
         'mnuReportItems
         '
         Me.mnuReportItems.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuReportItemsAll, Me.mnuReportItemsSold, Me.mnuReportItemsAvailable})
         Me.mnuReportItems.Name = "mnuReportItems"
-        Me.mnuReportItems.Size = New System.Drawing.Size(282, 30)
+        Me.mnuReportItems.Size = New System.Drawing.Size(356, 38)
         Me.mnuReportItems.Text = "تقارير الاصناف"
         '
         'mnuReportItemsAll
         '
         Me.mnuReportItemsAll.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportItemsAllGold, Me.tsReportItemsAllSilver, Me.tsReportItemsAllDiamond, Me.tsReportItemsAllAccessories})
         Me.mnuReportItemsAll.Name = "mnuReportItemsAll"
-        Me.mnuReportItemsAll.Size = New System.Drawing.Size(210, 30)
+        Me.mnuReportItemsAll.Size = New System.Drawing.Size(264, 38)
         Me.mnuReportItemsAll.Text = "طباعة الاصناف "
         '
         'tsReportItemsAllGold
         '
         Me.tsReportItemsAllGold.Name = "tsReportItemsAllGold"
-        Me.tsReportItemsAllGold.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAllGold.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAllGold.Text = "ذهب"
         '
         'tsReportItemsAllSilver
         '
         Me.tsReportItemsAllSilver.Name = "tsReportItemsAllSilver"
-        Me.tsReportItemsAllSilver.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAllSilver.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAllSilver.Text = "فضة"
         '
         'tsReportItemsAllDiamond
         '
         Me.tsReportItemsAllDiamond.Name = "tsReportItemsAllDiamond"
-        Me.tsReportItemsAllDiamond.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAllDiamond.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAllDiamond.Text = "ألماس"
         '
         'tsReportItemsAllAccessories
         '
         Me.tsReportItemsAllAccessories.Name = "tsReportItemsAllAccessories"
-        Me.tsReportItemsAllAccessories.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAllAccessories.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAllAccessories.Text = "ساعات وماركات"
         '
         'mnuReportItemsSold
         '
         Me.mnuReportItemsSold.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportItemsSoldGold, Me.tsReportItemsSoldSilver, Me.tsReportItemsSoldDiamond, Me.tsReportItemsSoldAccessories})
         Me.mnuReportItemsSold.Name = "mnuReportItemsSold"
-        Me.mnuReportItemsSold.Size = New System.Drawing.Size(210, 30)
+        Me.mnuReportItemsSold.Size = New System.Drawing.Size(264, 38)
         Me.mnuReportItemsSold.Text = "الأصناف المباعة"
         '
         'tsReportItemsSoldGold
         '
         Me.tsReportItemsSoldGold.Name = "tsReportItemsSoldGold"
-        Me.tsReportItemsSoldGold.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsSoldGold.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsSoldGold.Text = "ذهب"
         '
         'tsReportItemsSoldSilver
         '
         Me.tsReportItemsSoldSilver.Name = "tsReportItemsSoldSilver"
-        Me.tsReportItemsSoldSilver.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsSoldSilver.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsSoldSilver.Text = "فضة"
         '
         'tsReportItemsSoldDiamond
         '
         Me.tsReportItemsSoldDiamond.Name = "tsReportItemsSoldDiamond"
-        Me.tsReportItemsSoldDiamond.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsSoldDiamond.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsSoldDiamond.Text = "ألماس"
         '
         'tsReportItemsSoldAccessories
         '
         Me.tsReportItemsSoldAccessories.Name = "tsReportItemsSoldAccessories"
-        Me.tsReportItemsSoldAccessories.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsSoldAccessories.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsSoldAccessories.Text = "ساعات وماركات"
         '
         'mnuReportItemsAvailable
         '
         Me.mnuReportItemsAvailable.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportItemsAvailableGold, Me.tsReportItemsAvailableSilver, Me.tsReportItemsAvailableDiamond, Me.tsReportItemsAvailableAccessories})
         Me.mnuReportItemsAvailable.Name = "mnuReportItemsAvailable"
-        Me.mnuReportItemsAvailable.Size = New System.Drawing.Size(210, 30)
+        Me.mnuReportItemsAvailable.Size = New System.Drawing.Size(264, 38)
         Me.mnuReportItemsAvailable.Text = "الأصناف المتوفرة"
         '
         'tsReportItemsAvailableGold
         '
         Me.tsReportItemsAvailableGold.Name = "tsReportItemsAvailableGold"
-        Me.tsReportItemsAvailableGold.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAvailableGold.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAvailableGold.Text = "ذهب"
         '
         'tsReportItemsAvailableSilver
         '
         Me.tsReportItemsAvailableSilver.Name = "tsReportItemsAvailableSilver"
-        Me.tsReportItemsAvailableSilver.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAvailableSilver.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAvailableSilver.Text = "فضة"
         '
         'tsReportItemsAvailableDiamond
         '
         Me.tsReportItemsAvailableDiamond.Name = "tsReportItemsAvailableDiamond"
-        Me.tsReportItemsAvailableDiamond.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAvailableDiamond.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAvailableDiamond.Text = "ألماس"
         '
         'tsReportItemsAvailableAccessories
         '
         Me.tsReportItemsAvailableAccessories.Name = "tsReportItemsAvailableAccessories"
-        Me.tsReportItemsAvailableAccessories.Size = New System.Drawing.Size(196, 30)
+        Me.tsReportItemsAvailableAccessories.Size = New System.Drawing.Size(247, 38)
         Me.tsReportItemsAvailableAccessories.Text = "ساعات وماركات"
         '
         'mnuReportProfit
         '
         Me.mnuReportProfit.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsReportProfitGold, Me.tsReportProfitGoldPerPurchaseCost, Me.tsReportProfitSilver, Me.tsReportProfitDiamond, Me.tsReportProfitAccessories})
         Me.mnuReportProfit.Name = "mnuReportProfit"
-        Me.mnuReportProfit.Size = New System.Drawing.Size(282, 30)
+        Me.mnuReportProfit.Size = New System.Drawing.Size(356, 38)
         Me.mnuReportProfit.Text = "أرباح المبيعات"
         '
         'tsReportProfitGold
         '
         Me.tsReportProfitGold.Name = "tsReportProfitGold"
-        Me.tsReportProfitGold.Size = New System.Drawing.Size(301, 30)
+        Me.tsReportProfitGold.Size = New System.Drawing.Size(377, 38)
         Me.tsReportProfitGold.Text = "ذهب - أرباح حسب المصنعية"
         '
         'tsReportProfitGoldPerPurchaseCost
         '
         Me.tsReportProfitGoldPerPurchaseCost.Name = "tsReportProfitGoldPerPurchaseCost"
-        Me.tsReportProfitGoldPerPurchaseCost.Size = New System.Drawing.Size(301, 30)
+        Me.tsReportProfitGoldPerPurchaseCost.Size = New System.Drawing.Size(377, 38)
         Me.tsReportProfitGoldPerPurchaseCost.Text = "ذهب - حسب سعر الشراء"
         '
         'tsReportProfitSilver
         '
         Me.tsReportProfitSilver.Name = "tsReportProfitSilver"
-        Me.tsReportProfitSilver.Size = New System.Drawing.Size(301, 30)
+        Me.tsReportProfitSilver.Size = New System.Drawing.Size(377, 38)
         Me.tsReportProfitSilver.Text = "فضة"
         '
         'tsReportProfitDiamond
         '
         Me.tsReportProfitDiamond.Name = "tsReportProfitDiamond"
-        Me.tsReportProfitDiamond.Size = New System.Drawing.Size(301, 30)
+        Me.tsReportProfitDiamond.Size = New System.Drawing.Size(377, 38)
         Me.tsReportProfitDiamond.Text = "ألماس"
         '
         'tsReportProfitAccessories
         '
         Me.tsReportProfitAccessories.Name = "tsReportProfitAccessories"
-        Me.tsReportProfitAccessories.Size = New System.Drawing.Size(301, 30)
+        Me.tsReportProfitAccessories.Size = New System.Drawing.Size(377, 38)
         Me.tsReportProfitAccessories.Text = "ساعات وماركات"
         '
         'tsReportCustomers
         '
         Me.tsReportCustomers.Name = "tsReportCustomers"
-        Me.tsReportCustomers.Size = New System.Drawing.Size(282, 30)
+        Me.tsReportCustomers.Size = New System.Drawing.Size(356, 38)
         Me.tsReportCustomers.Text = "عرض العملاء المسجلين"
         '
         'tsReportExpenses
         '
         Me.tsReportExpenses.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpReportSellView, Me.ExpReportSellDetailed})
         Me.tsReportExpenses.Name = "tsReportExpenses"
-        Me.tsReportExpenses.Size = New System.Drawing.Size(282, 30)
+        Me.tsReportExpenses.Size = New System.Drawing.Size(356, 38)
         Me.tsReportExpenses.Text = "تقارير المصروفات"
         '
         'ExpReportSellView
         '
         Me.ExpReportSellView.Name = "ExpReportSellView"
-        Me.ExpReportSellView.Size = New System.Drawing.Size(226, 30)
+        Me.ExpReportSellView.Size = New System.Drawing.Size(283, 38)
         Me.ExpReportSellView.Text = "مراجعه الفواتير"
         '
         'ExpReportSellDetailed
         '
         Me.ExpReportSellDetailed.Name = "ExpReportSellDetailed"
-        Me.ExpReportSellDetailed.Size = New System.Drawing.Size(226, 30)
+        Me.ExpReportSellDetailed.Size = New System.Drawing.Size(283, 38)
         Me.ExpReportSellDetailed.Text = "بحث متعدد تفصلي"
         '
         'tsReportCivilIDPrint
         '
         Me.tsReportCivilIDPrint.Name = "tsReportCivilIDPrint"
-        Me.tsReportCivilIDPrint.Size = New System.Drawing.Size(282, 30)
+        Me.tsReportCivilIDPrint.Size = New System.Drawing.Size(356, 38)
         Me.tsReportCivilIDPrint.Text = "طباعة صور البطاقة المدنية"
         '
         'wholesaleReport
         '
         Me.wholesaleReport.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.wholesaleInvView})
         Me.wholesaleReport.Name = "wholesaleReport"
-        Me.wholesaleReport.Size = New System.Drawing.Size(282, 30)
+        Me.wholesaleReport.Size = New System.Drawing.Size(356, 38)
         Me.wholesaleReport.Text = "جمله"
         '
         'wholesaleInvView
         '
         Me.wholesaleInvView.Name = "wholesaleInvView"
-        Me.wholesaleInvView.Size = New System.Drawing.Size(193, 30)
+        Me.wholesaleInvView.Size = New System.Drawing.Size(244, 38)
         Me.wholesaleInvView.Text = "مراجعة الفواتير"
         '
         'ToolStripBondCash
         '
         Me.ToolStripBondCash.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripBondShowCash, Me.ToolStripBondShowDetelsCash})
         Me.ToolStripBondCash.Name = "ToolStripBondCash"
-        Me.ToolStripBondCash.Size = New System.Drawing.Size(282, 30)
+        Me.ToolStripBondCash.Size = New System.Drawing.Size(356, 38)
         Me.ToolStripBondCash.Text = "سند قبض/صرف"
         '
         'ToolStripBondShowCash
         '
         Me.ToolStripBondShowCash.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripBondShowCashComp, Me.ToolStripBondShowCashCompPersonal})
         Me.ToolStripBondShowCash.Name = "ToolStripBondShowCash"
-        Me.ToolStripBondShowCash.Size = New System.Drawing.Size(233, 30)
+        Me.ToolStripBondShowCash.Size = New System.Drawing.Size(291, 38)
         Me.ToolStripBondShowCash.Text = "مراجعة السند"
         '
         'ToolStripBondShowCashComp
         '
         Me.ToolStripBondShowCashComp.Name = "ToolStripBondShowCashComp"
-        Me.ToolStripBondShowCashComp.Size = New System.Drawing.Size(177, 30)
+        Me.ToolStripBondShowCashComp.Size = New System.Drawing.Size(226, 38)
         Me.ToolStripBondShowCashComp.Text = "شركات/ورشه"
         '
         'ToolStripBondShowCashCompPersonal
         '
         Me.ToolStripBondShowCashCompPersonal.Name = "ToolStripBondShowCashCompPersonal"
-        Me.ToolStripBondShowCashCompPersonal.Size = New System.Drawing.Size(177, 30)
+        Me.ToolStripBondShowCashCompPersonal.Size = New System.Drawing.Size(226, 38)
         Me.ToolStripBondShowCashCompPersonal.Text = "شخصي"
         '
         'ToolStripBondShowDetelsCash
         '
         Me.ToolStripBondShowDetelsCash.Name = "ToolStripBondShowDetelsCash"
-        Me.ToolStripBondShowDetelsCash.Size = New System.Drawing.Size(233, 30)
+        Me.ToolStripBondShowDetelsCash.Size = New System.Drawing.Size(291, 38)
         Me.ToolStripBondShowDetelsCash.Text = "بحث متعدد تفصيلي"
         '
         'ToolStripBondGold
         '
         Me.ToolStripBondGold.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripBondShowGold, Me.ToolStripBondShowDetelsGold})
         Me.ToolStripBondGold.Name = "ToolStripBondGold"
-        Me.ToolStripBondGold.Size = New System.Drawing.Size(282, 30)
+        Me.ToolStripBondGold.Size = New System.Drawing.Size(356, 38)
         Me.ToolStripBondGold.Text = "سند صرف ذهب"
         '
         'ToolStripBondShowGold
         '
         Me.ToolStripBondShowGold.Name = "ToolStripBondShowGold"
-        Me.ToolStripBondShowGold.Size = New System.Drawing.Size(233, 30)
+        Me.ToolStripBondShowGold.Size = New System.Drawing.Size(291, 38)
         Me.ToolStripBondShowGold.Text = "مراجعة السند"
         '
         'ToolStripBondShowDetelsGold
         '
         Me.ToolStripBondShowDetelsGold.Name = "ToolStripBondShowDetelsGold"
-        Me.ToolStripBondShowDetelsGold.Size = New System.Drawing.Size(233, 30)
+        Me.ToolStripBondShowDetelsGold.Size = New System.Drawing.Size(291, 38)
         Me.ToolStripBondShowDetelsGold.Text = "بحث متعدد تفصيلي"
         '
         'سندقبضذهبToolStripMenuItem
         '
         Me.سندقبضذهبToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.مراجعةالسنداتToolStripMenuItem, Me.بحثمتعددتفصيليToolStripMenuItem})
         Me.سندقبضذهبToolStripMenuItem.Name = "سندقبضذهبToolStripMenuItem"
-        Me.سندقبضذهبToolStripMenuItem.Size = New System.Drawing.Size(282, 30)
+        Me.سندقبضذهبToolStripMenuItem.Size = New System.Drawing.Size(356, 38)
         Me.سندقبضذهبToolStripMenuItem.Text = "سند قبض ذهب"
         '
         'مراجعةالسنداتToolStripMenuItem
         '
         Me.مراجعةالسنداتToolStripMenuItem.Name = "مراجعةالسنداتToolStripMenuItem"
-        Me.مراجعةالسنداتToolStripMenuItem.Size = New System.Drawing.Size(233, 30)
+        Me.مراجعةالسنداتToolStripMenuItem.Size = New System.Drawing.Size(291, 38)
         Me.مراجعةالسنداتToolStripMenuItem.Text = "مراجعة السندات"
         '
         'بحثمتعددتفصيليToolStripMenuItem
         '
         Me.بحثمتعددتفصيليToolStripMenuItem.Name = "بحثمتعددتفصيليToolStripMenuItem"
-        Me.بحثمتعددتفصيليToolStripMenuItem.Size = New System.Drawing.Size(233, 30)
+        Me.بحثمتعددتفصيليToolStripMenuItem.Size = New System.Drawing.Size(291, 38)
         Me.بحثمتعددتفصيليToolStripMenuItem.Text = "بحث متعدد تفصيلي"
         '
         'mnuUserManagement
@@ -1301,19 +1305,19 @@ Partial Class frmMain
         Me.mnuUserManagement.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold)
         Me.mnuUserManagement.ForeColor = System.Drawing.Color.Black
         Me.mnuUserManagement.Name = "mnuUserManagement"
-        Me.mnuUserManagement.Size = New System.Drawing.Size(153, 47)
+        Me.mnuUserManagement.Size = New System.Drawing.Size(193, 47)
         Me.mnuUserManagement.Text = "إدارة المستخدمين"
         '
         'tsUserManagementUser
         '
         Me.tsUserManagementUser.Name = "tsUserManagementUser"
-        Me.tsUserManagementUser.Size = New System.Drawing.Size(198, 30)
+        Me.tsUserManagementUser.Size = New System.Drawing.Size(247, 38)
         Me.tsUserManagementUser.Text = "إضافة مستخدم"
         '
         'tsUserManagementCashier
         '
         Me.tsUserManagementCashier.Name = "tsUserManagementCashier"
-        Me.tsUserManagementCashier.Size = New System.Drawing.Size(198, 30)
+        Me.tsUserManagementCashier.Size = New System.Drawing.Size(247, 38)
         Me.tsUserManagementCashier.Text = "إضافة كاشير"
         '
         'mnuTransactions
@@ -1322,164 +1326,170 @@ Partial Class frmMain
         Me.mnuTransactions.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold)
         Me.mnuTransactions.ForeColor = System.Drawing.Color.Black
         Me.mnuTransactions.Name = "mnuTransactions"
-        Me.mnuTransactions.Size = New System.Drawing.Size(97, 47)
+        Me.mnuTransactions.Size = New System.Drawing.Size(122, 47)
         Me.mnuTransactions.Text = "المعاملات"
         '
         'mnuTransactionsSell
         '
         Me.mnuTransactionsSell.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTransactionsSellGold, Me.tsTransactionsSellSilver, Me.tsTransactionsSellDiamond, Me.tsTransactionsSellAuction, Me.tsTransactionsSellAccessories})
         Me.mnuTransactionsSell.Name = "mnuTransactionsSell"
-        Me.mnuTransactionsSell.Size = New System.Drawing.Size(322, 30)
+        Me.mnuTransactionsSell.Size = New System.Drawing.Size(407, 38)
         Me.mnuTransactionsSell.Text = "بيع"
         '
         'tsTransactionsSellGold
         '
         Me.tsTransactionsSellGold.Name = "tsTransactionsSellGold"
-        Me.tsTransactionsSellGold.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsSellGold.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsSellGold.Text = " حذف/تعديل دهب"
         '
         'tsTransactionsSellSilver
         '
         Me.tsTransactionsSellSilver.Name = "tsTransactionsSellSilver"
-        Me.tsTransactionsSellSilver.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsSellSilver.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsSellSilver.Text = "حذف/تعديل فضة"
         '
         'tsTransactionsSellDiamond
         '
         Me.tsTransactionsSellDiamond.Name = "tsTransactionsSellDiamond"
-        Me.tsTransactionsSellDiamond.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsSellDiamond.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsSellDiamond.Text = "حذف/تعديل ألماس"
         '
         'tsTransactionsSellAuction
         '
         Me.tsTransactionsSellAuction.Name = "tsTransactionsSellAuction"
-        Me.tsTransactionsSellAuction.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsSellAuction.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsSellAuction.Text = "حذف/تعديل مزادات"
         '
         'tsTransactionsSellAccessories
         '
         Me.tsTransactionsSellAccessories.Name = "tsTransactionsSellAccessories"
-        Me.tsTransactionsSellAccessories.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsSellAccessories.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsSellAccessories.Text = "حذف/تعديل ساعات"
         '
         'mnuTransactionsBuy
         '
         Me.mnuTransactionsBuy.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTransactionsBuyGold, Me.tsTransactionsBuySilver, Me.tsTransactionsBuyDiamond, Me.tsTransactionsBuyAccessories})
         Me.mnuTransactionsBuy.Name = "mnuTransactionsBuy"
-        Me.mnuTransactionsBuy.Size = New System.Drawing.Size(322, 30)
+        Me.mnuTransactionsBuy.Size = New System.Drawing.Size(407, 38)
         Me.mnuTransactionsBuy.Text = "شراء"
         '
         'tsTransactionsBuyGold
         '
         Me.tsTransactionsBuyGold.Name = "tsTransactionsBuyGold"
-        Me.tsTransactionsBuyGold.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsBuyGold.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsBuyGold.Text = "حذف/تعديل ذهب"
         '
         'tsTransactionsBuySilver
         '
         Me.tsTransactionsBuySilver.Name = "tsTransactionsBuySilver"
-        Me.tsTransactionsBuySilver.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsBuySilver.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsBuySilver.Text = "حذف/تعديل فضة"
         '
         'tsTransactionsBuyDiamond
         '
         Me.tsTransactionsBuyDiamond.Name = "tsTransactionsBuyDiamond"
-        Me.tsTransactionsBuyDiamond.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsBuyDiamond.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsBuyDiamond.Text = "حذف/تعديل ألماس"
         '
         'tsTransactionsBuyAccessories
         '
         Me.tsTransactionsBuyAccessories.Name = "tsTransactionsBuyAccessories"
-        Me.tsTransactionsBuyAccessories.Size = New System.Drawing.Size(236, 30)
+        Me.tsTransactionsBuyAccessories.Size = New System.Drawing.Size(297, 38)
         Me.tsTransactionsBuyAccessories.Text = "حذف/تعديل ساعات"
         '
         'tsGoldVoucherReceive
         '
         Me.tsGoldVoucherReceive.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoldVoucherReceiveCreateNew, Me.GoldVoucherReceiveEdite})
         Me.tsGoldVoucherReceive.Name = "tsGoldVoucherReceive"
-        Me.tsGoldVoucherReceive.Size = New System.Drawing.Size(322, 30)
+        Me.tsGoldVoucherReceive.Size = New System.Drawing.Size(407, 38)
         Me.tsGoldVoucherReceive.Text = "سند صرف ذهب"
         '
         'GoldVoucherReceiveCreateNew
         '
         Me.GoldVoucherReceiveCreateNew.Name = "GoldVoucherReceiveCreateNew"
-        Me.GoldVoucherReceiveCreateNew.Size = New System.Drawing.Size(230, 30)
+        Me.GoldVoucherReceiveCreateNew.Size = New System.Drawing.Size(289, 38)
         Me.GoldVoucherReceiveCreateNew.Text = "انشاء جديد"
         '
         'GoldVoucherReceiveEdite
         '
         Me.GoldVoucherReceiveEdite.Name = "GoldVoucherReceiveEdite"
-        Me.GoldVoucherReceiveEdite.Size = New System.Drawing.Size(230, 30)
+        Me.GoldVoucherReceiveEdite.Size = New System.Drawing.Size(289, 38)
         Me.GoldVoucherReceiveEdite.Text = "حزف / تعديل سابق"
         '
         'tsGoldVoucher
         '
         Me.tsGoldVoucher.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoldVoucherCreateNew, Me.GoldVoucherEdite})
         Me.tsGoldVoucher.Name = "tsGoldVoucher"
-        Me.tsGoldVoucher.Size = New System.Drawing.Size(322, 30)
+        Me.tsGoldVoucher.Size = New System.Drawing.Size(407, 38)
         Me.tsGoldVoucher.Text = "سند قبض ذهب"
         '
         'GoldVoucherCreateNew
         '
         Me.GoldVoucherCreateNew.Name = "GoldVoucherCreateNew"
-        Me.GoldVoucherCreateNew.Size = New System.Drawing.Size(230, 30)
+        Me.GoldVoucherCreateNew.Size = New System.Drawing.Size(289, 38)
         Me.GoldVoucherCreateNew.Text = "انشاء جديد"
         '
         'GoldVoucherEdite
         '
         Me.GoldVoucherEdite.Name = "GoldVoucherEdite"
-        Me.GoldVoucherEdite.Size = New System.Drawing.Size(230, 30)
+        Me.GoldVoucherEdite.Size = New System.Drawing.Size(289, 38)
         Me.GoldVoucherEdite.Text = "حزف / تعديل سابق"
         '
         'tsTransactionsPaymentVoucher
         '
         Me.tsTransactionsPaymentVoucher.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.انشاءجديدToolStripMenuItem1, Me.حزفتعديلسابقToolStripMenuItem})
         Me.tsTransactionsPaymentVoucher.Name = "tsTransactionsPaymentVoucher"
-        Me.tsTransactionsPaymentVoucher.Size = New System.Drawing.Size(322, 30)
+        Me.tsTransactionsPaymentVoucher.Size = New System.Drawing.Size(407, 38)
         Me.tsTransactionsPaymentVoucher.Text = "سند صرف نقدي"
         '
         'انشاءجديدToolStripMenuItem1
         '
         Me.انشاءجديدToolStripMenuItem1.Name = "انشاءجديدToolStripMenuItem1"
-        Me.انشاءجديدToolStripMenuItem1.Size = New System.Drawing.Size(230, 30)
+        Me.انشاءجديدToolStripMenuItem1.Size = New System.Drawing.Size(289, 38)
         Me.انشاءجديدToolStripMenuItem1.Text = "انشاء جديد"
         '
         'حزفتعديلسابقToolStripMenuItem
         '
         Me.حزفتعديلسابقToolStripMenuItem.Name = "حزفتعديلسابقToolStripMenuItem"
-        Me.حزفتعديلسابقToolStripMenuItem.Size = New System.Drawing.Size(230, 30)
+        Me.حزفتعديلسابقToolStripMenuItem.Size = New System.Drawing.Size(289, 38)
         Me.حزفتعديلسابقToolStripMenuItem.Text = "حزف / تعديل سابق"
         '
         'mnuTransactionsPayInstallment
         '
         Me.mnuTransactionsPayInstallment.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTransactionsPayInstallmentGoldSilver, Me.tsTransactionsPayInstallmentDiamond, Me.tsTransactionsPayInstallmentAccessories})
         Me.mnuTransactionsPayInstallment.Name = "mnuTransactionsPayInstallment"
-        Me.mnuTransactionsPayInstallment.Size = New System.Drawing.Size(322, 30)
+        Me.mnuTransactionsPayInstallment.Size = New System.Drawing.Size(407, 38)
         Me.mnuTransactionsPayInstallment.Text = "الدفع الآجل"
         '
         'tsTransactionsPayInstallmentGoldSilver
         '
         Me.tsTransactionsPayInstallmentGoldSilver.Name = "tsTransactionsPayInstallmentGoldSilver"
-        Me.tsTransactionsPayInstallmentGoldSilver.Size = New System.Drawing.Size(231, 30)
+        Me.tsTransactionsPayInstallmentGoldSilver.Size = New System.Drawing.Size(291, 38)
         Me.tsTransactionsPayInstallmentGoldSilver.Text = "ذهب / فضة"
         '
         'tsTransactionsPayInstallmentDiamond
         '
         Me.tsTransactionsPayInstallmentDiamond.Name = "tsTransactionsPayInstallmentDiamond"
-        Me.tsTransactionsPayInstallmentDiamond.Size = New System.Drawing.Size(231, 30)
+        Me.tsTransactionsPayInstallmentDiamond.Size = New System.Drawing.Size(291, 38)
         Me.tsTransactionsPayInstallmentDiamond.Text = "ألماس"
         '
         'tsTransactionsPayInstallmentAccessories
         '
         Me.tsTransactionsPayInstallmentAccessories.Name = "tsTransactionsPayInstallmentAccessories"
-        Me.tsTransactionsPayInstallmentAccessories.Size = New System.Drawing.Size(231, 30)
+        Me.tsTransactionsPayInstallmentAccessories.Size = New System.Drawing.Size(291, 38)
         Me.tsTransactionsPayInstallmentAccessories.Text = "ساعات واكسسوارات"
         '
         'ExpensesToolStripMenuItem
         '
         Me.ExpensesToolStripMenuItem.Name = "ExpensesToolStripMenuItem"
-        Me.ExpensesToolStripMenuItem.Size = New System.Drawing.Size(322, 30)
+        Me.ExpensesToolStripMenuItem.Size = New System.Drawing.Size(407, 38)
         Me.ExpensesToolStripMenuItem.Text = "حزف/تعديل المصروفات"
+        '
+        'المحذوفاتذهبفضهالماسToolStripMenuItem
+        '
+        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Name = "المحذوفاتذهبفضهالماسToolStripMenuItem"
+        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Size = New System.Drawing.Size(407, 38)
+        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Text = "المحذوفات ذهب / فضه /الماس"
         '
         'mnuLicense
         '
@@ -1487,13 +1497,13 @@ Partial Class frmMain
         Me.mnuLicense.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold)
         Me.mnuLicense.ForeColor = System.Drawing.Color.Black
         Me.mnuLicense.Name = "mnuLicense"
-        Me.mnuLicense.Size = New System.Drawing.Size(87, 47)
+        Me.mnuLicense.Size = New System.Drawing.Size(110, 47)
         Me.mnuLicense.Text = "الترخيص"
         '
         'tsLicenseGet
         '
         Me.tsLicenseGet.Name = "tsLicenseGet"
-        Me.tsLicenseGet.Size = New System.Drawing.Size(238, 30)
+        Me.tsLicenseGet.Size = New System.Drawing.Size(298, 38)
         Me.tsLicenseGet.Text = "طلب مفتاح الترخيص"
         '
         'SelectColorToolStripMenuItem
@@ -1501,7 +1511,7 @@ Partial Class frmMain
         Me.SelectColorToolStripMenuItem.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold)
         Me.SelectColorToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.SelectColorToolStripMenuItem.Name = "SelectColorToolStripMenuItem"
-        Me.SelectColorToolStripMenuItem.Size = New System.Drawing.Size(115, 47)
+        Me.SelectColorToolStripMenuItem.Size = New System.Drawing.Size(146, 47)
         Me.SelectColorToolStripMenuItem.Text = "ضبط الالوان"
         '
         'pnlMenu
@@ -1527,7 +1537,7 @@ Partial Class frmMain
         Me.dtEndDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtEndDate.Location = New System.Drawing.Point(1, 15)
         Me.dtEndDate.Name = "dtEndDate"
-        Me.dtEndDate.Size = New System.Drawing.Size(115, 27)
+        Me.dtEndDate.Size = New System.Drawing.Size(115, 32)
         Me.dtEndDate.TabIndex = 10
         '
         'lblTechSupportEnd
@@ -1602,7 +1612,7 @@ Partial Class frmMain
         Me.lblBuyOunceUsd.LinkColor = System.Drawing.Color.Black
         Me.lblBuyOunceUsd.Location = New System.Drawing.Point(4, 4)
         Me.lblBuyOunceUsd.Name = "lblBuyOunceUsd"
-        Me.lblBuyOunceUsd.Size = New System.Drawing.Size(21, 15)
+        Me.lblBuyOunceUsd.Size = New System.Drawing.Size(28, 21)
         Me.lblBuyOunceUsd.TabIndex = 4
         Me.lblBuyOunceUsd.TabStop = True
         Me.lblBuyOunceUsd.Text = "00"
@@ -1629,7 +1639,7 @@ Partial Class frmMain
         Me.lblCurrencyBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblCurrencyBuy.Location = New System.Drawing.Point(467, 36)
         Me.lblCurrencyBuy.Name = "lblCurrencyBuy"
-        Me.lblCurrencyBuy.Size = New System.Drawing.Size(90, 26)
+        Me.lblCurrencyBuy.Size = New System.Drawing.Size(113, 33)
         Me.lblCurrencyBuy.TabIndex = 156
         Me.lblCurrencyBuy.Text = "دينار كويتي"
         Me.lblCurrencyBuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1655,7 +1665,7 @@ Partial Class frmMain
         Me.lblSellOunceUsd.LinkColor = System.Drawing.Color.Black
         Me.lblSellOunceUsd.Location = New System.Drawing.Point(4, 4)
         Me.lblSellOunceUsd.Name = "lblSellOunceUsd"
-        Me.lblSellOunceUsd.Size = New System.Drawing.Size(21, 15)
+        Me.lblSellOunceUsd.Size = New System.Drawing.Size(28, 21)
         Me.lblSellOunceUsd.TabIndex = 4
         Me.lblSellOunceUsd.TabStop = True
         Me.lblSellOunceUsd.Text = "00"
@@ -1693,7 +1703,7 @@ Partial Class frmMain
         Me.lblOunceBUY.LinkColor = System.Drawing.Color.Black
         Me.lblOunceBUY.Location = New System.Drawing.Point(1, 4)
         Me.lblOunceBUY.Name = "lblOunceBUY"
-        Me.lblOunceBUY.Size = New System.Drawing.Size(21, 15)
+        Me.lblOunceBUY.Size = New System.Drawing.Size(28, 21)
         Me.lblOunceBUY.TabIndex = 4
         Me.lblOunceBUY.TabStop = True
         Me.lblOunceBUY.Text = "00"
@@ -1729,7 +1739,7 @@ Partial Class frmMain
         Me.lblOunce.LinkColor = System.Drawing.Color.Black
         Me.lblOunce.Location = New System.Drawing.Point(1, 4)
         Me.lblOunce.Name = "lblOunce"
-        Me.lblOunce.Size = New System.Drawing.Size(21, 15)
+        Me.lblOunce.Size = New System.Drawing.Size(28, 21)
         Me.lblOunce.TabIndex = 4
         Me.lblOunce.TabStop = True
         Me.lblOunce.Text = "00"
@@ -1765,7 +1775,7 @@ Partial Class frmMain
         Me.lblSilver925BUY.LinkColor = System.Drawing.Color.Red
         Me.lblSilver925BUY.Location = New System.Drawing.Point(6, 4)
         Me.lblSilver925BUY.Name = "lblSilver925BUY"
-        Me.lblSilver925BUY.Size = New System.Drawing.Size(19, 14)
+        Me.lblSilver925BUY.Size = New System.Drawing.Size(22, 18)
         Me.lblSilver925BUY.TabIndex = 7
         Me.lblSilver925BUY.TabStop = True
         Me.lblSilver925BUY.Text = "00"
@@ -1802,7 +1812,7 @@ Partial Class frmMain
         Me.lbl24BUY.LinkColor = System.Drawing.Color.Black
         Me.lbl24BUY.Location = New System.Drawing.Point(3, 4)
         Me.lbl24BUY.Name = "lbl24BUY"
-        Me.lbl24BUY.Size = New System.Drawing.Size(21, 15)
+        Me.lbl24BUY.Size = New System.Drawing.Size(28, 21)
         Me.lbl24BUY.TabIndex = 4
         Me.lbl24BUY.TabStop = True
         Me.lbl24BUY.Text = "00"
@@ -1828,7 +1838,7 @@ Partial Class frmMain
         Me.lblCurrencySale.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblCurrencySale.Location = New System.Drawing.Point(467, 3)
         Me.lblCurrencySale.Name = "lblCurrencySale"
-        Me.lblCurrencySale.Size = New System.Drawing.Size(90, 26)
+        Me.lblCurrencySale.Size = New System.Drawing.Size(113, 33)
         Me.lblCurrencySale.TabIndex = 13
         Me.lblCurrencySale.Text = "دينار كويتي"
         Me.lblCurrencySale.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1853,7 +1863,7 @@ Partial Class frmMain
         Me.lbl22BUY.LinkColor = System.Drawing.Color.Black
         Me.lbl22BUY.Location = New System.Drawing.Point(3, 4)
         Me.lbl22BUY.Name = "lbl22BUY"
-        Me.lbl22BUY.Size = New System.Drawing.Size(21, 15)
+        Me.lbl22BUY.Size = New System.Drawing.Size(28, 21)
         Me.lbl22BUY.TabIndex = 5
         Me.lbl22BUY.TabStop = True
         Me.lbl22BUY.Text = "00"
@@ -1889,7 +1899,7 @@ Partial Class frmMain
         Me.lblSilver925.LinkColor = System.Drawing.Color.Red
         Me.lblSilver925.Location = New System.Drawing.Point(6, 5)
         Me.lblSilver925.Name = "lblSilver925"
-        Me.lblSilver925.Size = New System.Drawing.Size(19, 14)
+        Me.lblSilver925.Size = New System.Drawing.Size(22, 18)
         Me.lblSilver925.TabIndex = 7
         Me.lblSilver925.TabStop = True
         Me.lblSilver925.Text = "00"
@@ -1926,7 +1936,7 @@ Partial Class frmMain
         Me.lbl21BUY.LinkColor = System.Drawing.Color.Black
         Me.lbl21BUY.Location = New System.Drawing.Point(2, 4)
         Me.lbl21BUY.Name = "lbl21BUY"
-        Me.lbl21BUY.Size = New System.Drawing.Size(21, 15)
+        Me.lbl21BUY.Size = New System.Drawing.Size(28, 21)
         Me.lbl21BUY.TabIndex = 6
         Me.lbl21BUY.TabStop = True
         Me.lbl21BUY.Text = "00"
@@ -1962,7 +1972,7 @@ Partial Class frmMain
         Me.lbl24.LinkColor = System.Drawing.Color.Black
         Me.lbl24.Location = New System.Drawing.Point(3, 4)
         Me.lbl24.Name = "lbl24"
-        Me.lbl24.Size = New System.Drawing.Size(21, 15)
+        Me.lbl24.Size = New System.Drawing.Size(28, 21)
         Me.lbl24.TabIndex = 4
         Me.lbl24.TabStop = True
         Me.lbl24.Text = "00"
@@ -1999,7 +2009,7 @@ Partial Class frmMain
         Me.lbl18BUY.LinkColor = System.Drawing.Color.Black
         Me.lbl18BUY.Location = New System.Drawing.Point(2, 4)
         Me.lbl18BUY.Name = "lbl18BUY"
-        Me.lbl18BUY.Size = New System.Drawing.Size(21, 15)
+        Me.lbl18BUY.Size = New System.Drawing.Size(28, 21)
         Me.lbl18BUY.TabIndex = 7
         Me.lbl18BUY.TabStop = True
         Me.lbl18BUY.Text = "00"
@@ -2035,7 +2045,7 @@ Partial Class frmMain
         Me.lbl22.LinkColor = System.Drawing.Color.Black
         Me.lbl22.Location = New System.Drawing.Point(3, 4)
         Me.lbl22.Name = "lbl22"
-        Me.lbl22.Size = New System.Drawing.Size(21, 15)
+        Me.lbl22.Size = New System.Drawing.Size(28, 21)
         Me.lbl22.TabIndex = 5
         Me.lbl22.TabStop = True
         Me.lbl22.Text = "00"
@@ -2071,7 +2081,7 @@ Partial Class frmMain
         Me.lbl21.LinkColor = System.Drawing.Color.Black
         Me.lbl21.Location = New System.Drawing.Point(2, 4)
         Me.lbl21.Name = "lbl21"
-        Me.lbl21.Size = New System.Drawing.Size(21, 15)
+        Me.lbl21.Size = New System.Drawing.Size(28, 21)
         Me.lbl21.TabIndex = 6
         Me.lbl21.TabStop = True
         Me.lbl21.Text = "00"
@@ -2107,7 +2117,7 @@ Partial Class frmMain
         Me.lbl18.LinkColor = System.Drawing.Color.Black
         Me.lbl18.Location = New System.Drawing.Point(2, 4)
         Me.lbl18.Name = "lbl18"
-        Me.lbl18.Size = New System.Drawing.Size(21, 15)
+        Me.lbl18.Size = New System.Drawing.Size(28, 21)
         Me.lbl18.TabIndex = 7
         Me.lbl18.TabStop = True
         Me.lbl18.Text = "00"
@@ -2243,7 +2253,7 @@ Partial Class frmMain
         Me.SET_INVARCHR142TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SettingsBindingSource, "SET_INVARCHR142", True))
         Me.SET_INVARCHR142TextBox.Location = New System.Drawing.Point(1704, 59)
         Me.SET_INVARCHR142TextBox.Name = "SET_INVARCHR142TextBox"
-        Me.SET_INVARCHR142TextBox.Size = New System.Drawing.Size(31, 27)
+        Me.SET_INVARCHR142TextBox.Size = New System.Drawing.Size(31, 32)
         Me.SET_INVARCHR142TextBox.TabIndex = 156
         '
         'lblTechSupport
@@ -2350,7 +2360,7 @@ Partial Class frmMain
         Me.lblMinm.ForeColor = System.Drawing.Color.Black
         Me.lblMinm.Location = New System.Drawing.Point(343, 2)
         Me.lblMinm.Name = "lblMinm"
-        Me.lblMinm.Size = New System.Drawing.Size(15, 15)
+        Me.lblMinm.Size = New System.Drawing.Size(16, 18)
         Me.lblMinm.TabIndex = 0
         Me.lblMinm.Text = "_"
         '
@@ -2603,7 +2613,7 @@ Partial Class frmMain
         Me.PicDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.PicDateFrom.Location = New System.Drawing.Point(446, 418)
         Me.PicDateFrom.Name = "PicDateFrom"
-        Me.PicDateFrom.Size = New System.Drawing.Size(120, 27)
+        Me.PicDateFrom.Size = New System.Drawing.Size(120, 32)
         Me.PicDateFrom.TabIndex = 11
         '
         'PicDateTo
@@ -2613,7 +2623,7 @@ Partial Class frmMain
         Me.PicDateTo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.PicDateTo.Location = New System.Drawing.Point(572, 419)
         Me.PicDateTo.Name = "PicDateTo"
-        Me.PicDateTo.Size = New System.Drawing.Size(120, 27)
+        Me.PicDateTo.Size = New System.Drawing.Size(120, 32)
         Me.PicDateTo.TabIndex = 11
         '
         'lblDateFrom
@@ -2622,7 +2632,7 @@ Partial Class frmMain
         Me.lblDateFrom.BackColor = System.Drawing.Color.Black
         Me.lblDateFrom.Location = New System.Drawing.Point(461, 396)
         Me.lblDateFrom.Name = "lblDateFrom"
-        Me.lblDateFrom.Size = New System.Drawing.Size(93, 19)
+        Me.lblDateFrom.Size = New System.Drawing.Size(114, 24)
         Me.lblDateFrom.TabIndex = 175
         Me.lblDateFrom.Text = "lblDateFrom"
         '
@@ -2632,7 +2642,7 @@ Partial Class frmMain
         Me.lblDateTo.BackColor = System.Drawing.Color.Black
         Me.lblDateTo.Location = New System.Drawing.Point(587, 396)
         Me.lblDateTo.Name = "lblDateTo"
-        Me.lblDateTo.Size = New System.Drawing.Size(74, 19)
+        Me.lblDateTo.Size = New System.Drawing.Size(90, 24)
         Me.lblDateTo.TabIndex = 176
         Me.lblDateTo.Text = "lblDateTo"
         '
@@ -2684,11 +2694,24 @@ Partial Class frmMain
         Me.BtnWebView.UseVisualStyleBackColor = False
         Me.BtnWebView.Visible = False
         '
-        'المحذوفاتذهبفضهالماسToolStripMenuItem
+        'بحثمتعددوزارىToolStripMenuItem
         '
-        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Name = "المحذوفاتذهبفضهالماسToolStripMenuItem"
-        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Size = New System.Drawing.Size(322, 30)
-        Me.المحذوفاتذهبفضهالماسToolStripMenuItem.Text = "المحذوفات ذهب / فضه /الماس"
+        Me.بحثمتعددوزارىToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ذهبToolStripMenuItem, Me.فضهToolStripMenuItem})
+        Me.بحثمتعددوزارىToolStripMenuItem.Name = "بحثمتعددوزارىToolStripMenuItem"
+        Me.بحثمتعددوزارىToolStripMenuItem.Size = New System.Drawing.Size(297, 38)
+        Me.بحثمتعددوزارىToolStripMenuItem.Text = "بحث متعدد وزارى"
+        '
+        'ذهبToolStripMenuItem
+        '
+        Me.ذهبToolStripMenuItem.Name = "ذهبToolStripMenuItem"
+        Me.ذهبToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
+        Me.ذهبToolStripMenuItem.Text = "ذهب"
+        '
+        'فضهToolStripMenuItem
+        '
+        Me.فضهToolStripMenuItem.Name = "فضهToolStripMenuItem"
+        Me.فضهToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
+        Me.فضهToolStripMenuItem.Text = "فضة"
         '
         'frmMain
         '
@@ -3027,4 +3050,7 @@ Partial Class frmMain
     Friend WithEvents مراجعةالسنداتToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents بحثمتعددتفصيليToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents المحذوفاتذهبفضهالماسToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents بحثمتعددوزارىToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ذهبToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents فضهToolStripMenuItem As ToolStripMenuItem
 End Class

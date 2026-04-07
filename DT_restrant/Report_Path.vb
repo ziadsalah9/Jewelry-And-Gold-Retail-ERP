@@ -95,6 +95,7 @@ Public Class Report_Path
             txtDiamondSellShort.Text = SafeStr(dt.Rows(0)("Report_Path25"))
             txtGoldSellReportShortKYC.Text = SafeStr(dt.Rows(0)("Report_Path26"))
             txtSilverProfitsReport.Text = SafeStr(dt.Rows(0)("Report_Path27"))
+            txtGoldSellReportminstrial.Text = SafeStr(dt.Rows(0)("Report_Path28"))
             'colSilverProfitsReport
             Grid.ResumeLayout()
         Catch ex As Exception
@@ -229,6 +230,8 @@ Public Class Report_Path
             MsgBox(ex.ToString)
         End Try
     End Sub
+    ' txtGoldSellReportminstrial
+
     Private Sub DataSave()
         Dim Path1 As String = If(IsDBNull(Re_Path_DiaSelShort.Text.Trim) Or (Re_Path_DiaSelShort.Text.Trim = ""), Application.StartupPath & "\Report\rptDiamondSellShort.rdlc", Re_Path_DiaSelShort.Text.Trim)
         Dim Path2 As String = If(IsDBNull(TEXTDiaRepRwitRHeadR.Text.Trim) Or (TEXTDiaRepRwitRHeadR.Text.Trim = ""), Application.StartupPath & "\Report\rptDiamondSellPayDetails(A4)-background.rdlc", TEXTDiaRepRwitRHeadR.Text.Trim)
@@ -257,6 +260,7 @@ Public Class Report_Path
         Dim Path25 As String = If(IsDBNull(txtDiamondSellShort.Text.Trim) Or (txtDiamondSellShort.Text.Trim = ""), Application.StartupPath & "\Report\rptDiamondSellShort.rdlc", txtDiamondSellShort.Text.Trim)
         Dim Path26 As String = If(IsDBNull(txtGoldSellReportShortKYC.Text.Trim) Or (txtGoldSellReportShortKYC.Text.Trim = ""), Application.StartupPath & "\Report\rptGoldSellShortKYC.rdlc", txtGoldSellReportShortKYC.Text.Trim)
         Dim Path27 As String = If(IsDBNull(txtSilverProfitsReport.Text.Trim) Or (txtSilverProfitsReport.Text.Trim = ""), Application.StartupPath & "\Report\rptSilverProfitsReport.rdlc", txtSilverProfitsReport.Text.Trim)
+        Dim Path28 As String = If(IsDBNull(txtGoldSellReportminstrial.Text.Trim) Or (txtGoldSellReportminstrial.Text.Trim = ""), Application.StartupPath & "\Report\rptGoldSellMinistrial.rdlc", txtGoldSellReportminstrial.Text.Trim)
         Dim dt1 As DataTable = GetRecordSet("SELECT * FROM ReportPath")
         If dt1.Rows.Count = 0 Then
             GlCommand.CommandText = "INSERT INTO ReportPath ([Report_Path1]  " & vbCrLf &
@@ -285,7 +289,8 @@ Public Class Report_Path
                                                             ",[Report_Path24]" & vbCrLf &
                                                             ",[Report_Path25]" & vbCrLf &
                                                             ",[Report_Path26]" & vbCrLf &
-                                                            ",[Report_Path27])" & vbCrLf &
+                                                            ",[Report_Path27]" & vbCrLf &
+                                                            ",[Report_Path28])" & vbCrLf &
                                     " VALUES (" &
                                     "'" & Path1 & "' ," & vbCrLf &
                                     "'" & Path2 & "' ," & vbCrLf &
@@ -313,7 +318,8 @@ Public Class Report_Path
                                     "'" & Path24 & "' ," & vbCrLf &
                                     "'" & Path25 & "' ," & vbCrLf &
                                      "'" & Path26 & "' ," & vbCrLf &
-                                    "'" & Path27 & "')"
+                                     "'" & Path27 & "' ," & vbCrLf &
+                                    "'" & Path28 & "')"
             GlCommand.ExecuteNonQuery()
         Else
             GlCommand.CommandText = "UPDATE ReportPath SET Report_Path1='" & Path1 & "'"
@@ -370,6 +376,8 @@ Public Class Report_Path
             GlCommand.ExecuteNonQuery()
             GlCommand.CommandText = "UPDATE ReportPath SET Report_Path27='" & Path27 & "'"
             GlCommand.ExecuteNonQuery()
+            GlCommand.CommandText = "UPDATE ReportPath SET Report_Path28='" & Path28 & "'"
+            GlCommand.ExecuteNonQuery()
             LOOD_DATA()
             MsgBox("تم تحديث المسار" & vbCrLf & "Path Updated", , AppTitle)
         End If
@@ -409,6 +417,7 @@ Public Class Report_Path
             Dim Path25 As String = Application.StartupPath & "\Report\rptDiamondSellShort.rdlc"
             Dim Path26 As String = Application.StartupPath & "\Report\rptGoldSellShortKYC.rdlc"
             Dim Path27 As String = Application.StartupPath & "\Report\rptSilverProfitsReport.rdlc"
+            Dim Path28 As String = Application.StartupPath & "\Report\rptGoldSellMinistrial.rdlc"
             Dim dt1 As DataTable = GetRecordSet("SELECT * FROM ReportPath")
             If dt1.Rows.Count = 0 Then
                 GlCommand.CommandText = "INSERT INTO ReportPath ([Report_Path1]  " & vbCrLf &
@@ -437,7 +446,8 @@ Public Class Report_Path
                                                                 ",[Report_Path24]" & vbCrLf &
                                                                 ",[Report_Path25]" & vbCrLf &
                                                                 ",[Report_Path26]" & vbCrLf &
-                                                                ",[Report_Path27])" & vbCrLf &
+                                                                ",[Report_Path27]" & vbCrLf &
+                                                                ",[Report_Path28])" & vbCrLf &
                                         " VALUES (" &
                                         "'" & Path1 & "' ," & vbCrLf &
                                         "'" & Path2 & "' ," & vbCrLf &
@@ -465,7 +475,8 @@ Public Class Report_Path
                                         "'" & Path24 & "' ," & vbCrLf &
                                        "'" & Path25 & "' ," & vbCrLf &
                                        "'" & Path26 & "' ," & vbCrLf &
-                                        "'" & Path27 & "')"
+                                       "'" & Path27 & "' ," & vbCrLf &
+                                        "'" & Path28 & "')"
                 GlCommand.ExecuteNonQuery()
             Else
                 GlCommand.CommandText = "UPDATE ReportPath SET Report_Path1='" & Path1 & "'"
@@ -504,7 +515,7 @@ Public Class Report_Path
                 GlCommand.ExecuteNonQuery()
                 GlCommand.CommandText = "UPDATE ReportPath SET Report_Path18='" & Path18 & "'"
                 GlCommand.ExecuteNonQuery()
-                GlCommand.CommandText = "UPDATE ReportPath SET Report_Path19='" & Path18 & "'"
+                GlCommand.CommandText = "UPDATE ReportPath SET Report_Path19='" & Path19 & "'"
                 GlCommand.ExecuteNonQuery()
                 GlCommand.CommandText = "UPDATE ReportPath SET Report_Path20='" & Path20 & "'"
                 GlCommand.ExecuteNonQuery()
@@ -521,6 +532,8 @@ Public Class Report_Path
                 GlCommand.CommandText = "UPDATE ReportPath SET Report_Path26='" & Path26 & "'"
                 GlCommand.ExecuteNonQuery()
                 GlCommand.CommandText = "UPDATE ReportPath SET Report_Path27='" & Path27 & "'"
+                GlCommand.ExecuteNonQuery()
+                GlCommand.CommandText = "UPDATE ReportPath SET Report_Path28='" & Path28 & "'"
                 GlCommand.ExecuteNonQuery()
                 MsgBox("تم تحديث المسار" & vbCrLf & "Path Updated", , AppTitle)
             End If
@@ -945,5 +958,25 @@ Public Class Report_Path
                 Return
             End If
         End With
+    End Sub
+
+
+
+    Private Sub lblGoldSellReportminstrial_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblGoldSellReportminstrial.LinkClicked
+        Dim OFD As New OpenFileDialog
+        OFD.InitialDirectory = Application.StartupPath & "\Report"
+        OFD.FileName = "rptGoldSellMinistrial*"
+        OFD.Filter = "Reports (*.RDLC) | *.RDLC; *.rdlc | All Files (*.*) | *.*"
+        With OFD
+            If OFD.ShowDialog = Windows.Forms.DialogResult.OK Then
+                txtGoldSellReportminstrial.Text = OFD.FileName
+            Else
+                Return
+            End If
+        End With
+    End Sub
+
+    Private Sub txtGoldSellReportminstrial_TextChanged(sender As Object, e As EventArgs) Handles txtGoldSellReportminstrial.TextChanged
+
     End Sub
 End Class
