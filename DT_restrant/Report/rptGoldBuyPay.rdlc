@@ -1184,7 +1184,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>= "توقيع الكاشير" &amp; " / " &amp; First(Fields!Cashier.Value)</Value>
+                <Value>="توقيع الكاشير" &amp; " / " &amp; First(Fields!cacher_name.Value, "DataSet1")</Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
                   <FontSize>11pt</FontSize>
@@ -2668,7 +2668,7 @@ Or (Not IsNothing(Previous(Fields!Bank4.Value)) AndAlso CStr(Previous(Fields!Ban
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DT_restrantDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\hosam\Documents\GitHub\SABSQL_VB.net\DT_restrant\DT_restrantDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>H:\mr-hossam\new1\HOSAM_SAP_2026-main\DT_restrant\DT_restrantDataSet.xsd</rd:SchemaPath>
         <rd:TableName>ViwGoldPurchaseInvoice</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

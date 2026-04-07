@@ -365963,15 +365963,7 @@ Namespace DT_restrantDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT castomer_id, CastomerNAme, CastomerADr, CastomerTE, CastomerNA, foto, bay_"& _ 
-                "val, bay_mazan, bay_gram_price, bay_total_price, total_price, cach, kenet, arabi"& _ 
-                "k, inv_id, date, Signature, PIC1, English, Item_Des, INV_Actv, fotoBack, INV_Act"& _ 
-                "v_bay, TIME_INV, Cashier, cacher_name, CashierSignature, PayMethodAr, PayMethodE"& _ 
-                "n, AddToItem, Note, GoldWeight999, Qunt, GoldCaret999, CastomerNameEn, PayMethod"& _ 
-                ", B_gold_id, logo1, logo2, comp_name, comp_note1, Bank1, Bank2, Bank3, Bank4, Pa"& _ 
-                "yMethod1, PayMethod2, PayMethod3, PayMethod4, PayMethodAr1, PayMethodAr2, PayMet"& _ 
-                "hodAr3, PayMethodAr4, PaymentReceipt, PaymentTransNumber, SalesInvNumber, Purcha"& _ 
-                "seInvNumber, PurchaseGold FROM dbo.ViwGoldPurchaseInvoice"
+            Me._commandCollection(0).CommandText = "SELECT *FROM dbo.ViwGoldPurchaseInvoice"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         

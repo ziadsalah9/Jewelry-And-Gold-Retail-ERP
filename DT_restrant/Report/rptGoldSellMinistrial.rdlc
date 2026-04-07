@@ -988,13 +988,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1018,13 +1019,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1048,13 +1050,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1066,8 +1069,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TOTAL_mony.Value</Value>
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'0'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1078,13 +1083,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1096,8 +1102,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!PayMethodAr.Value</Value>
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'0'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1108,13 +1116,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1126,8 +1135,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!KENT.Value</Value>
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'(None)'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1138,13 +1149,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1156,8 +1168,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CACH.Value</Value>
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'(None)'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1168,13 +1182,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1186,8 +1201,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!item_gramMade.Value</Value>
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'(None)'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1198,13 +1215,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1216,8 +1234,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'(None)'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1228,13 +1248,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1246,8 +1267,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'0'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1258,13 +1281,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1276,8 +1300,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
-                                  <Style />
+                                  <Value>0</Value>
+                                  <Style>
+                                    <Format>0.00;(0.00);'(None)'</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1288,13 +1314,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1318,13 +1345,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1348,13 +1376,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1379,13 +1408,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1409,13 +1439,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1439,13 +1470,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1475,13 +1507,14 @@
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Tomato", "Transparent")</BackgroundColor>
+                            <BackgroundColor>=IIF(Fields!RecordStatus.Value = "محذوف - Deleted", "Apricot", "Transparent")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1743,7 +1776,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

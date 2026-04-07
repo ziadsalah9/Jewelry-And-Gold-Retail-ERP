@@ -29,11 +29,6 @@ Partial Class Cashier
         Me.lblAddress = New System.Windows.Forms.Label()
         Me.lblCID = New System.Windows.Forms.Label()
         Me.grid = New System.Windows.Forms.DataGridView()
-        Me.colcacherID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colcacher_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.coladr = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colsvil_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCashierSignature = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Cacher_nameTextBox = New System.Windows.Forms.TextBox()
         Me.btnNew = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -44,13 +39,22 @@ Partial Class Cashier
         Me.lnkSignature = New System.Windows.Forms.LinkLabel()
         Me.lnkSignature2 = New System.Windows.Forms.LinkLabel()
         Me.btnDel = New System.Windows.Forms.Button()
+        Me.txttelno = New System.Windows.Forms.TextBox()
+        Me.lbltelpho = New System.Windows.Forms.Label()
+        Me.btnedit = New System.Windows.Forms.Button()
+        Me.colcacherID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colcacher_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coladr = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colsvil_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.coltel_no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCashierSignature = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbSignature, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCashierName
         '
-        Me.lblCashierName.Location = New System.Drawing.Point(394, 63)
+        Me.lblCashierName.Location = New System.Drawing.Point(524, 82)
         Me.lblCashierName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCashierName.Name = "lblCashierName"
         Me.lblCashierName.Size = New System.Drawing.Size(95, 27)
@@ -60,7 +64,7 @@ Partial Class Cashier
         '
         'lblAddress
         '
-        Me.lblAddress.Location = New System.Drawing.Point(394, 94)
+        Me.lblAddress.Location = New System.Drawing.Point(524, 123)
         Me.lblAddress.Name = "lblAddress"
         Me.lblAddress.Size = New System.Drawing.Size(95, 27)
         Me.lblAddress.TabIndex = 51
@@ -69,7 +73,7 @@ Partial Class Cashier
         '
         'lblCID
         '
-        Me.lblCID.Location = New System.Drawing.Point(394, 126)
+        Me.lblCID.Location = New System.Drawing.Point(525, 160)
         Me.lblCID.Name = "lblCID"
         Me.lblCID.Size = New System.Drawing.Size(95, 27)
         Me.lblCID.TabIndex = 56
@@ -92,7 +96,7 @@ Partial Class Cashier
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colcacherID, Me.colcacher_name, Me.coladr, Me.colsvil_id, Me.colCashierSignature})
+        Me.grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colcacherID, Me.colcacher_name, Me.coladr, Me.colsvil_id, Me.coltel_no, Me.colCashierSignature})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -102,54 +106,22 @@ Partial Class Cashier
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.grid.DefaultCellStyle = DataGridViewCellStyle2
         Me.grid.GridColor = System.Drawing.Color.Black
-        Me.grid.Location = New System.Drawing.Point(3, 157)
+        Me.grid.Location = New System.Drawing.Point(3, 280)
         Me.grid.Margin = New System.Windows.Forms.Padding(4)
         Me.grid.MultiSelect = False
         Me.grid.Name = "grid"
         Me.grid.ReadOnly = True
         Me.grid.RowHeadersWidth = 10
         Me.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grid.Size = New System.Drawing.Size(488, 236)
+        Me.grid.Size = New System.Drawing.Size(628, 236)
         Me.grid.TabIndex = 9
-        '
-        'colcacherID
-        '
-        Me.colcacherID.HeaderText = "cacherID"
-        Me.colcacherID.Name = "colcacherID"
-        Me.colcacherID.ReadOnly = True
-        Me.colcacherID.Visible = False
-        '
-        'colcacher_name
-        '
-        Me.colcacher_name.HeaderText = "cacher_name"
-        Me.colcacher_name.Name = "colcacher_name"
-        Me.colcacher_name.ReadOnly = True
-        '
-        'coladr
-        '
-        Me.coladr.HeaderText = "adr"
-        Me.coladr.Name = "coladr"
-        Me.coladr.ReadOnly = True
-        '
-        'colsvil_id
-        '
-        Me.colsvil_id.HeaderText = "svil_id"
-        Me.colsvil_id.Name = "colsvil_id"
-        Me.colsvil_id.ReadOnly = True
-        '
-        'colCashierSignature
-        '
-        Me.colCashierSignature.HeaderText = "CashierSignature"
-        Me.colCashierSignature.Name = "colCashierSignature"
-        Me.colCashierSignature.ReadOnly = True
-        Me.colCashierSignature.Visible = False
         '
         'Cacher_nameTextBox
         '
-        Me.Cacher_nameTextBox.Location = New System.Drawing.Point(220, 63)
+        Me.Cacher_nameTextBox.Location = New System.Drawing.Point(321, 82)
         Me.Cacher_nameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.Cacher_nameTextBox.Name = "Cacher_nameTextBox"
-        Me.Cacher_nameTextBox.Size = New System.Drawing.Size(174, 27)
+        Me.Cacher_nameTextBox.Size = New System.Drawing.Size(174, 32)
         Me.Cacher_nameTextBox.TabIndex = 0
         Me.Cacher_nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -160,7 +132,7 @@ Partial Class Cashier
         Me.btnNew.ForeColor = System.Drawing.Color.White
         Me.btnNew.Image = Global.DT_restrant.My.Resources.Resources.Add
         Me.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNew.Location = New System.Drawing.Point(403, 3)
+        Me.btnNew.Location = New System.Drawing.Point(542, 3)
         Me.btnNew.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(89, 57)
@@ -176,7 +148,7 @@ Partial Class Cashier
         Me.btnSave.ForeColor = System.Drawing.Color.White
         Me.btnSave.Image = Global.DT_restrant.My.Resources.Resources.DiskGreen
         Me.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSave.Location = New System.Drawing.Point(314, 3)
+        Me.btnSave.Location = New System.Drawing.Point(445, 2)
         Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(89, 57)
@@ -187,19 +159,19 @@ Partial Class Cashier
         '
         'txtCID
         '
-        Me.txtCID.Location = New System.Drawing.Point(220, 126)
+        Me.txtCID.Location = New System.Drawing.Point(321, 160)
         Me.txtCID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCID.MaxLength = 12
         Me.txtCID.Name = "txtCID"
-        Me.txtCID.Size = New System.Drawing.Size(174, 27)
+        Me.txtCID.Size = New System.Drawing.Size(174, 32)
         Me.txtCID.TabIndex = 2
         Me.txtCID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'AdrTextBox
         '
-        Me.AdrTextBox.Location = New System.Drawing.Point(220, 94)
+        Me.AdrTextBox.Location = New System.Drawing.Point(321, 121)
         Me.AdrTextBox.Name = "AdrTextBox"
-        Me.AdrTextBox.Size = New System.Drawing.Size(174, 27)
+        Me.AdrTextBox.Size = New System.Drawing.Size(174, 32)
         Me.AdrTextBox.TabIndex = 1
         Me.AdrTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -207,7 +179,7 @@ Partial Class Cashier
         '
         Me.Start_warkDateTimePicker.Location = New System.Drawing.Point(743, 12)
         Me.Start_warkDateTimePicker.Name = "Start_warkDateTimePicker"
-        Me.Start_warkDateTimePicker.Size = New System.Drawing.Size(58, 27)
+        Me.Start_warkDateTimePicker.Size = New System.Drawing.Size(58, 32)
         Me.Start_warkDateTimePicker.TabIndex = 53
         '
         'pbSignature
@@ -215,7 +187,7 @@ Partial Class Cashier
         Me.pbSignature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pbSignature.Location = New System.Drawing.Point(3, 63)
         Me.pbSignature.Name = "pbSignature"
-        Me.pbSignature.Size = New System.Drawing.Size(214, 90)
+        Me.pbSignature.Size = New System.Drawing.Size(214, 187)
         Me.pbSignature.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbSignature.TabIndex = 54
         Me.pbSignature.TabStop = False
@@ -256,11 +228,92 @@ Partial Class Cashier
         Me.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnDel.UseVisualStyleBackColor = False
         '
+        'txttelno
+        '
+        Me.txttelno.Location = New System.Drawing.Point(321, 200)
+        Me.txttelno.Margin = New System.Windows.Forms.Padding(4)
+        Me.txttelno.MaxLength = 12
+        Me.txttelno.Name = "txttelno"
+        Me.txttelno.Size = New System.Drawing.Size(174, 32)
+        Me.txttelno.TabIndex = 59
+        Me.txttelno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lbltelpho
+        '
+        Me.lbltelpho.Location = New System.Drawing.Point(525, 202)
+        Me.lbltelpho.Name = "lbltelpho"
+        Me.lbltelpho.Size = New System.Drawing.Size(95, 27)
+        Me.lbltelpho.TabIndex = 60
+        Me.lbltelpho.Text = "رقم الهاتف "
+        Me.lbltelpho.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'btnedit
+        '
+        Me.btnedit.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnedit.ForeColor = System.Drawing.Color.White
+        Me.btnedit.Image = Global.DT_restrant.My.Resources.Resources.exchange
+        Me.btnedit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnedit.Location = New System.Drawing.Point(331, 3)
+        Me.btnedit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnedit.Name = "btnedit"
+        Me.btnedit.Size = New System.Drawing.Size(106, 57)
+        Me.btnedit.TabIndex = 61
+        Me.btnedit.Text = "تعديل "
+        Me.btnedit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnedit.UseVisualStyleBackColor = False
+        '
+        'colcacherID
+        '
+        Me.colcacherID.HeaderText = "cacherID"
+        Me.colcacherID.MinimumWidth = 6
+        Me.colcacherID.Name = "colcacherID"
+        Me.colcacherID.ReadOnly = True
+        '
+        'colcacher_name
+        '
+        Me.colcacher_name.HeaderText = "cacher_name"
+        Me.colcacher_name.MinimumWidth = 6
+        Me.colcacher_name.Name = "colcacher_name"
+        Me.colcacher_name.ReadOnly = True
+        '
+        'coladr
+        '
+        Me.coladr.HeaderText = "adr"
+        Me.coladr.MinimumWidth = 6
+        Me.coladr.Name = "coladr"
+        Me.coladr.ReadOnly = True
+        '
+        'colsvil_id
+        '
+        Me.colsvil_id.HeaderText = "svil_id"
+        Me.colsvil_id.MinimumWidth = 6
+        Me.colsvil_id.Name = "colsvil_id"
+        Me.colsvil_id.ReadOnly = True
+        '
+        'coltel_no
+        '
+        Me.coltel_no.HeaderText = "cacherphone"
+        Me.coltel_no.MinimumWidth = 6
+        Me.coltel_no.Name = "coltel_no"
+        Me.coltel_no.ReadOnly = True
+        '
+        'colCashierSignature
+        '
+        Me.colCashierSignature.HeaderText = "CashierSignature"
+        Me.colCashierSignature.MinimumWidth = 6
+        Me.colCashierSignature.Name = "colCashierSignature"
+        Me.colCashierSignature.ReadOnly = True
+        Me.colCashierSignature.Visible = False
+        '
         'Cashier
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(494, 395)
+        Me.ClientSize = New System.Drawing.Size(632, 516)
+        Me.Controls.Add(Me.btnedit)
+        Me.Controls.Add(Me.lbltelpho)
+        Me.Controls.Add(Me.txttelno)
         Me.Controls.Add(Me.btnDel)
         Me.Controls.Add(Me.lnkSignature2)
         Me.Controls.Add(Me.lblCID)
@@ -303,10 +356,14 @@ Partial Class Cashier
     Friend WithEvents lblAddress As System.Windows.Forms.Label
     Friend WithEvents lblCID As System.Windows.Forms.Label
     Friend WithEvents lnkSignature2 As LinkLabel
+    Friend WithEvents btnDel As Button
+    Friend WithEvents txttelno As TextBox
+    Friend WithEvents lbltelpho As Label
+    Friend WithEvents btnedit As Button
     Friend WithEvents colcacherID As DataGridViewTextBoxColumn
     Friend WithEvents colcacher_name As DataGridViewTextBoxColumn
     Friend WithEvents coladr As DataGridViewTextBoxColumn
     Friend WithEvents colsvil_id As DataGridViewTextBoxColumn
-    Friend WithEvents btnDel As Button
+    Friend WithEvents coltel_no As DataGridViewTextBoxColumn
     Friend WithEvents colCashierSignature As DataGridViewImageColumn
 End Class
